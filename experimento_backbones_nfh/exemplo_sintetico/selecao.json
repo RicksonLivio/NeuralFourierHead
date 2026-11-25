@@ -1,0 +1,9 @@
+{
+ "p": 16,
+ "n": 1000,
+ "variante": "zero_L1000",
+ "qualificada": true,
+ "rel_RMSE": -0.03949575380820953,
+ "rel_MAE": -0.03793767258714157,
+ "empate_com": 0
+}

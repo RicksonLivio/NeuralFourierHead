@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software or its results, please cite it as below, and cite the paper (submitted to ESANN 2027,
+  under review) if you use the method.
+title: "Neural Fourier Head (NFH): code, results and reproduction scripts"
+abstract: >-
+  Output layer for multi-step forecasting networks that replaces the final dense layer and writes each forecast as a
+  polynomial trend, Fourier harmonics and a residual in orthogonal subspaces, with an exact and unique decomposition.
+  The repository contains the nfh library, the code and stored results of the main study, of the control with the
+  same extra epochs and of a pre-registered backbone sweep, and the scripts that recompute every reported number.
+type: software
+version: "1.0.0"
+repository-code: "https://github.com/RicksonLivio/NeuralFourierHead"
+license: BSD-3-Clause
+keywords:
+  - time series forecasting
+  - explainable AI
+  - interpretable by design
+  - Fourier decomposition
+  - identifiability
+  - PyTorch
+authors:
+  - family-names: "Gaspar"
+    given-names: "Rickson Livio de Souza"
+    email: "rickson.gaspar@outlook.com"
+    orcid: "https://orcid.org/0009-0000-1550-6301"
+    affiliation: "Instituto Federal de Educação, Ciência e Tecnologia do Ceará (IFCE), PPGCC"

@@ -1,0 +1,18 @@
+\tiny
+\setlength{\tabcolsep}{2pt}
+\begin{longtable}{llrrlrrrrl}
+\caption{T2: pares que qualificaram, n\~ao foram \`a confirma\c{c}\~ao e perderam no teste (m\'edias sobre as sementes; contra a densa+E).}\label{tab:t2_qualif_perdeu}\\
+\toprule
+Conjunto & Backbone & Fr. & L & Variante & \shortstack[l]{RMSE val} & \shortstack[l]{MAE val} & \shortstack[l]{RMSE teste} & \shortstack[l]{MAE teste} & \shortstack[l]{Pior em} \\ \midrule
+\endfirsthead
+\toprule
+Conjunto & Backbone & Fr. & L & Variante & \shortstack[l]{RMSE val} & \shortstack[l]{MAE val} & \shortstack[l]{RMSE teste} & \shortstack[l]{MAE teste} & \shortstack[l]{Pior em} \\ \midrule
+\endhead
+\bottomrule
+\multicolumn{10}{l}{\textit{Fonte: resultados/t2.csv e selecao\_T2.md.}}\\
+\endlastfoot
+ETTh1-M & iTransformer & 0.25 & 1 & \texttt{zero\_\allowbreak{}L1000\_\allowbreak{}K4} & \textminus{}5,47\% & \textminus{}5,10\% & \textminus{}0,95\% & +0,23\% & MAE \\
+air\_quality-U & PatchTST & 1 & 1 & \texttt{zero\_\allowbreak{}L1000\_\allowbreak{}K10} & \textminus{}4,31\% & \textminus{}4,77\% & +2,72\% & +0,32\% & RMSE e MAE \\
+SINT-M-M & Conv1D+LSTM & 1 & 1 & \texttt{conv\_\allowbreak{}L1000\_\allowbreak{}K4} & \textminus{}1,70\% & \textminus{}1,51\% & +0,92\% & +0,99\% & RMSE e MAE \\
+\end{longtable}
+\normalsize

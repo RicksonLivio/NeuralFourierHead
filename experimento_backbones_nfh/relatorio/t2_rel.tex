@@ -1,0 +1,31 @@
+\tiny
+\setlength{\tabcolsep}{2pt}
+\begin{longtable}{llrrlrrrrrrll}
+\caption{T2: m\'edias sobre as sementes 0, 1 e 2 da diferen\c{c}a relativa da melhor variante NFH (contra a densa+E, salvo a \'ultima coluna de teste).}\label{tab:t2_rel}\\
+\toprule
+Conjunto & Backbone & Fr. & L & Variante & \shortstack[l]{RMSE val} & \shortstack[l]{MAE val} & \shortstack[l]{Pior sem.\\ val} & \shortstack[l]{RMSE teste} & \shortstack[l]{MAE teste} & \shortstack[l]{RMSE teste\\ vs densa} & Passa & Conf. \\ \midrule
+\endfirsthead
+\toprule
+Conjunto & Backbone & Fr. & L & Variante & \shortstack[l]{RMSE val} & \shortstack[l]{MAE val} & \shortstack[l]{Pior sem.\\ val} & \shortstack[l]{RMSE teste} & \shortstack[l]{MAE teste} & \shortstack[l]{RMSE teste\\ vs densa} & Passa & Conf. \\ \midrule
+\endhead
+\bottomrule
+\multicolumn{13}{l}{\textit{Fonte: resultados/t2.csv e selecao\_T2.md.}}\\
+\endlastfoot
+SINT-M-M & iTransformer & 0.25 & 2 & \texttt{conv\_\allowbreak{}L1000\_\allowbreak{}K10} & \textminus{}9,89\% & \textminus{}6,41\% & \textminus{}7,29\% & \textminus{}7,24\% & \textminus{}6,08\% & \textminus{}7,95\% & sim & sim \\
+ETTh1-M & PatchTST & 0.25 & 2 & \texttt{zero\_\allowbreak{}L1000\_\allowbreak{}K4} & \textminus{}8,66\% & \textminus{}7,06\% & \textminus{}7,66\% & \textminus{}5,91\% & \textminus{}0,99\% & \textminus{}5,91\% & sim & sim \\
+ETTh1-M & PatchTST & 0.25 & 1 & \texttt{zero\_\allowbreak{}L1000\_\allowbreak{}K4} & \textminus{}6,98\% & \textminus{}5,54\% & \textminus{}3,70\% & \textminus{}4,32\% & \textminus{}0,33\% & \textminus{}4,68\% & sim & sim \\
+SINT-M-M & PatchTST & 0.1 & 1 & \texttt{conv\_\allowbreak{}L1000\_\allowbreak{}K4} & \textminus{}5,61\% & \textminus{}5,38\% & \textminus{}3,98\% & \textminus{}7,61\% & \textminus{}7,88\% & \textminus{}7,61\% & sim & sim \\
+ETTh1-M & iTransformer & 0.25 & 1 & \texttt{zero\_\allowbreak{}L1000\_\allowbreak{}K4} & \textminus{}5,47\% & \textminus{}5,10\% & \textminus{}4,36\% & \textminus{}0,95\% & +0,23\% & +0,22\% & sim & n\~ao \\
+SINT-M-M & iTransformer & 0.25 & 1 & \texttt{conv\_\allowbreak{}L1000\_\allowbreak{}K10} & \textminus{}4,63\% & \textminus{}2,71\% & \textminus{}3,59\% & \textminus{}4,99\% & \textminus{}3,99\% & \textminus{}5,41\% & sim & n\~ao \\
+air\_quality-U & PatchTST & 1 & 1 & \texttt{zero\_\allowbreak{}L1000\_\allowbreak{}K10} & \textminus{}4,31\% & \textminus{}4,77\% & \textminus{}3,47\% & +2,72\% & +0,32\% & +0,91\% & sim & n\~ao \\
+SINT-M-M & PatchTST & 0.1 & 2 & \texttt{conv\_\allowbreak{}L1000\_\allowbreak{}K10} & \textminus{}3,80\% & \textminus{}3,29\% & \textminus{}2,98\% & \textminus{}4,99\% & \textminus{}4,61\% & \textminus{}4,99\% & sim & n\~ao \\
+ETTh2-U & iTransformer & 0.25 & 1 & \texttt{zero\_\allowbreak{}L1000\_\allowbreak{}K4} & \textminus{}2,94\% & \textminus{}3,13\% & \textminus{}2,38\% & \textminus{}3,93\% & \textminus{}4,07\% & \textminus{}3,77\% & sim & sim \\
+SINT-U48-U & Linear & 0.1 & 1 & \texttt{zero\_\allowbreak{}L1000\_\allowbreak{}K4} & \textminus{}2,53\% & \textminus{}2,48\% & \textminus{}2,37\% & \textminus{}2,53\% & \textminus{}2,22\% & \textminus{}2,74\% & sim & sim \\
+SINT-M-M & Conv1D+LSTM & 1 & 2 & \texttt{zero\_\allowbreak{}L1000\_\allowbreak{}K10} & \textminus{}2,23\% & \textminus{}2,22\% & \textminus{}1,12\% & \textminus{}1,14\% & \textminus{}1,07\% & \textminus{}2,22\% & sim & n\~ao \\
+SINT-U48-U & DLinear & 0.1 & 1 & \texttt{zero\_\allowbreak{}L1000\_\allowbreak{}K4} & \textminus{}2,13\% & \textminus{}2,14\% & \textminus{}2,06\% & \textminus{}2,17\% & \textminus{}2,02\% & \textminus{}2,48\% & sim & sim \\
+SINT-M-M & Conv1D+LSTM & 1 & 1 & \texttt{conv\_\allowbreak{}L1000\_\allowbreak{}K4} & \textminus{}1,70\% & \textminus{}1,51\% & \textminus{}0,00\% & +0,92\% & +0,99\% & +1,71\% & sim & n\~ao \\
+seoul\_bike-U & Conv1D+LSTM & 1 & 1 & \texttt{conv\_\allowbreak{}L1000\_\allowbreak{}K10} & \textminus{}1,62\% & \textminus{}1,22\% & +0,00\% & +0,37\% & +0,01\% & \textminus{}2,01\% & n\~ao & n\~ao \\
+ETTh2-U & FreqMLP & 0.25 & 1 & \texttt{conv\_\allowbreak{}L100\_\allowbreak{}K10} & \textminus{}1,39\% & \textminus{}1,69\% & \textminus{}0,70\% & \textminus{}1,48\% & \textminus{}0,91\% & \textminus{}1,48\% & sim & sim \\
+SINT-U48-U & FreqMLP & 0.1 & 1 & \texttt{zero\_\allowbreak{}L100\_\allowbreak{}K10} & \textminus{}0,27\% & \textminus{}0,02\% & +2,20\% & \textminus{}0,13\% & \textminus{}0,27\% & \textminus{}0,45\% & n\~ao & n\~ao \\
+\end{longtable}
+\normalsize

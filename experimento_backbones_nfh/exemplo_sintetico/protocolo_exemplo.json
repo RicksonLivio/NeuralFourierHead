@@ -1,0 +1,8 @@
+{
+ "E_EXTRA": 50,
+ "LR": 0.003,
+ "LR_AJ": 0.0003,
+ "EPOCAS": 400,
+ "PACIENCIA": 40,
+ "LOTE": 64
+}

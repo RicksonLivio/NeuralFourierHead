@@ -1,0 +1,17 @@
+\tiny
+\setlength{\tabcolsep}{2pt}
+\begin{longtable}{llrrlrrrrr}
+\caption{T2: pares sem qualifica\c{c}\~ao (m\'edias sobre as sementes; contra a densa+E).}\label{tab:nao_ganhou_t2}\\
+\toprule
+Conjunto & Backbone & Fr. & L & Variante & \shortstack[l]{RMSE val} & \shortstack[l]{MAE val} & \shortstack[l]{Pior sem.\\ val} & \shortstack[l]{RMSE teste} & \shortstack[l]{MAE teste} \\ \midrule
+\endfirsthead
+\toprule
+Conjunto & Backbone & Fr. & L & Variante & \shortstack[l]{RMSE val} & \shortstack[l]{MAE val} & \shortstack[l]{Pior sem.\\ val} & \shortstack[l]{RMSE teste} & \shortstack[l]{MAE teste} \\ \midrule
+\endhead
+\bottomrule
+\multicolumn{10}{l}{\textit{Fonte: resultados/t2.csv.}}\\
+\endlastfoot
+seoul\_bike-U & Conv1D+LSTM & 1 & 1 & \texttt{conv\_\allowbreak{}L1000\_\allowbreak{}K10} & \textminus{}1,62\% & \textminus{}1,22\% & +0,00\% & +0,37\% & +0,01\% \\
+SINT-U48-U & FreqMLP & 0.1 & 1 & \texttt{zero\_\allowbreak{}L100\_\allowbreak{}K10} & \textminus{}0,27\% & \textminus{}0,02\% & +2,20\% & \textminus{}0,13\% & \textminus{}0,27\% \\
+\end{longtable}
+\normalsize

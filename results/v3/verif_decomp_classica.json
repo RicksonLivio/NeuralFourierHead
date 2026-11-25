@@ -1,0 +1,9 @@
+{
+ "H": 48,
+ "periodo": 24,
+ "classica_passos_sem_tendencia": 24,
+ "classica_fracao_sem_tendencia": 0.5,
+ "projecao_erro_reconstrucao": 0.0,
+ "projecao_soma_participacoes": 0.999999999999997,
+ "projecao_desvio_linearidade": 2.220446049250313e-16
+}

@@ -1,0 +1,233 @@
+{
+ "combinacao": "SINT-M_M_PatchTST_w1_f0.1",
+ "id": "SINT-M|M|PatchTST|w1|f0.1",
+ "dataset": "SINT-M",
+ "modo": "M",
+ "backbone": "PatchTST",
+ "largura": 1,
+ "fracao": 0.1,
+ "variante_nfh": "conv_L1000_K4",
+ "K": 4,
+ "lambda": 1000.0,
+ "seed": 10,
+ "veredito_confirmacao": "SUCESSO",
+ "d": 5,
+ "n_janelas_teste": 1650,
+ "periodo_h_por_harmonico": [
+  48.0,
+  24.0,
+  16.0,
+  12.0
+ ],
+ "nfh": {
+  "eps_T": {
+   "mediana": 0.10590459307500233,
+   "q1": 0.0608900847648096,
+   "q3": 0.17836775558947326
+  },
+  "eps_S": {
+   "mediana": 0.8923830265551678,
+   "q1": 0.8200581299652272,
+   "q3": 0.9374708668635349
+  },
+  "eps_R": {
+   "mediana": 0.0012610343661604913,
+   "q1": 0.000920783869080835,
+   "q3": 0.0018389231803455112
+  },
+  "amplitude_mediana_por_harmonico": [
+   0.24520782381296158,
+   0.8139007389545441,
+   0.04412267357110977,
+   0.026900394819676876
+  ],
+  "eps_via_projetor": {
+   "eps_T": {
+    "mediana": 0.10590459056156681,
+    "q1": 0.06089008086286206,
+    "q3": 0.17836775634081864
+   },
+   "eps_S": {
+    "mediana": 0.892383040856833,
+    "q1": 0.820058108432592,
+    "q3": 0.9374708968679594
+   },
+   "eps_R": {
+    "mediana": 0.0012610357429258105,
+    "q1": 0.0009207832420866273,
+    "q3": 0.0018389236347565326
+   }
+  },
+  "cobertura_mediana": 0.9987389656338395
+ },
+ "densa_projetada": {
+  "eps_T": {
+   "mediana": 0.11117384853432125,
+   "q1": 0.06047878268676457,
+   "q3": 0.18143721507843769
+  },
+  "eps_S": {
+   "mediana": 0.8743415792804909,
+   "q1": 0.8044277690067229,
+   "q3": 0.9243996787896169
+  },
+  "eps_R": {
+   "mediana": 0.011933825764712297,
+   "q1": 0.008430743165427256,
+   "q3": 0.016989504273202213
+  },
+  "amplitude_mediana_por_harmonico": [
+   0.40902104999813527,
+   0.8174372950038823,
+   0.07484736136228617,
+   0.05014206491559105
+  ],
+  "cobertura_mediana": 0.9880661742352876
+ },
+ "metricas_teste_semente10": {
+  "nfh": {
+   "test_RMSE": 0.28342674566364545,
+   "test_MAE": 0.22402993761560694
+  },
+  "densa": {
+   "test_RMSE": 0.3096628049587026,
+   "test_MAE": 0.2433940412349278
+  }
+ },
+ "conferencias": {
+  "max_abs_T+S+R_menos_previsao": 4.735775291919708e-07,
+  "max_abs_cabeca_vs_projetor": 4.793528504236366e-07,
+  "max_abs_previsao_vs_pred_npy_salvo": 0.00010454654693603516
+ },
+ "ig": {
+  "n_janelas": 50,
+  "n_passos": 64,
+  "baseline": 0.0,
+  "janelas_teste_indices": [
+   0,
+   33,
+   67,
+   100,
+   134,
+   168,
+   201,
+   235,
+   269,
+   302,
+   336,
+   370,
+   403,
+   437,
+   471,
+   504,
+   538,
+   572,
+   605,
+   639,
+   673,
+   706,
+   740,
+   774,
+   807,
+   841,
+   874,
+   908,
+   942,
+   975,
+   1009,
+   1043,
+   1076,
+   1110,
+   1144,
+   1177,
+   1211,
+   1245,
+   1278,
+   1312,
+   1346,
+   1379,
+   1413,
+   1447,
+   1480,
+   1514,
+   1548,
+   1581,
+   1615,
+   1649
+  ],
+  "agrupamento": "por variável (soma sobre as 96 defasagens)",
+  "grupos": [
+   "x1_tendencia",
+   "x2_ciclo",
+   "x3_distrator_lento",
+   "x4_distrator_oscilante",
+   "y"
+  ],
+  "g_T": {
+   "abs_mediana_por_grupo": [
+    3.2297814243520406e-05,
+    2.170664402001421e-06,
+    2.278831868807174e-05,
+    1.0659111921995645e-06,
+    0.6410742280520481
+   ],
+   "participacao_mediana_por_grupo": [
+    5.791261108019355e-05,
+    2.420025500767799e-06,
+    5.0000206116018515e-05,
+    1.6116830790488343e-06,
+    0.9998850684722591
+   ],
+   "completude_erro_mediano": 2.829529023529176e-06,
+   "completude_erro_max": 1.23495527688533e-05,
+   "completude_rel_mediano": 4.831997652562473e-06,
+   "completude_rel_max": 0.00015140598530611246,
+   "delta_g_mediano": 0.6410836032905536
+  },
+  "g_S": {
+   "abs_mediana_por_grupo": [
+    6.19862403254956e-05,
+    2.5309185730293393e-05,
+    5.1734852604568005e-05,
+    2.9472779715433717e-05,
+    14.017269038115046
+   ],
+   "participacao_mediana_por_grupo": [
+    4.079677980855645e-06,
+    1.509481327749268e-06,
+    2.9434675327298555e-06,
+    1.7000836625304057e-06,
+    0.99998841596076
+   ],
+   "completude_erro_mediano": 3.639917617093147e-06,
+   "completude_erro_max": 2.7130498658323177e-05,
+   "completude_rel_mediano": 2.501409145992428e-07,
+   "completude_rel_max": 9.389826477572878e-07,
+   "delta_g_mediano": 14.017341136913041
+  }
+ },
+ "verdade_sint_m": {
+  "verdade": "y_t = x1_{t-48} + x2_{t-48} + ruído AR(1): x1 conduz a tendência, x2 conduz o ciclo (src/v3_sintetico_multivariado.py)",
+  "aviso_d5": "Aqui d = 5 e a última coluna é o próprio y passado (o catálogo exige o alvo entre as variáveis); na v3, d = 4, sem y. Como o y passado é x1 + x2 defasados mais ruído, ele pode absorver atribuição: por isso o acerto é reportado com as 5 colunas e só com as 4 covariáveis.",
+  "tendencia": {
+   "variavel_correta": "x1_tendencia",
+   "acerto_5_colunas": 0.0,
+   "acerto_4_covariaveis": 0.58,
+   "participacao_correta_5_colunas": 0.00014341658458910317,
+   "participacao_correta_4_covariaveis": 0.5101250816811232,
+   "participacao_y_passado": 0.99966274115395
+  },
+  "ciclo": {
+   "variavel_correta": "x2_ciclo",
+   "acerto_5_colunas": 0.0,
+   "acerto_4_covariaveis": 0.02,
+   "participacao_correta_5_colunas": 1.6329261350017507e-06,
+   "participacao_correta_4_covariaveis": 0.1391565938513611,
+   "participacao_y_passado": 0.9999863502313316
+  }
+ },
+ "figura": "SINT-M_M_PatchTST_w1_f0.1.png",
+ "janela_da_figura": 841,
+ "tempo_s": 4.948789119720459,
+ "texto_relatorio_tex": "Semente 10, 1650 janelas de teste. Participações de energia da NFH (mediana [Q1; Q3]): $\\varepsilon_T=0,106 [0,061; 0,178]$, $\\varepsilon_S=0,892 [0,820; 0,937]$, $\\varepsilon_R=0,001 [0,001; 0,002]$. A densa da mesma semente, decomposta só pelo Projetor, dá $\\varepsilon_T=0,111 [0,060; 0,181]$, $\\varepsilon_S=0,874 [0,804; 0,924]$, $\\varepsilon_R=0,012 [0,008; 0,017]$. O harmônico de maior amplitude mediana da NFH é $k=2$ (período 24,0 h, amplitude 0,814). RMSE e MAE de teste desta semente: NFH 0,2834 e 0,2240; densa 0,3097 e 0,2434. IG de $g_T$ (50 janelas, 64 passos, referência zero): maior participação mediana em ``y'' (100,0\\%); erro de completude mediano 0,000003 (relativo 0,0000). IG de $g_S$ (50 janelas, 64 passos, referência zero): maior participação mediana em ``y'' (100,0\\%); erro de completude mediano 0,000004 (relativo 0,0000). SINT-M: acerto da tendência (x1) 0,00 com as 5 colunas e 0,58 só com as 4 covariáveis; acerto do ciclo (x2) 0,00 e 0,02. Aviso: aqui $d=5$ e a última coluna é o próprio $y$ passado (na v3, $d=4$); sua participação mediana é 100,0\\% em $g_T$ e 100,0\\% em $g_S$.\n"
+}

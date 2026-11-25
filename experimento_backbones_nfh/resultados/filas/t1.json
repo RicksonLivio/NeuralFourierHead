@@ -1,0 +1,4825 @@
+{
+ "meta": {
+  "fase": "t1",
+  "reais_m": false,
+  "sem_frac025": [],
+  "so_frac025_reais": false,
+  "b2": false,
+  "opcao_m": false,
+  "limite_frac1": null,
+  "backbones": [
+   "Linear",
+   "DLinear",
+   "MLP",
+   "LSTM",
+   "Conv1D+LSTM",
+   "TCN",
+   "PatchTST",
+   "TSMixer",
+   "iTransformer",
+   "FreqMLP"
+  ]
+ },
+ "tarefas": [
+  {
+   "tipo": "ingenua",
+   "dataset": "ETTh1",
+   "modo": "U"
+  },
+  {
+   "tipo": "ingenua",
+   "dataset": "ETTh2",
+   "modo": "U"
+  },
+  {
+   "tipo": "ingenua",
+   "dataset": "jena_climate",
+   "modo": "U"
+  },
+  {
+   "tipo": "ingenua",
+   "dataset": "air_quality",
+   "modo": "U"
+  },
+  {
+   "tipo": "ingenua",
+   "dataset": "bike_sharing_dc",
+   "modo": "U"
+  },
+  {
+   "tipo": "ingenua",
+   "dataset": "seoul_bike",
+   "modo": "U"
+  },
+  {
+   "tipo": "ingenua",
+   "dataset": "household_power",
+   "modo": "U"
+  },
+  {
+   "tipo": "ingenua",
+   "dataset": "melbourne_pedestrian_southbank",
+   "modo": "U"
+  },
+  {
+   "tipo": "ingenua",
+   "dataset": "electricity_mt156",
+   "modo": "U"
+  },
+  {
+   "tipo": "ingenua",
+   "dataset": "opsd_de_solar",
+   "modo": "U"
+  },
+  {
+   "tipo": "ingenua",
+   "dataset": "SINT-U48",
+   "modo": "U"
+  },
+  {
+   "tipo": "ingenua",
+   "dataset": "SINT-M",
+   "modo": "M"
+  },
+  {
+   "dataset": "opsd_de_solar",
+   "modo": "U",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 30245,
+   "custo_rel": 77.77512793740893
+  },
+  {
+   "dataset": "opsd_de_solar",
+   "modo": "U",
+   "backbone": "TCN",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 30245,
+   "custo_rel": 69.31173690576553
+  },
+  {
+   "dataset": "opsd_de_solar",
+   "modo": "U",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 30245,
+   "custo_rel": 67.81838997194725
+  },
+  {
+   "dataset": "electricity_mt156",
+   "modo": "U",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 24402,
+   "custo_rel": 62.7498321021211
+  },
+  {
+   "dataset": "electricity_mt156",
+   "modo": "U",
+   "backbone": "TCN",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 24402,
+   "custo_rel": 55.92147475531461
+  },
+  {
+   "dataset": "electricity_mt156",
+   "modo": "U",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 24402,
+   "custo_rel": 54.716625957859385
+  },
+  {
+   "dataset": "jena_climate",
+   "modo": "U",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 18253,
+   "custo_rel": 46.93765614949661
+  },
+  {
+   "dataset": "household_power",
+   "modo": "U",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 18111,
+   "custo_rel": 46.57250263099398
+  },
+  {
+   "dataset": "opsd_de_solar",
+   "modo": "U",
+   "backbone": "TSMixer",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 30245,
+   "custo_rel": 44.70149432978272
+  },
+  {
+   "dataset": "jena_climate",
+   "modo": "U",
+   "backbone": "TCN",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 18253,
+   "custo_rel": 41.829959786442
+  },
+  {
+   "dataset": "household_power",
+   "modo": "U",
+   "backbone": "TCN",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 18111,
+   "custo_rel": 41.504541811880294
+  },
+  {
+   "dataset": "jena_climate",
+   "modo": "U",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 18253,
+   "custo_rel": 40.9287178759449
+  },
+  {
+   "dataset": "household_power",
+   "modo": "U",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 18111,
+   "custo_rel": 40.610311151659346
+  },
+  {
+   "dataset": "electricity_mt156",
+   "modo": "U",
+   "backbone": "TSMixer",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 24402,
+   "custo_rel": 36.06565927046976
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "U",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 12051,
+   "custo_rel": 30.989190503346503
+  },
+  {
+   "dataset": "ETTh2",
+   "modo": "U",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 12051,
+   "custo_rel": 30.989190503346503
+  },
+  {
+   "dataset": "bike_sharing_dc",
+   "modo": "U",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 12022,
+   "custo_rel": 30.914616897455115
+  },
+  {
+   "dataset": "opsd_de_solar",
+   "modo": "U",
+   "backbone": "Conv1D+LSTM",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 30245,
+   "custo_rel": 30.50774684259921
+  },
+  {
+   "dataset": "melbourne_pedestrian_southbank",
+   "modo": "U",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 11719,
+   "custo_rel": 30.135451291072748
+  },
+  {
+   "dataset": "opsd_de_solar",
+   "modo": "U",
+   "backbone": "MLP",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 30245,
+   "custo_rel": 28.64820973690137
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "U",
+   "backbone": "TCN",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 12051,
+   "custo_rel": 27.616985996078043
+  },
+  {
+   "dataset": "ETTh2",
+   "modo": "U",
+   "backbone": "TCN",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 12051,
+   "custo_rel": 27.616985996078043
+  },
+  {
+   "dataset": "bike_sharing_dc",
+   "modo": "U",
+   "backbone": "TCN",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 12022,
+   "custo_rel": 27.550527395639385
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "U",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 12051,
+   "custo_rel": 27.021967847642138
+  },
+  {
+   "dataset": "ETTh2",
+   "modo": "U",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 12051,
+   "custo_rel": 27.021967847642138
+  },
+  {
+   "dataset": "jena_climate",
+   "modo": "U",
+   "backbone": "TSMixer",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 18253,
+   "custo_rel": 26.97756244012313
+  },
+  {
+   "dataset": "bike_sharing_dc",
+   "modo": "U",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 12022,
+   "custo_rel": 26.95694112225988
+  },
+  {
+   "dataset": "melbourne_pedestrian_southbank",
+   "modo": "U",
+   "backbone": "TCN",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 11719,
+   "custo_rel": 26.856149604849275
+  },
+  {
+   "dataset": "household_power",
+   "modo": "U",
+   "backbone": "TSMixer",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 18111,
+   "custo_rel": 26.7676893306892
+  },
+  {
+   "dataset": "melbourne_pedestrian_southbank",
+   "modo": "U",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 11719,
+   "custo_rel": 26.277523957059017
+  },
+  {
+   "dataset": "electricity_mt156",
+   "modo": "U",
+   "backbone": "Conv1D+LSTM",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 24402,
+   "custo_rel": 24.613987054161214
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 8257,
+   "custo_rel": 24.266177885522914
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 8223,
+   "custo_rel": 24.16625660078175
+  },
+  {
+   "dataset": "opsd_de_solar",
+   "modo": "U",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 30245,
+   "custo_rel": 23.23760827277095
+  },
+  {
+   "dataset": "electricity_mt156",
+   "modo": "U",
+   "backbone": "MLP",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 24402,
+   "custo_rel": 23.113691982141418
+  },
+  {
+   "dataset": "opsd_de_solar",
+   "modo": "U",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 30245,
+   "custo_rel": 22.462850000666485
+  },
+  {
+   "dataset": "opsd_de_solar",
+   "modo": "U",
+   "backbone": "LSTM",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 30245,
+   "custo_rel": 22.345403001205415
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "TCN",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 8257,
+   "custo_rel": 21.62556310628556
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "TCN",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 8223,
+   "custo_rel": 21.536515129343126
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 8257,
+   "custo_rel": 21.159632373648293
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 8223,
+   "custo_rel": 21.072502968209992
+  },
+  {
+   "dataset": "opsd_de_solar",
+   "modo": "U",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 7561,
+   "custo_rel": 19.44378198435223
+  },
+  {
+   "dataset": "electricity_mt156",
+   "modo": "U",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 24402,
+   "custo_rel": 18.748358970810273
+  },
+  {
+   "dataset": "jena_climate",
+   "modo": "U",
+   "backbone": "Conv1D+LSTM",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 18253,
+   "custo_rel": 18.411568957446303
+  },
+  {
+   "dataset": "household_power",
+   "modo": "U",
+   "backbone": "Conv1D+LSTM",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 18111,
+   "custo_rel": 18.268335363409303
+  },
+  {
+   "dataset": "electricity_mt156",
+   "modo": "U",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 24402,
+   "custo_rel": 18.123275441106415
+  },
+  {
+   "dataset": "electricity_mt156",
+   "modo": "U",
+   "backbone": "LSTM",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 24402,
+   "custo_rel": 18.028517904956672
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "U",
+   "backbone": "TSMixer",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 12051,
+   "custo_rel": 17.811132688649746
+  },
+  {
+   "dataset": "ETTh2",
+   "modo": "U",
+   "backbone": "TSMixer",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 12051,
+   "custo_rel": 17.811132688649746
+  },
+  {
+   "dataset": "bike_sharing_dc",
+   "modo": "U",
+   "backbone": "TSMixer",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 12022,
+   "custo_rel": 17.76827127897662
+  },
+  {
+   "dataset": "opsd_de_solar",
+   "modo": "U",
+   "backbone": "TCN",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 7561,
+   "custo_rel": 17.327934226441382
+  },
+  {
+   "dataset": "melbourne_pedestrian_southbank",
+   "modo": "U",
+   "backbone": "TSMixer",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 11719,
+   "custo_rel": 17.32044344687465
+  },
+  {
+   "dataset": "jena_climate",
+   "modo": "U",
+   "backbone": "MLP",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 18253,
+   "custo_rel": 17.289329552906622
+  },
+  {
+   "dataset": "household_power",
+   "modo": "U",
+   "backbone": "MLP",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 18111,
+   "custo_rel": 17.154826468673193
+  },
+  {
+   "dataset": "opsd_de_solar",
+   "modo": "U",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 7561,
+   "custo_rel": 16.954597492986814
+  },
+  {
+   "dataset": "electricity_mt156",
+   "modo": "U",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 6100,
+   "custo_rel": 15.687458025530274
+  },
+  {
+   "dataset": "seoul_bike",
+   "modo": "U",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 5989,
+   "custo_rel": 15.400735368396164
+  },
+  {
+   "dataset": "air_quality",
+   "modo": "U",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 5825,
+   "custo_rel": 14.97900876956214
+  },
+  {
+   "dataset": "opsd_de_solar",
+   "modo": "U",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 30245,
+   "custo_rel": 14.293000021629473
+  },
+  {
+   "dataset": "jena_climate",
+   "modo": "U",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 18253,
+   "custo_rel": 14.024006077133016
+  },
+  {
+   "dataset": "electricity_mt156",
+   "modo": "U",
+   "backbone": "TCN",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 6100,
+   "custo_rel": 13.980368688828653
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "TSMixer",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 8257,
+   "custo_rel": 13.947060479645408
+  },
+  {
+   "dataset": "household_power",
+   "modo": "U",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 18111,
+   "custo_rel": 13.914905717578264
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "TSMixer",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 8223,
+   "custo_rel": 13.8896304134824
+  },
+  {
+   "dataset": "seoul_bike",
+   "modo": "U",
+   "backbone": "TCN",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 5989,
+   "custo_rel": 13.7248468285214
+  },
+  {
+   "dataset": "electricity_mt156",
+   "modo": "U",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 6100,
+   "custo_rel": 13.679156489464846
+  },
+  {
+   "dataset": "jena_climate",
+   "modo": "U",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 18253,
+   "custo_rel": 13.556435809626892
+  },
+  {
+   "dataset": "jena_climate",
+   "modo": "U",
+   "backbone": "LSTM",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 18253,
+   "custo_rel": 13.485555992097948
+  },
+  {
+   "dataset": "household_power",
+   "modo": "U",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 18111,
+   "custo_rel": 13.45097293311525
+  },
+  {
+   "dataset": "seoul_bike",
+   "modo": "U",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 5989,
+   "custo_rel": 13.42913994187443
+  },
+  {
+   "dataset": "household_power",
+   "modo": "U",
+   "backbone": "LSTM",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 18111,
+   "custo_rel": 13.3806445281809
+  },
+  {
+   "dataset": "air_quality",
+   "modo": "U",
+   "backbone": "TCN",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 5825,
+   "custo_rel": 13.349011984661406
+  },
+  {
+   "dataset": "air_quality",
+   "modo": "U",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 5825,
+   "custo_rel": 13.061402598333371
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "U",
+   "backbone": "Conv1D+LSTM",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 12051,
+   "custo_rel": 12.155690434788001
+  },
+  {
+   "dataset": "ETTh2",
+   "modo": "U",
+   "backbone": "Conv1D+LSTM",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 12051,
+   "custo_rel": 12.155690434788001
+  },
+  {
+   "dataset": "bike_sharing_dc",
+   "modo": "U",
+   "backbone": "Conv1D+LSTM",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 12022,
+   "custo_rel": 12.12643850361143
+  },
+  {
+   "dataset": "melbourne_pedestrian_southbank",
+   "modo": "U",
+   "backbone": "Conv1D+LSTM",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 11719,
+   "custo_rel": 11.820806257180365
+  },
+  {
+   "dataset": "jena_climate",
+   "modo": "U",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 4563,
+   "custo_rel": 11.734414037374153
+  },
+  {
+   "dataset": "household_power",
+   "modo": "U",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 4528,
+   "custo_rel": 11.643125657748495
+  },
+  {
+   "dataset": "electricity_mt156",
+   "modo": "U",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 24402,
+   "custo_rel": 11.53175025715994
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "U",
+   "backbone": "MLP",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 12051,
+   "custo_rel": 11.414765268288921
+  },
+  {
+   "dataset": "ETTh2",
+   "modo": "U",
+   "backbone": "MLP",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 12051,
+   "custo_rel": 11.414765268288921
+  },
+  {
+   "dataset": "bike_sharing_dc",
+   "modo": "U",
+   "backbone": "MLP",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 12022,
+   "custo_rel": 11.387296328551109
+  },
+  {
+   "dataset": "opsd_de_solar",
+   "modo": "U",
+   "backbone": "TSMixer",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 7561,
+   "custo_rel": 11.17537358244568
+  },
+  {
+   "dataset": "melbourne_pedestrian_southbank",
+   "modo": "U",
+   "backbone": "MLP",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 11719,
+   "custo_rel": 11.100293268531894
+  },
+  {
+   "dataset": "jena_climate",
+   "modo": "U",
+   "backbone": "TCN",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 4563,
+   "custo_rel": 10.4574899466105
+  },
+  {
+   "dataset": "household_power",
+   "modo": "U",
+   "backbone": "TCN",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 4528,
+   "custo_rel": 10.376135452970074
+  },
+  {
+   "dataset": "jena_climate",
+   "modo": "U",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 4563,
+   "custo_rel": 10.232179468986224
+  },
+  {
+   "dataset": "household_power",
+   "modo": "U",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 4528,
+   "custo_rel": 10.152577787914836
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "Conv1D+LSTM",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 8257,
+   "custo_rel": 9.51854958521944
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "Conv1D+LSTM",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 8223,
+   "custo_rel": 9.479354879406497
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "U",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 12051,
+   "custo_rel": 9.258932626720537
+  },
+  {
+   "dataset": "ETTh2",
+   "modo": "U",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 12051,
+   "custo_rel": 9.258932626720537
+  },
+  {
+   "dataset": "bike_sharing_dc",
+   "modo": "U",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 12022,
+   "custo_rel": 9.23665156737485
+  },
+  {
+   "dataset": "electricity_mt156",
+   "modo": "U",
+   "backbone": "TSMixer",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 6100,
+   "custo_rel": 9.01641481761744
+  },
+  {
+   "dataset": "melbourne_pedestrian_southbank",
+   "modo": "U",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 11719,
+   "custo_rel": 9.003852912831963
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "U",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 12051,
+   "custo_rel": 8.950233273533868
+  },
+  {
+   "dataset": "ETTh2",
+   "modo": "U",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 12051,
+   "custo_rel": 8.950233273533868
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "MLP",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 8257,
+   "custo_rel": 8.938365927689379
+  },
+  {
+   "dataset": "bike_sharing_dc",
+   "modo": "U",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 12022,
+   "custo_rel": 8.928695080443461
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "U",
+   "backbone": "LSTM",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 12051,
+   "custo_rel": 8.903436983551876
+  },
+  {
+   "dataset": "ETTh2",
+   "modo": "U",
+   "backbone": "LSTM",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 12051,
+   "custo_rel": 8.903436983551876
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "MLP",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 8223,
+   "custo_rel": 8.901560254740192
+  },
+  {
+   "dataset": "bike_sharing_dc",
+   "modo": "U",
+   "backbone": "LSTM",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 12022,
+   "custo_rel": 8.882011402892761
+  },
+  {
+   "dataset": "seoul_bike",
+   "modo": "U",
+   "backbone": "TSMixer",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 5989,
+   "custo_rel": 8.85162008732249
+  },
+  {
+   "dataset": "melbourne_pedestrian_southbank",
+   "modo": "U",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 11719,
+   "custo_rel": 8.703658097464393
+  },
+  {
+   "dataset": "melbourne_pedestrian_southbank",
+   "modo": "U",
+   "backbone": "LSTM",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 11719,
+   "custo_rel": 8.65815102566131
+  },
+  {
+   "dataset": "jena_climate",
+   "modo": "U",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 18253,
+   "custo_rel": 8.625892854845521
+  },
+  {
+   "dataset": "air_quality",
+   "modo": "U",
+   "backbone": "TSMixer",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 5825,
+   "custo_rel": 8.609231425722742
+  },
+  {
+   "dataset": "household_power",
+   "modo": "U",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 18111,
+   "custo_rel": 8.558787349701815
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "U",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 3013,
+   "custo_rel": 7.747297625836626
+  },
+  {
+   "dataset": "ETTh2",
+   "modo": "U",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 3013,
+   "custo_rel": 7.747297625836626
+  },
+  {
+   "dataset": "bike_sharing_dc",
+   "modo": "U",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 3006,
+   "custo_rel": 7.728654224363779
+  },
+  {
+   "dataset": "opsd_de_solar",
+   "modo": "U",
+   "backbone": "Conv1D+LSTM",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 7561,
+   "custo_rel": 7.626936710649803
+  },
+  {
+   "dataset": "melbourne_pedestrian_southbank",
+   "modo": "U",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 2930,
+   "custo_rel": 7.533862822768187
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 8257,
+   "custo_rel": 7.250234759304526
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 8223,
+   "custo_rel": 7.220380334959564
+  },
+  {
+   "dataset": "opsd_de_solar",
+   "modo": "U",
+   "backbone": "MLP",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 7561,
+   "custo_rel": 7.162052434225343
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 8257,
+   "custo_rel": 7.008506811723427
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 8223,
+   "custo_rel": 6.97964775497175
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "LSTM",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 8257,
+   "custo_rel": 6.971862837529816
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "LSTM",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 8223,
+   "custo_rel": 6.943154670341247
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "U",
+   "backbone": "TCN",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 3013,
+   "custo_rel": 6.904246499019511
+  },
+  {
+   "dataset": "ETTh2",
+   "modo": "U",
+   "backbone": "TCN",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 3013,
+   "custo_rel": 6.904246499019511
+  },
+  {
+   "dataset": "bike_sharing_dc",
+   "modo": "U",
+   "backbone": "TCN",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 3006,
+   "custo_rel": 6.887631848909846
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "U",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 3013,
+   "custo_rel": 6.7554919619105345
+  },
+  {
+   "dataset": "ETTh2",
+   "modo": "U",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 3013,
+   "custo_rel": 6.7554919619105345
+  },
+  {
+   "dataset": "jena_climate",
+   "modo": "U",
+   "backbone": "TSMixer",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 4563,
+   "custo_rel": 6.744390610030782
+  },
+  {
+   "dataset": "bike_sharing_dc",
+   "modo": "U",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 3006,
+   "custo_rel": 6.73923528056497
+  },
+  {
+   "dataset": "melbourne_pedestrian_southbank",
+   "modo": "U",
+   "backbone": "TCN",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 2930,
+   "custo_rel": 6.714037401212319
+  },
+  {
+   "dataset": "household_power",
+   "modo": "U",
+   "backbone": "TSMixer",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 4528,
+   "custo_rel": 6.6919223326723
+  },
+  {
+   "dataset": "melbourne_pedestrian_southbank",
+   "modo": "U",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 2930,
+   "custo_rel": 6.569380989264754
+  },
+  {
+   "dataset": "electricity_mt156",
+   "modo": "U",
+   "backbone": "Conv1D+LSTM",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 6100,
+   "custo_rel": 6.1534967635403035
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 2064,
+   "custo_rel": 6.066544471380729
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 2056,
+   "custo_rel": 6.041564150195438
+  },
+  {
+   "dataset": "seoul_bike",
+   "modo": "U",
+   "backbone": "Conv1D+LSTM",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 5989,
+   "custo_rel": 6.0410281316028
+  },
+  {
+   "dataset": "air_quality",
+   "modo": "U",
+   "backbone": "Conv1D+LSTM",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 5825,
+   "custo_rel": 5.875603417362884
+  },
+  {
+   "dataset": "opsd_de_solar",
+   "modo": "U",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 7561,
+   "custo_rel": 5.809402068192737
+  },
+  {
+   "dataset": "electricity_mt156",
+   "modo": "U",
+   "backbone": "MLP",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 6100,
+   "custo_rel": 5.7784229955353545
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "U",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 12051,
+   "custo_rel": 5.694989031597182
+  },
+  {
+   "dataset": "ETTh2",
+   "modo": "U",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 12051,
+   "custo_rel": 5.694989031597182
+  },
+  {
+   "dataset": "bike_sharing_dc",
+   "modo": "U",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 12022,
+   "custo_rel": 5.6812843861805105
+  },
+  {
+   "dataset": "seoul_bike",
+   "modo": "U",
+   "backbone": "MLP",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 5989,
+   "custo_rel": 5.672809658267559
+  },
+  {
+   "dataset": "opsd_de_solar",
+   "modo": "U",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 7561,
+   "custo_rel": 5.615712500166621
+  },
+  {
+   "dataset": "opsd_de_solar",
+   "modo": "U",
+   "backbone": "LSTM",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 7561,
+   "custo_rel": 5.586350750301354
+  },
+  {
+   "dataset": "melbourne_pedestrian_southbank",
+   "modo": "U",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 11719,
+   "custo_rel": 5.538094470275278
+  },
+  {
+   "dataset": "air_quality",
+   "modo": "U",
+   "backbone": "MLP",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 5825,
+   "custo_rel": 5.517468068026137
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "TCN",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 2064,
+   "custo_rel": 5.40639077657139
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "TCN",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 2056,
+   "custo_rel": 5.3841287823357815
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 2064,
+   "custo_rel": 5.289908093412073
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 2056,
+   "custo_rel": 5.268125742052498
+  },
+  {
+   "dataset": "electricity_mt156",
+   "modo": "U",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 6100,
+   "custo_rel": 4.687089742702568
+  },
+  {
+   "dataset": "jena_climate",
+   "modo": "U",
+   "backbone": "Conv1D+LSTM",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 4563,
+   "custo_rel": 4.602892239361576
+  },
+  {
+   "dataset": "seoul_bike",
+   "modo": "U",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 5989,
+   "custo_rel": 4.60142291108035
+  },
+  {
+   "dataset": "household_power",
+   "modo": "U",
+   "backbone": "Conv1D+LSTM",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 4528,
+   "custo_rel": 4.567083840852326
+  },
+  {
+   "dataset": "electricity_mt156",
+   "modo": "U",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 6100,
+   "custo_rel": 4.530818860276604
+  },
+  {
+   "dataset": "electricity_mt156",
+   "modo": "U",
+   "backbone": "LSTM",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 6100,
+   "custo_rel": 4.507129476239168
+  },
+  {
+   "dataset": "air_quality",
+   "modo": "U",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 5825,
+   "custo_rel": 4.475419678918524
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 8257,
+   "custo_rel": 4.459478116471466
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "U",
+   "backbone": "TSMixer",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 3013,
+   "custo_rel": 4.4527831721624365
+  },
+  {
+   "dataset": "ETTh2",
+   "modo": "U",
+   "backbone": "TSMixer",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 3013,
+   "custo_rel": 4.4527831721624365
+  },
+  {
+   "dataset": "seoul_bike",
+   "modo": "U",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 5989,
+   "custo_rel": 4.44800822132556
+  },
+  {
+   "dataset": "bike_sharing_dc",
+   "modo": "U",
+   "backbone": "TSMixer",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 3006,
+   "custo_rel": 4.442067819744155
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 8223,
+   "custo_rel": 4.441115241824496
+  },
+  {
+   "dataset": "seoul_bike",
+   "modo": "U",
+   "backbone": "LSTM",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 5989,
+   "custo_rel": 4.424751812670499
+  },
+  {
+   "dataset": "melbourne_pedestrian_southbank",
+   "modo": "U",
+   "backbone": "TSMixer",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 2930,
+   "custo_rel": 4.330110861718662
+  },
+  {
+   "dataset": "air_quality",
+   "modo": "U",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 5825,
+   "custo_rel": 4.326206025917747
+  },
+  {
+   "dataset": "jena_climate",
+   "modo": "U",
+   "backbone": "MLP",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 4563,
+   "custo_rel": 4.3223323882266556
+  },
+  {
+   "dataset": "air_quality",
+   "modo": "U",
+   "backbone": "LSTM",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 5825,
+   "custo_rel": 4.303586459977568
+  },
+  {
+   "dataset": "household_power",
+   "modo": "U",
+   "backbone": "MLP",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 4528,
+   "custo_rel": 4.288706617168298
+  },
+  {
+   "dataset": "seoul_bike",
+   "modo": "U",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 1497,
+   "custo_rel": 3.850183842099041
+  },
+  {
+   "dataset": "air_quality",
+   "modo": "U",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 1456,
+   "custo_rel": 3.744752192390535
+  },
+  {
+   "dataset": "opsd_de_solar",
+   "modo": "U",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 7561,
+   "custo_rel": 3.573250005407368
+  },
+  {
+   "dataset": "jena_climate",
+   "modo": "U",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 4563,
+   "custo_rel": 3.506001519283254
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "TSMixer",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 2064,
+   "custo_rel": 3.486765119911352
+  },
+  {
+   "dataset": "household_power",
+   "modo": "U",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 4528,
+   "custo_rel": 3.478726429394566
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "TSMixer",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 2056,
+   "custo_rel": 3.4724076033706
+  },
+  {
+   "dataset": "seoul_bike",
+   "modo": "U",
+   "backbone": "TCN",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 1497,
+   "custo_rel": 3.43121170713035
+  },
+  {
+   "dataset": "jena_climate",
+   "modo": "U",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 4563,
+   "custo_rel": 3.389108952406723
+  },
+  {
+   "dataset": "jena_climate",
+   "modo": "U",
+   "backbone": "LSTM",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 4563,
+   "custo_rel": 3.371388998024487
+  },
+  {
+   "dataset": "household_power",
+   "modo": "U",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 4528,
+   "custo_rel": 3.3627432332788123
+  },
+  {
+   "dataset": "seoul_bike",
+   "modo": "U",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 1497,
+   "custo_rel": 3.3572849854686075
+  },
+  {
+   "dataset": "household_power",
+   "modo": "U",
+   "backbone": "LSTM",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 4528,
+   "custo_rel": 3.345161132045225
+  },
+  {
+   "dataset": "air_quality",
+   "modo": "U",
+   "backbone": "TCN",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 1456,
+   "custo_rel": 3.3372529961653514
+  },
+  {
+   "dataset": "air_quality",
+   "modo": "U",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 1456,
+   "custo_rel": 3.265350649583343
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "U",
+   "backbone": "Conv1D+LSTM",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 3013,
+   "custo_rel": 3.0389226086970003
+  },
+  {
+   "dataset": "ETTh2",
+   "modo": "U",
+   "backbone": "Conv1D+LSTM",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 3013,
+   "custo_rel": 3.0389226086970003
+  },
+  {
+   "dataset": "bike_sharing_dc",
+   "modo": "U",
+   "backbone": "Conv1D+LSTM",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 3006,
+   "custo_rel": 3.0316096259028575
+  },
+  {
+   "dataset": "melbourne_pedestrian_southbank",
+   "modo": "U",
+   "backbone": "Conv1D+LSTM",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 2930,
+   "custo_rel": 2.9552015642950913
+  },
+  {
+   "dataset": "electricity_mt156",
+   "modo": "U",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 6100,
+   "custo_rel": 2.882937564289985
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "U",
+   "backbone": "MLP",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 3013,
+   "custo_rel": 2.8536913170722302
+  },
+  {
+   "dataset": "ETTh2",
+   "modo": "U",
+   "backbone": "MLP",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 3013,
+   "custo_rel": 2.8536913170722302
+  },
+  {
+   "dataset": "bike_sharing_dc",
+   "modo": "U",
+   "backbone": "MLP",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 3006,
+   "custo_rel": 2.8468240821377773
+  },
+  {
+   "dataset": "seoul_bike",
+   "modo": "U",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 5989,
+   "custo_rel": 2.8302455655327794
+  },
+  {
+   "dataset": "melbourne_pedestrian_southbank",
+   "modo": "U",
+   "backbone": "MLP",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 2930,
+   "custo_rel": 2.7750733171329736
+  },
+  {
+   "dataset": "air_quality",
+   "modo": "U",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 1.0,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 5825,
+   "custo_rel": 2.752743432831598
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 826,
+   "custo_rel": 2.4266177885522913
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 822,
+   "custo_rel": 2.4166256600781755
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "Conv1D+LSTM",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 2064,
+   "custo_rel": 2.37963739630486
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "Conv1D+LSTM",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 2056,
+   "custo_rel": 2.369838719851624
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "U",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 3013,
+   "custo_rel": 2.314733156680134
+  },
+  {
+   "dataset": "ETTh2",
+   "modo": "U",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 3013,
+   "custo_rel": 2.314733156680134
+  },
+  {
+   "dataset": "bike_sharing_dc",
+   "modo": "U",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 3006,
+   "custo_rel": 2.3091628918437124
+  },
+  {
+   "dataset": "melbourne_pedestrian_southbank",
+   "modo": "U",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 2930,
+   "custo_rel": 2.2509632282079908
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "U",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 3013,
+   "custo_rel": 2.237558318383467
+  },
+  {
+   "dataset": "ETTh2",
+   "modo": "U",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 3013,
+   "custo_rel": 2.237558318383467
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "MLP",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 2064,
+   "custo_rel": 2.2345914819223447
+  },
+  {
+   "dataset": "bike_sharing_dc",
+   "modo": "U",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 3006,
+   "custo_rel": 2.2321737701108653
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "U",
+   "backbone": "LSTM",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 3013,
+   "custo_rel": 2.225859245887969
+  },
+  {
+   "dataset": "ETTh2",
+   "modo": "U",
+   "backbone": "LSTM",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 3013,
+   "custo_rel": 2.225859245887969
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "MLP",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 2056,
+   "custo_rel": 2.225390063685048
+  },
+  {
+   "dataset": "bike_sharing_dc",
+   "modo": "U",
+   "backbone": "LSTM",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 3006,
+   "custo_rel": 2.2205028507231903
+  },
+  {
+   "dataset": "seoul_bike",
+   "modo": "U",
+   "backbone": "TSMixer",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 1497,
+   "custo_rel": 2.2129050218306223
+  },
+  {
+   "dataset": "melbourne_pedestrian_southbank",
+   "modo": "U",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 2930,
+   "custo_rel": 2.1759145243660982
+  },
+  {
+   "dataset": "melbourne_pedestrian_southbank",
+   "modo": "U",
+   "backbone": "LSTM",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 2930,
+   "custo_rel": 2.1645377564153274
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "TCN",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 826,
+   "custo_rel": 2.1625563106285566
+  },
+  {
+   "dataset": "jena_climate",
+   "modo": "U",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 4563,
+   "custo_rel": 2.1564732137113802
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "TCN",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 822,
+   "custo_rel": 2.153651512934313
+  },
+  {
+   "dataset": "air_quality",
+   "modo": "U",
+   "backbone": "TSMixer",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 1456,
+   "custo_rel": 2.1523078564306855
+  },
+  {
+   "dataset": "household_power",
+   "modo": "U",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 4528,
+   "custo_rel": 2.1396968374254537
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 826,
+   "custo_rel": 2.1159632373648294
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 822,
+   "custo_rel": 2.1072502968209994
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 2064,
+   "custo_rel": 1.8125586898261314
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 2056,
+   "custo_rel": 1.805095083739891
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 2064,
+   "custo_rel": 1.7521267029308567
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 2056,
+   "custo_rel": 1.7449119387429375
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "LSTM",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 2064,
+   "custo_rel": 1.742965709382454
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "LSTM",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 2056,
+   "custo_rel": 1.7357886675853118
+  },
+  {
+   "dataset": "seoul_bike",
+   "modo": "U",
+   "backbone": "Conv1D+LSTM",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 1497,
+   "custo_rel": 1.5102570329007
+  },
+  {
+   "dataset": "air_quality",
+   "modo": "U",
+   "backbone": "Conv1D+LSTM",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 1456,
+   "custo_rel": 1.468900854340721
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "U",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 3013,
+   "custo_rel": 1.4237472578992956
+  },
+  {
+   "dataset": "ETTh2",
+   "modo": "U",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 3013,
+   "custo_rel": 1.4237472578992956
+  },
+  {
+   "dataset": "bike_sharing_dc",
+   "modo": "U",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 3006,
+   "custo_rel": 1.4203210965451276
+  },
+  {
+   "dataset": "seoul_bike",
+   "modo": "U",
+   "backbone": "MLP",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 1497,
+   "custo_rel": 1.4182024145668897
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "TSMixer",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 826,
+   "custo_rel": 1.3947060479645408
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "TSMixer",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 822,
+   "custo_rel": 1.3889630413482401
+  },
+  {
+   "dataset": "melbourne_pedestrian_southbank",
+   "modo": "U",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 2930,
+   "custo_rel": 1.3845236175688196
+  },
+  {
+   "dataset": "air_quality",
+   "modo": "U",
+   "backbone": "MLP",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 1456,
+   "custo_rel": 1.3793670170065342
+  },
+  {
+   "dataset": "seoul_bike",
+   "modo": "U",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 1497,
+   "custo_rel": 1.1503557277700875
+  },
+  {
+   "dataset": "air_quality",
+   "modo": "U",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 1456,
+   "custo_rel": 1.118854919729631
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 2064,
+   "custo_rel": 1.1148695291178665
+  },
+  {
+   "dataset": "seoul_bike",
+   "modo": "U",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 1497,
+   "custo_rel": 1.11200205533139
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 2056,
+   "custo_rel": 1.110278810456124
+  },
+  {
+   "dataset": "seoul_bike",
+   "modo": "U",
+   "backbone": "LSTM",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 1497,
+   "custo_rel": 1.1061879531676249
+  },
+  {
+   "dataset": "air_quality",
+   "modo": "U",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 1456,
+   "custo_rel": 1.0815515064794368
+  },
+  {
+   "dataset": "air_quality",
+   "modo": "U",
+   "backbone": "LSTM",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 1456,
+   "custo_rel": 1.075896614994392
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "Conv1D+LSTM",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 826,
+   "custo_rel": 0.9518549585219439
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "Conv1D+LSTM",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 822,
+   "custo_rel": 0.9479354879406497
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "MLP",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 826,
+   "custo_rel": 0.893836592768938
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "MLP",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 822,
+   "custo_rel": 0.8901560254740193
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 826,
+   "custo_rel": 0.7250234759304526
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 822,
+   "custo_rel": 0.7220380334959564
+  },
+  {
+   "dataset": "seoul_bike",
+   "modo": "U",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 1497,
+   "custo_rel": 0.7075613913831948
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 826,
+   "custo_rel": 0.7008506811723427
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 822,
+   "custo_rel": 0.6979647754971751
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "LSTM",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 826,
+   "custo_rel": 0.6971862837529816
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "LSTM",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 822,
+   "custo_rel": 0.6943154670341248
+  },
+  {
+   "dataset": "air_quality",
+   "modo": "U",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10"
+   ],
+   "n_tr_estimado": 1456,
+   "custo_rel": 0.6881858582078995
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 826,
+   "custo_rel": 0.44594781164714664
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K10",
+    "zero_L1000_K4"
+   ],
+   "n_tr_estimado": 822,
+   "custo_rel": 0.44411152418244965
+  }
+ ]
+}

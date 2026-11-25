@@ -1,0 +1,22 @@
+\begin{table}[htbp]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2pt}
+\caption{T1: combina\c{c}\~oes testadas e vit\'orias da NFH sobre a densa+E, por backbone. ``Vence'' = RMSE (ou RMSE e MAE) menor que o da densa+E, da melhor variante NFH escolhida na valida\c{c}\~ao.}\label{tab:t1_contagem_bb}
+\begin{tabular}{lrrrrrrr}
+\toprule
+Backbone & Comb. & \shortstack[l]{RMSE val} & \shortstack[l]{RMSE teste} & \shortstack[l]{RMSE+MAE val} & \shortstack[l]{RMSE+MAE teste} & Qualif. & \shortstack[l]{Foram T2} \\ \midrule
+Conv1D+LSTM & 22 & 17 & 13 & 13 & 12 & 13 & 2 \\
+DLinear & 22 & 10 & 12 & 7 & 12 & 7 & 1 \\
+FreqMLP & 22 & 15 & 8 & 11 & 8 & 11 & 2 \\
+LSTM & 22 & 14 & 11 & 12 & 8 & 12 & 0 \\
+Linear & 22 & 8 & 9 & 6 & 9 & 6 & 1 \\
+MLP & 22 & 10 & 11 & 8 & 8 & 8 & 0 \\
+PatchTST & 24 & 18 & 15 & 17 & 13 & 17 & 3 \\
+TCN & 22 & 4 & 9 & 4 & 8 & 4 & 0 \\
+TSMixer & 24 & 15 & 14 & 12 & 10 & 12 & 0 \\
+iTransformer & 24 & 18 & 10 & 15 & 9 & 15 & 3 \\
+\bottomrule
+\end{tabular}
+\par\smallskip{\scriptsize Fonte: resultados/t1.csv e selecao\_T1.md.}
+\end{table}

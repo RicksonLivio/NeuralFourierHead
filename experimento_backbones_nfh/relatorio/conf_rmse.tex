@@ -1,0 +1,24 @@
+\tiny
+\setlength{\tabcolsep}{2pt}
+\begin{longtable}{llrrlrrllll}
+\caption{Confirma\c{c}\~ao: RMSE de teste, m\'edia $\pm$ desvio-padr\~ao entre as sementes (escala padronizada pelo treino; menor \'e melhor). A coluna ``Sem. com densa+E = densa'' conta as sementes em que a \'epoca escolhida da densa+E \'e 0, isto \'e, a densa+E \'e o mesmo modelo da densa.}\label{tab:conf_rmse}\\
+\toprule
+Conjunto & Backbone & Fr. & L & \shortstack[l]{Variante NFH} & Sem. & \shortstack[l]{Sem. com\\ densa+E =\\ densa (época\\ 0)} & densa & densa+E & proj\_K10 & NFH \\ \midrule
+\endfirsthead
+\toprule
+Conjunto & Backbone & Fr. & L & \shortstack[l]{Variante NFH} & Sem. & \shortstack[l]{Sem. com\\ densa+E =\\ densa (época\\ 0)} & densa & densa+E & proj\_K10 & NFH \\ \midrule
+\endhead
+\bottomrule
+\multicolumn{11}{l}{\textit{Fonte: resultados/confirmacao.csv; $\dagger$ = exemplo\_sintetico/confirmacao.csv (outro protocolo, $H=8$).}}\\
+\endlastfoot
+ETTh1-M & PatchTST & 0.25 & 1 & \texttt{zero\_\allowbreak{}L1000\_\allowbreak{}K4} & 5 & 2/5 & 0,3255 $\pm$ 0,0091 & 0,3207 $\pm$ 0,0073 & 0,3236 $\pm$ 0,0094 & 0,3080 $\pm$ 0,0032 \\
+ETTh1-M & PatchTST & 0.25 & 2 & \texttt{zero\_\allowbreak{}L1000\_\allowbreak{}K4} & 5 & 4/5 & 0,3246 $\pm$ 0,0110 & 0,3219 $\pm$ 0,0117 & 0,3236 $\pm$ 0,0107 & 0,3129 $\pm$ 0,0025 \\
+ETTh2-U & FreqMLP & 0.25 & 1 & \texttt{conv\_\allowbreak{}L100\_\allowbreak{}K10} & 5 & 2/5 & 0,4962 $\pm$ 0,0098 & 0,4951 $\pm$ 0,0089 & 0,4914 $\pm$ 0,0102 & 0,4876 $\pm$ 0,0066 \\
+ETTh2-U & iTransformer & 0.25 & 1 & \texttt{zero\_\allowbreak{}L1000\_\allowbreak{}K4} & 5 & 5/5 & 0,4898 $\pm$ 0,0161 & 0,4898 $\pm$ 0,0161 & 0,4895 $\pm$ 0,0162 & 0,4752 $\pm$ 0,0038 \\
+SINT-M-M & PatchTST & 0.1 & 1 & \texttt{conv\_\allowbreak{}L1000\_\allowbreak{}K4} & 5 & 4/5 & 0,2923 $\pm$ 0,0116 & 0,2923 $\pm$ 0,0116 & 0,2898 $\pm$ 0,0115 & 0,2695 $\pm$ 0,0091 \\
+SINT-M-M & iTransformer & 0.25 & 2 & \texttt{conv\_\allowbreak{}L1000\_\allowbreak{}K10} & 5 & 2/5 & 0,3173 $\pm$ 0,0104 & 0,3144 $\pm$ 0,0095 & 0,3166 $\pm$ 0,0102 & 0,2949 $\pm$ 0,0051 \\
+SINT-U48-U & DLinear & 0.1 & 1 & \texttt{zero\_\allowbreak{}L1000\_\allowbreak{}K4} & 5 & 0/5 & 0,3140 $\pm$ 0,0001 & 0,3132 $\pm$ 0,0001 & 0,3096 $\pm$ 0,0002 & 0,3073 $\pm$ 0,0009 \\
+SINT-U48-U & Linear & 0.1 & 1 & \texttt{zero\_\allowbreak{}L1000\_\allowbreak{}K4} & 5 & 0/5 & 0,3155 $\pm$ 0,0004 & 0,3148 $\pm$ 0,0001 & 0,3101 $\pm$ 0,0003 & 0,3063 $\pm$ 0,0003 \\
+SINT-H8 (livro)$^\dagger$ & 1 camada, p=16 & n=1000 & -- & \texttt{zero\_\allowbreak{}L1000} & 10 & n/d & 0,3282 $\pm$ 0,0116 & 0,3285 $\pm$ 0,0124 & n/d & 0,3038 $\pm$ 0,0015 \\
+\end{longtable}
+\normalsize

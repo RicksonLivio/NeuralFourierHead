@@ -1,0 +1,22 @@
+\begin{table}[htbp]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2pt}
+\caption{T1, valida\c{c}\~ao: diferen\c{c}a relativa da melhor variante NFH (escolhida na valida\c{c}\~ao), mediana [Q1; Q3], por backbone.}\label{tab:t1_bb_val}
+\begin{tabular}{lrllll}
+\toprule
+Backbone & n & \shortstack[l]{RMSE vs\\ densa+E} & \shortstack[l]{MAE vs\\ densa+E} & \shortstack[l]{RMSE vs\\ densa} & \shortstack[l]{MAE vs\\ densa} \\ \midrule
+Conv1D+LSTM & 22 & \textminus{}0,24\% [\textminus{}0,90; \textminus{}0,00] & \textminus{}0,13\% [\textminus{}0,88; +0,69] & \textminus{}1,00\% [\textminus{}2,07; \textminus{}0,00] & \textminus{}1,02\% [\textminus{}2,22; \textminus{}0,00] \\
+DLinear & 22 & +0,00\% [\textminus{}0,08; +0,21] & +0,02\% [\textminus{}0,18; +0,17] & \textminus{}0,09\% [\textminus{}0,34; \textminus{}0,01] & \textminus{}0,11\% [\textminus{}1,14; \textminus{}0,00] \\
+FreqMLP & 22 & \textminus{}0,06\% [\textminus{}0,91; +0,26] & \textminus{}0,06\% [\textminus{}0,64; +0,63] & \textminus{}0,51\% [\textminus{}1,20; \textminus{}0,03] & \textminus{}0,41\% [\textminus{}1,25; +0,00] \\
+LSTM & 22 & \textminus{}0,07\% [\textminus{}0,34; +0,24] & \textminus{}0,00\% [\textminus{}0,29; +0,54] & \textminus{}0,28\% [\textminus{}1,47; \textminus{}0,00] & \textminus{}0,29\% [\textminus{}0,75; \textminus{}0,00] \\
+Linear & 22 & +0,01\% [\textminus{}0,00; +0,21] & +0,07\% [\textminus{}0,00; +0,25] & \textminus{}0,04\% [\textminus{}0,28; \textminus{}0,00] & \textminus{}0,04\% [\textminus{}0,98; +0,00] \\
+MLP & 22 & +0,06\% [\textminus{}0,06; +0,82] & +0,35\% [\textminus{}0,19; +1,28] & \textminus{}0,10\% [\textminus{}1,22; \textminus{}0,01] & \textminus{}0,33\% [\textminus{}1,60; \textminus{}0,00] \\
+PatchTST & 24 & \textminus{}1,15\% [\textminus{}2,41; +0,03] & \textminus{}1,50\% [\textminus{}2,59; +0,12] & \textminus{}1,54\% [\textminus{}4,84; \textminus{}0,51] & \textminus{}2,25\% [\textminus{}4,90; \textminus{}0,31] \\
+TCN & 22 & +0,06\% [+0,00; +0,48] & +0,03\% [\textminus{}0,00; +1,29] & \textminus{}0,00\% [\textminus{}0,29; +0,00] & +0,00\% [\textminus{}0,00; +0,00] \\
+TSMixer & 24 & \textminus{}0,22\% [\textminus{}0,70; +0,17] & +0,00\% [\textminus{}0,50; +0,80] & \textminus{}0,36\% [\textminus{}1,12; \textminus{}0,00] & \textminus{}0,23\% [\textminus{}0,94; +0,00] \\
+iTransformer & 24 & \textminus{}1,05\% [\textminus{}1,91; \textminus{}0,00] & \textminus{}1,02\% [\textminus{}1,79; +1,39] & \textminus{}1,57\% [\textminus{}2,91; \textminus{}0,50] & \textminus{}1,99\% [\textminus{}3,02; \textminus{}0,27] \\
+\bottomrule
+\end{tabular}
+\par\smallskip{\scriptsize Fonte: resultados/t1.csv.}
+\end{table}

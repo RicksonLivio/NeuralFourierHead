@@ -1,0 +1,17 @@
+\tiny
+\setlength{\tabcolsep}{2pt}
+\begin{longtable}{llrrllrrrlp{3.6cm}}
+\caption{Confirma\c{c}\~ao: combina\c{c}\~oes sem SUCESSO (diferen\c{c}as relativas das m\'edias de teste).}\label{tab:nao_ganhou_conf}\\
+\toprule
+Conjunto & Backbone & Fr. & L & Variante & Tipo & \shortstack[l]{RMSE vs\\ densa+E} & \shortstack[l]{MAE vs\\ densa+E} & \shortstack[l]{RMSE vs\\ densa} & \shortstack[l]{Vit. RMSE} & \shortstack[l]{Falhas do\\ crit\'erio} \\ \midrule
+\endfirsthead
+\toprule
+Conjunto & Backbone & Fr. & L & Variante & Tipo & \shortstack[l]{RMSE vs\\ densa+E} & \shortstack[l]{MAE vs\\ densa+E} & \shortstack[l]{RMSE vs\\ densa} & \shortstack[l]{Vit. RMSE} & \shortstack[l]{Falhas do\\ crit\'erio} \\ \midrule
+\endhead
+\bottomrule
+\multicolumn{11}{l}{\textit{Fonte: resultados/confirmacao.csv.}}\\
+\endlastfoot
+ETTh1-M & PatchTST & 0.25 & 1 & \texttt{zero\_\allowbreak{}L1000\_\allowbreak{}K4} & falha pelo MAE & \textminus{}3,99\% & +0,65\% & \textminus{}5,39\% & 5/5 & média de MAE da NFH maior que a da densa+E \\
+ETTh1-M & PatchTST & 0.25 & 2 & \texttt{zero\_\allowbreak{}L1000\_\allowbreak{}K4} & falha pelo MAE & \textminus{}2,82\% & +2,05\% & \textminus{}3,61\% & 4/5 & média de MAE da NFH maior que a da densa; média de MAE da NFH maior que a da densa+E \\
+\end{longtable}
+\normalsize

@@ -1,0 +1,587 @@
+{
+ "meta": {
+  "fase": "confirmacao"
+ },
+ "tarefas": [
+  {
+   "tipo": "ingenua",
+   "dataset": "ETTh1",
+   "modo": "M"
+  },
+  {
+   "tipo": "ingenua",
+   "dataset": "ETTh2",
+   "modo": "U"
+  },
+  {
+   "tipo": "ingenua",
+   "dataset": "SINT-M",
+   "modo": "M"
+  },
+  {
+   "tipo": "ingenua",
+   "dataset": "SINT-U48",
+   "modo": "U"
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "iTransformer",
+   "largura": 2,
+   "fracao": 0.25,
+   "seed": 10,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10"
+   ]
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "iTransformer",
+   "largura": 2,
+   "fracao": 0.25,
+   "seed": 11,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10"
+   ]
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "iTransformer",
+   "largura": 2,
+   "fracao": 0.25,
+   "seed": 12,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10"
+   ]
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "iTransformer",
+   "largura": 2,
+   "fracao": 0.25,
+   "seed": 13,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10"
+   ]
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "iTransformer",
+   "largura": 2,
+   "fracao": 0.25,
+   "seed": 14,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10"
+   ]
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "M",
+   "backbone": "PatchTST",
+   "largura": 2,
+   "fracao": 0.25,
+   "seed": 10,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "M",
+   "backbone": "PatchTST",
+   "largura": 2,
+   "fracao": 0.25,
+   "seed": 11,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "M",
+   "backbone": "PatchTST",
+   "largura": 2,
+   "fracao": 0.25,
+   "seed": 12,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "M",
+   "backbone": "PatchTST",
+   "largura": 2,
+   "fracao": 0.25,
+   "seed": 13,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "M",
+   "backbone": "PatchTST",
+   "largura": 2,
+   "fracao": 0.25,
+   "seed": 14,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "M",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 10,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "M",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 11,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "M",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 12,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "M",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 13,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "M",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 14,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 10,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 11,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 12,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 13,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "SINT-M",
+   "modo": "M",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 14,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh2",
+   "modo": "U",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 10,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh2",
+   "modo": "U",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 11,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh2",
+   "modo": "U",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 12,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh2",
+   "modo": "U",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 13,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh2",
+   "modo": "U",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 14,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 10,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 11,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 12,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 13,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 14,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 10,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 11,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 12,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 13,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 14,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh2",
+   "modo": "U",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 10,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L100_K10"
+   ]
+  },
+  {
+   "dataset": "ETTh2",
+   "modo": "U",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 11,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L100_K10"
+   ]
+  },
+  {
+   "dataset": "ETTh2",
+   "modo": "U",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 12,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L100_K10"
+   ]
+  },
+  {
+   "dataset": "ETTh2",
+   "modo": "U",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 13,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L100_K10"
+   ]
+  },
+  {
+   "dataset": "ETTh2",
+   "modo": "U",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 0.25,
+   "seed": 14,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L100_K10"
+   ]
+  }
+ ]
+}

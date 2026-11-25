@@ -1,0 +1,24 @@
+\tiny
+\setlength{\tabcolsep}{2pt}
+\begin{longtable}{llrrrrrrlrrl}
+\caption{Confirma\c{c}\~ao: vit\'orias da NFH por semente (estritamente menor), compara\c{c}\~ao com a melhor ing\^enua e veredito do \S6.}\label{tab:conf_vit}\\
+\toprule
+Conjunto & Backbone & Fr. & L & \shortstack[l]{RMSE vs\\ densa+E} & \shortstack[l]{MAE vs\\ densa+E} & \shortstack[l]{RMSE vs\\ densa} & \shortstack[l]{MAE vs\\ densa} & \shortstack[l]{Melhor ing\^enua\\ (RMSE)} & \shortstack[l]{NFH vs\\ ing. RMSE} & \shortstack[l]{NFH vs\\ ing. MAE} & Veredito \\ \midrule
+\endfirsthead
+\toprule
+Conjunto & Backbone & Fr. & L & \shortstack[l]{RMSE vs\\ densa+E} & \shortstack[l]{MAE vs\\ densa+E} & \shortstack[l]{RMSE vs\\ densa} & \shortstack[l]{MAE vs\\ densa} & \shortstack[l]{Melhor ing\^enua\\ (RMSE)} & \shortstack[l]{NFH vs\\ ing. RMSE} & \shortstack[l]{NFH vs\\ ing. MAE} & Veredito \\ \midrule
+\endhead
+\bottomrule
+\multicolumn{12}{l}{\textit{Fonte: resultados/confirmacao.csv (ing\^enuas: linhas \texttt{ingenua\_*}); $\dagger$ = exemplo (outro protocolo).}}\\
+\endlastfoot
+ETTh1-M & PatchTST & 0.25 & 1 & 5/5 & 2/5 & 5/5 & 2/5 & 0,3013 (ulti) & +2,22\% & +6,78\% & \textbf{FALHA} \\
+ETTh1-M & PatchTST & 0.25 & 2 & 4/5 & 2/5 & 4/5 & 3/5 & 0,3013 (ulti) & +3,85\% & +8,61\% & \textbf{FALHA} \\
+ETTh2-U & FreqMLP & 0.25 & 1 & 5/5 & 4/5 & 5/5 & 4/5 & 0,5188 (sazo) & \textminus{}6,02\% & \textminus{}2,56\% & \textbf{SUCESSO} \\
+ETTh2-U & iTransformer & 0.25 & 1 & 5/5 & 4/5 & 5/5 & 4/5 & 0,5188 (sazo) & \textminus{}8,41\% & \textminus{}5,98\% & \textbf{SUCESSO} \\
+SINT-M-M & PatchTST & 0.1 & 1 & 5/5 & 5/5 & 5/5 & 5/5 & 0,3850 (sazo) & \textminus{}30,00\% & \textminus{}30,08\% & \textbf{SUCESSO} \\
+SINT-M-M & iTransformer & 0.25 & 2 & 5/5 & 5/5 & 5/5 & 5/5 & 0,3850 (sazo) & \textminus{}23,41\% & \textminus{}24,39\% & \textbf{SUCESSO} \\
+SINT-U48-U & DLinear & 0.1 & 1 & 5/5 & 5/5 & 5/5 & 5/5 & 0,3927 (sazo) & \textminus{}21,74\% & \textminus{}22,38\% & \textbf{SUCESSO} \\
+SINT-U48-U & Linear & 0.1 & 1 & 5/5 & 5/5 & 5/5 & 5/5 & 0,3927 (sazo) & \textminus{}21,99\% & \textminus{}22,64\% & \textbf{SUCESSO} \\
+SINT-H8 (livro)$^\dagger$ & 1 camada, p=16 & n=1000 & -- & 10/10 & 10/10 & 10/10 & 10/10 & n/d & n/d & n/d & \textbf{SUCESSO}$^\dagger$ \\
+\end{longtable}
+\normalsize

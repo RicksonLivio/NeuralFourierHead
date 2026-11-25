@@ -1,0 +1,42 @@
+[project]
+name = "neural-fourier-head"
+version = "1.0.0"
+description = "Neural Fourier Head (NFH): identifiable trend-seasonal-residual output layer for multi-step forecasting (library, examples, and reproduction of the ESANN 2027 submission)"
+readme = "README.md"
+requires-python = "==3.11.*"
+license = { file = "LICENSE" }
+authors = [{ name = "Rickson Livio de Souza Gaspar" }]
+# Versions pinned to the environment in which the experiments were run (22/11/2026).
+dependencies = [
+    "torch==2.12.1",
+    "numpy==2.4.6",
+    "pandas==3.0.3",
+    "scipy==1.17.1",
+    "matplotlib==3.11.0",
+    "scikit-learn==1.9.0",
+    "shap==0.51.0",
+    "lime==0.2.0.1",
+    "captum==0.9.0",
+    "pypdf==6.13.3",
+]
+
+keywords = ["time series", "forecasting", "explainability", "fourier", "pytorch", "identifiability"]
+
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+# The `nfh` library lives in experimentation/src/nfh (kept there so that stored results and paths keep working).
+[tool.hatch.build.targets.wheel]
+sources = ["experimentation/src"]
+packages = ["experimentation/src/nfh"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "experimentation/tests"]
+addopts = "-q"
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
+
+[tool.uv]
+package = true

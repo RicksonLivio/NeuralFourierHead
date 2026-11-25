@@ -1,0 +1,208 @@
+{
+ "combinacao": "ETTh2_U_iTransformer_w1_f0.25",
+ "id": "ETTh2|U|iTransformer|w1|f0.25",
+ "dataset": "ETTh2",
+ "modo": "U",
+ "backbone": "iTransformer",
+ "largura": 1,
+ "fracao": 0.25,
+ "variante_nfh": "zero_L1000_K4",
+ "K": 4,
+ "lambda": 1000.0,
+ "seed": 10,
+ "veredito_confirmacao": "SUCESSO",
+ "d": 1,
+ "n_janelas_teste": 2470,
+ "periodo_h_por_harmonico": [
+  48.0,
+  24.0,
+  16.0,
+  12.0
+ ],
+ "nfh": {
+  "eps_T": {
+   "mediana": 0.08425447663405321,
+   "q1": 0.03042816265381265,
+   "q3": 0.20756918856991566
+  },
+  "eps_S": {
+   "mediana": 0.9156385117602495,
+   "q1": 0.792364570042866,
+   "q3": 0.9694229173522899
+  },
+  "eps_R": {
+   "mediana": 8.997596959652742e-05,
+   "q1": 6.480569683833133e-05,
+   "q3": 0.0001493162542633729
+  },
+  "amplitude_mediana_por_harmonico": [
+   0.06345190480351448,
+   0.39575453102588654,
+   0.013699602335691452,
+   0.11743896827101707
+  ],
+  "eps_via_projetor": {
+   "eps_T": {
+    "mediana": 0.08425446270057022,
+    "q1": 0.030428157080371585,
+    "q3": 0.20756919216302538
+   },
+   "eps_S": {
+    "mediana": 0.9156385096246688,
+    "q1": 0.792364576488162,
+    "q3": 0.9694229404935709
+   },
+   "eps_R": {
+    "mediana": 8.99762150605563e-05,
+    "q1": 6.480562433838381e-05,
+    "q3": 0.0001493164723094914
+   }
+  },
+  "cobertura_mediana": 0.9999100240304035
+ },
+ "densa_projetada": {
+  "eps_T": {
+   "mediana": 0.18556712942418724,
+   "q1": 0.0836006114947993,
+   "q3": 0.3351344287700992
+  },
+  "eps_S": {
+   "mediana": 0.8098448888748926,
+   "q1": 0.6606108468938565,
+   "q3": 0.9118984118028473
+  },
+  "eps_R": {
+   "mediana": 0.0029275574292769724,
+   "q1": 0.0017551366975989346,
+   "q3": 0.005918288781436606
+  },
+  "amplitude_mediana_por_harmonico": [
+   0.11966114151861938,
+   0.380933793657412,
+   0.014735354583949072,
+   0.10832669024245686
+  ],
+  "cobertura_mediana": 0.997072442570723
+ },
+ "metricas_teste_semente10": {
+  "nfh": {
+   "test_RMSE": 0.4770179683726209,
+   "test_MAE": 0.3683391554984286
+  },
+  "densa": {
+   "test_RMSE": 0.4881993946631318,
+   "test_MAE": 0.369328324967475
+  }
+ },
+ "conferencias": {
+  "max_abs_T+S+R_menos_previsao": 2.2351741790771484e-07,
+  "max_abs_cabeca_vs_projetor": 1.8958355070465994e-07,
+  "max_abs_previsao_vs_pred_npy_salvo": 0.00010979175567626953
+ },
+ "ig": {
+  "n_janelas": 50,
+  "n_passos": 64,
+  "baseline": 0.0,
+  "janelas_teste_indices": [
+   0,
+   50,
+   100,
+   151,
+   201,
+   251,
+   302,
+   352,
+   403,
+   453,
+   503,
+   554,
+   604,
+   655,
+   705,
+   755,
+   806,
+   856,
+   906,
+   957,
+   1007,
+   1058,
+   1108,
+   1158,
+   1209,
+   1259,
+   1310,
+   1360,
+   1410,
+   1461,
+   1511,
+   1562,
+   1612,
+   1662,
+   1713,
+   1763,
+   1813,
+   1864,
+   1914,
+   1965,
+   2015,
+   2065,
+   2116,
+   2166,
+   2217,
+   2267,
+   2317,
+   2368,
+   2418,
+   2469
+  ],
+  "agrupamento": "por bloco de 24 h de defasagens",
+  "grupos": [
+   "defasagens 73 a 96 h",
+   "defasagens 49 a 72 h",
+   "defasagens 25 a 48 h",
+   "defasagens 1 a 24 h"
+  ],
+  "g_T": {
+   "abs_mediana_por_grupo": [
+    0.10049741003012969,
+    0.07248405538121006,
+    0.04179050697132425,
+    0.4006513110598462
+   ],
+   "participacao_mediana_por_grupo": [
+    0.13920539294235548,
+    0.12737778939232744,
+    0.09411854407200988,
+    0.569910035871662
+   ],
+   "completude_erro_mediano": 2.1429626940516755e-05,
+   "completude_erro_max": 3.238114732084796e-05,
+   "completude_rel_mediano": 4.846208965063087e-05,
+   "completude_rel_max": 0.5774041639678268,
+   "delta_g_mediano": 0.41937255859375
+  },
+  "g_S": {
+   "abs_mediana_por_grupo": [
+    0.43827755653182976,
+    1.2932385929889278,
+    0.7006345905865601,
+    1.3236051987623796
+   ],
+   "participacao_mediana_por_grupo": [
+    0.1447165292902704,
+    0.2776324849842218,
+    0.1640244603278762,
+    0.31467078227244427
+   ],
+   "completude_erro_mediano": 5.907531048787718e-07,
+   "completude_erro_max": 2.334625632371967e-06,
+   "completude_rel_mediano": 2.0441174417877344e-07,
+   "completude_rel_max": 5.527186619427298e-07,
+   "delta_g_mediano": 4.115020035740626
+  }
+ },
+ "figura": "ETTh2_U_iTransformer_w1_f0.25.png",
+ "janela_da_figura": 1259,
+ "tempo_s": 2.0969955921173096,
+ "texto_relatorio_tex": "Semente 10, 2470 janelas de teste. Participações de energia da NFH (mediana [Q1; Q3]): $\\varepsilon_T=0,084 [0,030; 0,208]$, $\\varepsilon_S=0,916 [0,792; 0,969]$, $\\varepsilon_R=0,000 [0,000; 0,000]$. A densa da mesma semente, decomposta só pelo Projetor, dá $\\varepsilon_T=0,186 [0,084; 0,335]$, $\\varepsilon_S=0,810 [0,661; 0,912]$, $\\varepsilon_R=0,003 [0,002; 0,006]$. O harmônico de maior amplitude mediana da NFH é $k=2$ (período 24,0 h, amplitude 0,396). RMSE e MAE de teste desta semente: NFH 0,4770 e 0,3683; densa 0,4882 e 0,3693. IG de $g_T$ (50 janelas, 64 passos, referência zero): maior participação mediana em ``defasagens 1 a 24 h'' (57,0\\%); erro de completude mediano 0,000021 (relativo 0,0000). IG de $g_S$ (50 janelas, 64 passos, referência zero): maior participação mediana em ``defasagens 1 a 24 h'' (31,5\\%); erro de completude mediano 0,000001 (relativo 0,0000).\n"
+}

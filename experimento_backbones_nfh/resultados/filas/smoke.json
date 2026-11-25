@@ -1,0 +1,520 @@
+{
+ "meta": {
+  "fase": "smoke",
+  "reais_m": false,
+  "sem_frac025": [],
+  "so_frac025_reais": false,
+  "b2": false,
+  "opcao_m": false,
+  "limite_frac1": null,
+  "backbones": [
+   "Linear",
+   "DLinear",
+   "MLP",
+   "LSTM",
+   "Conv1D+LSTM",
+   "TCN",
+   "PatchTST",
+   "TSMixer",
+   "iTransformer",
+   "FreqMLP"
+  ]
+ },
+ "tarefas": [
+  {
+   "tipo": "ingenua",
+   "dataset": "ETTh1",
+   "modo": "U"
+  },
+  {
+   "tipo": "ingenua",
+   "dataset": "ETTh1",
+   "modo": "M"
+  },
+  {
+   "tipo": "ingenua",
+   "dataset": "SINT-U48",
+   "modo": "U"
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "U",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "U",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "U",
+   "backbone": "MLP",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "U",
+   "backbone": "LSTM",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "U",
+   "backbone": "Conv1D+LSTM",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "U",
+   "backbone": "TCN",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "U",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "U",
+   "backbone": "TSMixer",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "U",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "U",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "M",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "M",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "M",
+   "backbone": "MLP",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "M",
+   "backbone": "LSTM",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "M",
+   "backbone": "Conv1D+LSTM",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "M",
+   "backbone": "TCN",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "M",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "M",
+   "backbone": "TSMixer",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "M",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "ETTh1",
+   "modo": "M",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "Linear",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "DLinear",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "MLP",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "LSTM",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "Conv1D+LSTM",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "TCN",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "PatchTST",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "TSMixer",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "iTransformer",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K4"
+   ]
+  },
+  {
+   "dataset": "SINT-U48",
+   "modo": "U",
+   "backbone": "FreqMLP",
+   "largura": 1,
+   "fracao": 0.1,
+   "seed": 0,
+   "variantes": [
+    "densa",
+    "densa+E",
+    "proj_K10",
+    "conv_L1000_K10",
+    "zero_L100_K10",
+    "zero_L1000_K4"
+   ]
+  }
+ ]
+}

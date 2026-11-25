@@ -1,0 +1,153 @@
+[
+  {
+    "freq": "H",
+    "licenca": "sintético (gerado por este repositório)",
+    "faltantes_frac": 0.0,
+    "origem": "sintético",
+    "nome": "SINT-U48",
+    "arquivo": "SINT-U48.csv",
+    "fonte_url": "sinteticos.py (gerar_u48)",
+    "alvo": "y",
+    "covariaveis": [],
+    "modos": [
+      "U"
+    ],
+    "periodos_dominantes_h": [
+      24,
+      12
+    ],
+    "cortes": [
+      0.7,
+      0.15
+    ],
+    "n_obs": 12000,
+    "notas": "Univariado, H=48; ciclos de 24 h e 12 h com amplitude/fase lentas, tendência suave, ruído branco sigma=0,3. Oráculo e RMSE em dados/sint_u48_oraculo.json."
+  },
+  {
+    "freq": "H",
+    "licenca": "sintético (gerado por este repositório)",
+    "faltantes_frac": 0.0,
+    "origem": "sintético",
+    "nome": "SINT-M",
+    "arquivo": "SINT-M.csv",
+    "fonte_url": "src/v3_sintetico_multivariado.py (gerar)",
+    "alvo": "y",
+    "covariaveis": [
+      "x1_tendencia",
+      "x2_ciclo",
+      "x3_distrator_lento",
+      "x4_distrator_oscilante"
+    ],
+    "modos": [
+      "M"
+    ],
+    "periodos_dominantes_h": [
+      24
+    ],
+    "cortes": [
+      0.7,
+      0.15
+    ],
+    "n_obs": 11952,
+    "notas": "y_t = x1_{t-48} + x2_{t-48} + AR(1); já padronizado pelo treino; o alvo y entra como última variável (d=5)."
+  },
+  {
+    "nome": "melbourne_pedestrian_southbank",
+    "arquivo": "melbourne_pedestrian_southbank.csv",
+    "fonte_url": "https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/pedestrian-counting-system-monthly-counts-per-hour/exports/csv?where=location_id%3D35",
+    "licenca": "CC BY 4.0 (City of Melbourne Open Data; campo license da API: 'CC BY')",
+    "freq": "H",
+    "alvo": "pedestriancount",
+    "covariaveis": [],
+    "periodos_dominantes_h": [
+      24,
+      8,
+      21
+    ],
+    "cortes": [
+      0.7,
+      0.15
+    ],
+    "n_obs": 17016,
+    "faltantes_frac": 0.0002,
+    "ciclo_diario": {
+      "r2_perfil": 0.7515,
+      "acf_12h": -0.7732,
+      "acf_24h": 0.8855,
+      "r2_perfil_bruto": 0.6757,
+      "acf_24h_bruto": 0.8523,
+      "r2_TS_K10_media": 0.9594,
+      "r2_TS_K10_mediana": 0.9637
+    },
+    "origem": "rodada 2026-11-21 (pesquisa_backbones)",
+    "periodo": "2024-11-22 00:00 a 2026-10-31 23:00",
+    "notas": "Pedestrian Counting System, sensor SouthB_T (location_id 35), contagem por hora, hora local de Melbourne. Janela fixa 2024-11-22 a 2026-10-31 (a API so mantem cerca de 2 anos). Sem covariaveis (direction_1/2 somam o alvo). Ciclo diario e semanal fortes; ha eventos (feriados, jogos)."
+  },
+  {
+    "nome": "electricity_mt156",
+    "arquivo": "electricity_mt156.csv",
+    "fonte_url": "https://archive.ics.uci.edu/dataset/321/electricityloaddiagrams20112014",
+    "licenca": "CC BY 4.0 (UCI ElectricityLoadDiagrams20112014)",
+    "freq": "H",
+    "alvo": "MT_kW",
+    "covariaveis": [],
+    "periodos_dominantes_h": [
+      24,
+      168,
+      84
+    ],
+    "cortes": [
+      0.7,
+      0.15
+    ],
+    "n_obs": 35065,
+    "faltantes_frac": 0.0,
+    "ciclo_diario": {
+      "r2_perfil": 0.2733,
+      "acf_12h": -0.7421,
+      "acf_24h": 0.7833,
+      "r2_perfil_bruto": 0.0876,
+      "acf_24h_bruto": 0.7457,
+      "r2_TS_K10_media": 0.5709,
+      "r2_TS_K10_mediana": 0.4937
+    },
+    "origem": "rodada 2026-11-21 (pesquisa_backbones)",
+    "periodo": "2011-01-01 00:00 a 2015-01-01 00:00",
+    "notas": "Cliente MT_156 (primeiro, na ordem do arquivo, sem hora zero em 2011-2014), kW medio por hora (15 min agregado por media). Sem covariaveis. Cliente fixado por regra, nao pela forca do ciclo."
+  },
+  {
+    "nome": "opsd_de_solar",
+    "arquivo": "opsd_de_solar.csv",
+    "fonte_url": "https://data.open-power-system-data.org/time_series/2020-10-06/time_series_60min_singleindex.csv",
+    "licenca": "licenca dos dados nao declarada pelo OPSD (time_series 2020-10-06; dados primarios ENTSO-E); ver DATA.md do repositorio publico",
+    "freq": "H",
+    "alvo": "solar_MW",
+    "covariaveis": [
+      "load_MW",
+      "wind_MW"
+    ],
+    "periodos_dominantes_h": [
+      24,
+      12,
+      8
+    ],
+    "cortes": [
+      0.7,
+      0.15
+    ],
+    "n_obs": 43824,
+    "faltantes_frac": 0.0024,
+    "ciclo_diario": {
+      "r2_perfil": 0.7382,
+      "acf_12h": -0.7078,
+      "acf_24h": 0.9576,
+      "r2_perfil_bruto": 0.6064,
+      "acf_24h_bruto": 0.9423,
+      "r2_TS_K10_media": 0.9991,
+      "r2_TS_K10_mediana": 0.9996
+    },
+    "origem": "rodada 2026-11-21 (pesquisa_backbones)",
+    "periodo": "2015-01-01 00:00 a 2019-12-31 23:00",
+    "notas": "Geracao solar real da Alemanha (DE_solar_generation_actual), horario em UTC, 2015-2019. Covariaveis: carga real (DE_load_actual_entsoe_transparency) e geracao eolica (DE_wind_generation_actual). Zero a noite; amplitude varia com a estacao e cresce com a capacidade instalada."
+  }
+]

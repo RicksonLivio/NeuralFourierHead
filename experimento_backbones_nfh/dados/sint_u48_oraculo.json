@@ -1,0 +1,20 @@
+{
+  "formula": "ver docstring de sinteticos.py",
+  "N": 12000,
+  "seed": 2026,
+  "sigma": 0.3,
+  "mu_treino": 0.10389183221301765,
+  "sd_treino": 1.1216338498093366,
+  "oraculo": "previsão = sinal sem ruído do futuro (inclui a deriva futura); referência amostral de RMSE (não é piso rígido)",
+  "RMSE_oraculo_original": {
+    "treino": 0.3006992386371059,
+    "val": 0.29450763017981973,
+    "teste": 0.2981703860682301
+  },
+  "RMSE_oraculo_padronizado_janelas_teste": 0.26706781277522323,
+  "n_janelas_teste": 1657,
+  "referencia_amostral": "RMSE_oraculo_padronizado_janelas_teste é o número a citar (janelas de teste avaliadas)",
+  "RMSE_oraculo_padronizado_teste": 0.26583575925326725,
+  "RMSE_ridge_linear_padronizado_teste": 0.30134121420449655,
+  "arquivo_sinal_sem_ruido": "SINT-U48_com_sinal.csv (coluna sinal_sem_ruido)"
+}

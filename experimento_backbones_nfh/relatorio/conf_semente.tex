@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2pt}
+\caption{Confirma\c{c}\~ao: RMSE de teste da NFH relativo \`a densa+E em cada semente.}\label{tab:conf_semente}
+\begin{tabular}{llrrrrrr}
+\toprule
+Conjunto & Backbone & Fr. & s10 & s11 & s12 & s13 & s14 \\ \midrule
+ETTh1-M & PatchTST & 0.25 & \textminus{}6,88\% & \textminus{}4,50\% & \textminus{}6,26\% & \textminus{}1,70\% & \textminus{}0,34\% \\
+ETTh1-M & PatchTST & 0.25 & \textminus{}4,93\% & \textminus{}7,22\% & \textminus{}0,09\% & +1,98\% & \textminus{}3,31\% \\
+ETTh2-U & FreqMLP & 0.25 & \textminus{}2,28\% & \textminus{}0,89\% & \textminus{}1,11\% & \textminus{}1,51\% & \textminus{}1,80\% \\
+ETTh2-U & iTransformer & 0.25 & \textminus{}2,29\% & \textminus{}8,96\% & \textminus{}1,11\% & \textminus{}1,39\% & \textminus{}0,75\% \\
+SINT-M-M & PatchTST & 0.1 & \textminus{}8,49\% & \textminus{}8,45\% & \textminus{}7,76\% & \textminus{}7,87\% & \textminus{}6,23\% \\
+SINT-M-M & iTransformer & 0.25 & \textminus{}9,38\% & \textminus{}5,74\% & \textminus{}6,04\% & \textminus{}2,91\% & \textminus{}6,78\% \\
+SINT-U48-U & DLinear & 0.1 & \textminus{}2,22\% & \textminus{}1,97\% & \textminus{}1,56\% & \textminus{}1,84\% & \textminus{}1,85\% \\
+SINT-U48-U & Linear & 0.1 & \textminus{}2,59\% & \textminus{}2,71\% & \textminus{}2,73\% & \textminus{}2,67\% & \textminus{}2,80\% \\
+\bottomrule
+\end{tabular}
+\par\smallskip{\scriptsize Fonte: resultados/confirmacao.csv.}
+\end{table}

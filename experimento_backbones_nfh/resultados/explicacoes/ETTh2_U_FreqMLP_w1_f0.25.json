@@ -1,0 +1,226 @@
+{
+ "combinacao": "ETTh2_U_FreqMLP_w1_f0.25",
+ "id": "ETTh2|U|FreqMLP|w1|f0.25",
+ "dataset": "ETTh2",
+ "modo": "U",
+ "backbone": "FreqMLP",
+ "largura": 1,
+ "fracao": 0.25,
+ "variante_nfh": "conv_L100_K10",
+ "K": 10,
+ "lambda": 100.0,
+ "seed": 10,
+ "veredito_confirmacao": "SUCESSO",
+ "d": 1,
+ "n_janelas_teste": 2470,
+ "periodo_h_por_harmonico": [
+  48.0,
+  24.0,
+  16.0,
+  12.0,
+  9.6,
+  8.0,
+  6.857142857142857,
+  6.0,
+  5.333333333333333,
+  4.8
+ ],
+ "nfh": {
+  "eps_T": {
+   "mediana": 0.12941284694250976,
+   "q1": 0.06307385749720001,
+   "q3": 0.2517012590137185
+  },
+  "eps_S": {
+   "mediana": 0.8635738317797885,
+   "q1": 0.7417977608339804,
+   "q3": 0.9317146883660069
+  },
+  "eps_R": {
+   "mediana": 0.0037199528462952287,
+   "q1": 0.0018643400737832683,
+   "q3": 0.0073772300480722626
+  },
+  "amplitude_mediana_por_harmonico": [
+   0.5871714949607849,
+   0.36402377486228943,
+   0.06804142519831657,
+   0.10548863559961319,
+   0.02813341561704874,
+   0.021487034857273102,
+   0.016322903335094452,
+   0.014294433407485485,
+   0.01176186976954341,
+   0.010239070281386375
+  ],
+  "eps_via_projetor": {
+   "eps_T": {
+    "mediana": 0.12941282559633754,
+    "q1": 0.0630738457770392,
+    "q3": 0.25170126380404395
+   },
+   "eps_S": {
+    "mediana": 0.8635738777234538,
+    "q1": 0.7417977221424275,
+    "q3": 0.9317147019985534
+   },
+   "eps_R": {
+    "mediana": 0.003719950771158724,
+    "q1": 0.0018643392871751075,
+    "q3": 0.007377233055709206
+   }
+  },
+  "cobertura_mediana": 0.9962800471537048
+ },
+ "densa_projetada": {
+  "eps_T": {
+   "mediana": 0.13661989712014894,
+   "q1": 0.06756460324035632,
+   "q3": 0.2653191819370243
+  },
+  "eps_S": {
+   "mediana": 0.8159987136690934,
+   "q1": 0.6806688399304938,
+   "q3": 0.8919988057784127
+  },
+  "eps_R": {
+   "mediana": 0.03722220668509534,
+   "q1": 0.021107298895517348,
+   "q3": 0.06280449078372317
+  },
+  "amplitude_mediana_por_harmonico": [
+   0.7882491305384881,
+   0.4314698851332329,
+   0.09638967320847791,
+   0.12871041593338517,
+   0.04072337384878193,
+   0.0330858561181658,
+   0.026978345846510605,
+   0.025811373219051432,
+   0.019469802794493368,
+   0.020165654366033944
+  ],
+  "cobertura_mediana": 0.9627777933149047
+ },
+ "metricas_teste_semente10": {
+  "nfh": {
+   "test_RMSE": 0.4947833243878596,
+   "test_MAE": 0.3834212111177575
+  },
+  "densa": {
+   "test_RMSE": 0.5063190588101609,
+   "test_MAE": 0.3901535759394365
+  }
+ },
+ "conferencias": {
+  "max_abs_T+S+R_menos_previsao": 2.8405338525772095e-07,
+  "max_abs_cabeca_vs_projetor": 2.572249239926605e-07,
+  "max_abs_previsao_vs_pred_npy_salvo": 1.1920928955078125e-06
+ },
+ "ig": {
+  "n_janelas": 50,
+  "n_passos": 64,
+  "baseline": 0.0,
+  "janelas_teste_indices": [
+   0,
+   50,
+   100,
+   151,
+   201,
+   251,
+   302,
+   352,
+   403,
+   453,
+   503,
+   554,
+   604,
+   655,
+   705,
+   755,
+   806,
+   856,
+   906,
+   957,
+   1007,
+   1058,
+   1108,
+   1158,
+   1209,
+   1259,
+   1310,
+   1360,
+   1410,
+   1461,
+   1511,
+   1562,
+   1612,
+   1662,
+   1713,
+   1763,
+   1813,
+   1864,
+   1914,
+   1965,
+   2015,
+   2065,
+   2116,
+   2166,
+   2217,
+   2267,
+   2317,
+   2368,
+   2418,
+   2469
+  ],
+  "agrupamento": "por bloco de 24 h de defasagens",
+  "grupos": [
+   "defasagens 73 a 96 h",
+   "defasagens 49 a 72 h",
+   "defasagens 25 a 48 h",
+   "defasagens 1 a 24 h"
+  ],
+  "g_T": {
+   "abs_mediana_por_grupo": [
+    0.13223349884992786,
+    0.11551848502779194,
+    0.09794331861860428,
+    0.35423539478870225
+   ],
+   "participacao_mediana_por_grupo": [
+    0.17361731353277948,
+    0.13283467429529883,
+    0.12731280897728015,
+    0.4666202499144299
+   ],
+   "completude_erro_mediano": 5.508550842137083e-07,
+   "completude_erro_max": 1.3441945796444088e-06,
+   "completude_rel_mediano": 1.1573033575221248e-06,
+   "completude_rel_max": 1.2031583134313495e-05,
+   "delta_g_mediano": 0.46626050770282745
+  },
+  "g_S": {
+   "abs_mediana_por_grupo": [
+    0.4503456929232925,
+    1.2935622085096838,
+    0.7485288172611035,
+    1.749431900883792
+   ],
+   "participacao_mediana_por_grupo": [
+    0.12381294354429252,
+    0.26858538006663485,
+    0.15163953432500515,
+    0.35615404713308874
+   ],
+   "completude_erro_mediano": 5.750806550963716e-07,
+   "completude_erro_max": 7.088748255057453e-06,
+   "completude_rel_mediano": 1.847688409092974e-07,
+   "completude_rel_max": 1.035827154591995e-06,
+   "delta_g_mediano": 4.034896612153837
+  }
+ },
+ "figura": "ETTh2_U_FreqMLP_w1_f0.25.png",
+ "janela_da_figura": 1259,
+ "tempo_s": 1.4805829524993896,
+ "texto_relatorio_tex": "Semente 10, 2470 janelas de teste. Participações de energia da NFH (mediana [Q1; Q3]): $\\varepsilon_T=0,129 [0,063; 0,252]$, $\\varepsilon_S=0,864 [0,742; 0,932]$, $\\varepsilon_R=0,004 [0,002; 0,007]$. A densa da mesma semente, decomposta só pelo Projetor, dá $\\varepsilon_T=0,137 [0,068; 0,265]$, $\\varepsilon_S=0,816 [0,681; 0,892]$, $\\varepsilon_R=0,037 [0,021; 0,063]$. O harmônico de maior amplitude mediana da NFH é $k=1$ (período 48,0 h, amplitude 0,587). RMSE e MAE de teste desta semente: NFH 0,4948 e 0,3834; densa 0,5063 e 0,3902. IG de $g_T$ (50 janelas, 64 passos, referência zero): maior participação mediana em ``defasagens 1 a 24 h'' (46,7\\%); erro de completude mediano 0,000001 (relativo 0,0000). IG de $g_S$ (50 janelas, 64 passos, referência zero): maior participação mediana em ``defasagens 1 a 24 h'' (35,6\\%); erro de completude mediano 0,000001 (relativo 0,0000).\n"
+}

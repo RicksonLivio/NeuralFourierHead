@@ -1,0 +1,2000 @@
+{
+ "meta": {
+  "fase": "controle",
+  "n": 144
+ },
+ "tarefas": [
+  {
+   "tipo": "treino",
+   "conjunto": "Jena-M",
+   "backbone": "LSTM",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 2480.7655231952667,
+   "estagio": 0
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "Jena-U",
+   "backbone": "LSTM",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 2396.1367931365967,
+   "estagio": 0
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "Jena-M",
+   "backbone": "Conv1D+LSTM",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 792.9444098472595,
+   "estagio": 0
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh1-M",
+   "backbone": "LSTM",
+   "seed": 0,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 763.3206415176392,
+   "estagio": 0
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "Jena-U",
+   "backbone": "Conv1D+LSTM",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 613.5963881015778,
+   "estagio": 0
+  },
+  {
+   "tipo": "exata_s0",
+   "conjunto": "Jena-M",
+   "backbone": "LSTM",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa_diss",
+    "densa+E"
+   ],
+   "custo_s": 552.2974379062653,
+   "estagio": 0
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "AirQ-U",
+   "backbone": "LSTM",
+   "seed": 0,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 540.2897193431854,
+   "estagio": 0
+  },
+  {
+   "tipo": "exata_s0",
+   "conjunto": "Jena-U",
+   "backbone": "LSTM",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa_diss",
+    "densa+E"
+   ],
+   "custo_s": 480.4172224998474,
+   "estagio": 0
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh2-U",
+   "backbone": "Conv1D+LSTM",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 475.23495149612427,
+   "estagio": 0
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "AirQ-M",
+   "backbone": "LSTM",
+   "seed": 0,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 425.03898096084595,
+   "estagio": 0
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh2-M",
+   "backbone": "Conv1D+LSTM",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 386.8657829761505,
+   "estagio": 0
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh1-M",
+   "backbone": "MLP",
+   "seed": 0,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 291.04301357269287,
+   "estagio": 0
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "Jena-U",
+   "backbone": "MLP",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 249.62663531303406,
+   "estagio": 0
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh1-U",
+   "backbone": "Conv1D+LSTM",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 249.31216192245483,
+   "estagio": 0
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh1-M",
+   "backbone": "Conv1D+LSTM",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 249.2299313545227,
+   "estagio": 0
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "Jena-M",
+   "backbone": "MLP",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 242.28897833824158,
+   "estagio": 0
+  },
+  {
+   "tipo": "exata_s0",
+   "conjunto": "ETTh1-M",
+   "backbone": "LSTM",
+   "seed": 0,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa_diss",
+    "densa+E"
+   ],
+   "custo_s": 240.68047952651978,
+   "estagio": 0
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh2-M",
+   "backbone": "LSTM",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 220.65982842445374,
+   "estagio": 0
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh1-U",
+   "backbone": "LSTM",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 218.54842162132263,
+   "estagio": 0
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh2-U",
+   "backbone": "LSTM",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 211.44243907928467,
+   "estagio": 0
+  },
+  {
+   "tipo": "exata_s0",
+   "conjunto": "Jena-M",
+   "backbone": "Conv1D+LSTM",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa_diss",
+    "densa+E"
+   ],
+   "custo_s": 207.44850826263428,
+   "estagio": 0
+  },
+  {
+   "tipo": "exata_s0",
+   "conjunto": "Jena-U",
+   "backbone": "Conv1D+LSTM",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa_diss",
+    "densa+E"
+   ],
+   "custo_s": 207.26848101615906,
+   "estagio": 0
+  },
+  {
+   "tipo": "exata_s0",
+   "conjunto": "AirQ-U",
+   "backbone": "LSTM",
+   "seed": 0,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa_diss",
+    "densa+E"
+   ],
+   "custo_s": 191.73274636268616,
+   "estagio": 0
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "AirQ-M",
+   "backbone": "Conv1D+LSTM",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 160.62939167022705,
+   "estagio": 0
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "AirQ-U",
+   "backbone": "Conv1D+LSTM",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 154.461092710495,
+   "estagio": 0
+  },
+  {
+   "tipo": "exata_s0",
+   "conjunto": "AirQ-M",
+   "backbone": "LSTM",
+   "seed": 0,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa_diss",
+    "densa+E"
+   ],
+   "custo_s": 143.61106252670288,
+   "estagio": 0
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "AirQ-M",
+   "backbone": "MLP",
+   "seed": 0,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 134.67769169807434,
+   "estagio": 0
+  },
+  {
+   "tipo": "exata_s0",
+   "conjunto": "ETTh2-M",
+   "backbone": "Conv1D+LSTM",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa_diss",
+    "densa+E"
+   ],
+   "custo_s": 131.99495840072632,
+   "estagio": 0
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh2-U",
+   "backbone": "MLP",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 119.02641201019287,
+   "estagio": 0
+  },
+  {
+   "tipo": "exata_s0",
+   "conjunto": "ETTh1-M",
+   "backbone": "MLP",
+   "seed": 0,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa_diss",
+    "densa+E"
+   ],
+   "custo_s": 108.5351448059082,
+   "estagio": 0
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh1-U",
+   "backbone": "MLP",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 102.88229990005493,
+   "estagio": 0
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh2-M",
+   "backbone": "MLP",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 99.03039050102234,
+   "estagio": 0
+  },
+  {
+   "tipo": "exata_s0",
+   "conjunto": "ETTh1-M",
+   "backbone": "Conv1D+LSTM",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa_diss",
+    "densa+E"
+   ],
+   "custo_s": 94.89560055732727,
+   "estagio": 0
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "AirQ-U",
+   "backbone": "MLP",
+   "seed": 0,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 90.8824098110199,
+   "estagio": 0
+  },
+  {
+   "tipo": "exata_s0",
+   "conjunto": "Jena-M",
+   "backbone": "MLP",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa_diss",
+    "densa+E"
+   ],
+   "custo_s": 90.33847761154175,
+   "estagio": 0
+  },
+  {
+   "tipo": "exata_s0",
+   "conjunto": "Jena-U",
+   "backbone": "MLP",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa_diss",
+    "densa+E"
+   ],
+   "custo_s": 84.7331531047821,
+   "estagio": 0
+  },
+  {
+   "tipo": "exata_s0",
+   "conjunto": "ETTh2-M",
+   "backbone": "LSTM",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa_diss",
+    "densa+E"
+   ],
+   "custo_s": 84.45712232589722,
+   "estagio": 0
+  },
+  {
+   "tipo": "exata_s0",
+   "conjunto": "ETTh2-U",
+   "backbone": "LSTM",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa_diss",
+    "densa+E"
+   ],
+   "custo_s": 73.42183136940002,
+   "estagio": 0
+  },
+  {
+   "tipo": "exata_s0",
+   "conjunto": "ETTh1-U",
+   "backbone": "LSTM",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa_diss",
+    "densa+E"
+   ],
+   "custo_s": 73.06008172035217,
+   "estagio": 0
+  },
+  {
+   "tipo": "exata_s0",
+   "conjunto": "AirQ-M",
+   "backbone": "Conv1D+LSTM",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa_diss",
+    "densa+E"
+   ],
+   "custo_s": 58.85212159156799,
+   "estagio": 0
+  },
+  {
+   "tipo": "exata_s0",
+   "conjunto": "ETTh2-U",
+   "backbone": "Conv1D+LSTM",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa_diss",
+    "densa+E"
+   ],
+   "custo_s": 57.480568170547485,
+   "estagio": 0
+  },
+  {
+   "tipo": "exata_s0",
+   "conjunto": "ETTh1-U",
+   "backbone": "Conv1D+LSTM",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa_diss",
+    "densa+E"
+   ],
+   "custo_s": 55.390440464019775,
+   "estagio": 0
+  },
+  {
+   "tipo": "exata_s0",
+   "conjunto": "AirQ-U",
+   "backbone": "Conv1D+LSTM",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa_diss",
+    "densa+E"
+   ],
+   "custo_s": 54.25535535812378,
+   "estagio": 0
+  },
+  {
+   "tipo": "exata_s0",
+   "conjunto": "AirQ-M",
+   "backbone": "MLP",
+   "seed": 0,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa_diss",
+    "densa+E"
+   ],
+   "custo_s": 52.79744029045105,
+   "estagio": 0
+  },
+  {
+   "tipo": "exata_s0",
+   "conjunto": "ETTh2-M",
+   "backbone": "MLP",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa_diss",
+    "densa+E"
+   ],
+   "custo_s": 41.76120853424072,
+   "estagio": 0
+  },
+  {
+   "tipo": "exata_s0",
+   "conjunto": "ETTh2-U",
+   "backbone": "MLP",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa_diss",
+    "densa+E"
+   ],
+   "custo_s": 41.22908091545105,
+   "estagio": 0
+  },
+  {
+   "tipo": "exata_s0",
+   "conjunto": "ETTh1-U",
+   "backbone": "MLP",
+   "seed": 0,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa_diss",
+    "densa+E"
+   ],
+   "custo_s": 38.0104444026947,
+   "estagio": 0
+  },
+  {
+   "tipo": "exata_s0",
+   "conjunto": "AirQ-U",
+   "backbone": "MLP",
+   "seed": 0,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa_diss",
+    "densa+E"
+   ],
+   "custo_s": 30.242605447769165,
+   "estagio": 0
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "Jena-U",
+   "backbone": "Conv1D+LSTM",
+   "seed": 1,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 1581.404117822647,
+   "estagio": 1
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "Jena-M",
+   "backbone": "Conv1D+LSTM",
+   "seed": 1,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 1479.0984420776367,
+   "estagio": 1
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh1-U",
+   "backbone": "Conv1D+LSTM",
+   "seed": 1,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 1457.1549785137177,
+   "estagio": 1
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh1-M",
+   "backbone": "LSTM",
+   "seed": 1,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 992.1221635341644,
+   "estagio": 1
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh2-M",
+   "backbone": "Conv1D+LSTM",
+   "seed": 1,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 795.3304121494293,
+   "estagio": 1
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "AirQ-U",
+   "backbone": "LSTM",
+   "seed": 1,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 552.8725328445435,
+   "estagio": 1
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh1-M",
+   "backbone": "MLP",
+   "seed": 1,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 403.5364534854889,
+   "estagio": 1
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "AirQ-M",
+   "backbone": "LSTM",
+   "seed": 1,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 396.3322243690491,
+   "estagio": 1
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh2-M",
+   "backbone": "LSTM",
+   "seed": 1,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 378.4038317203522,
+   "estagio": 1
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh2-U",
+   "backbone": "Conv1D+LSTM",
+   "seed": 1,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 287.0368208885193,
+   "estagio": 1
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "AirQ-U",
+   "backbone": "Conv1D+LSTM",
+   "seed": 1,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 276.65693640708923,
+   "estagio": 1
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh1-U",
+   "backbone": "LSTM",
+   "seed": 1,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 272.5724196434021,
+   "estagio": 1
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "Jena-M",
+   "backbone": "LSTM",
+   "seed": 1,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 259.12895345687866,
+   "estagio": 1
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "Jena-U",
+   "backbone": "LSTM",
+   "seed": 1,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 251.5944540500641,
+   "estagio": 1
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh2-U",
+   "backbone": "LSTM",
+   "seed": 1,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 228.10405087471008,
+   "estagio": 1
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "Jena-U",
+   "backbone": "MLP",
+   "seed": 1,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 163.94042301177979,
+   "estagio": 1
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "Jena-M",
+   "backbone": "MLP",
+   "seed": 1,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 149.72779321670532,
+   "estagio": 1
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh2-U",
+   "backbone": "MLP",
+   "seed": 1,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 115.53753232955933,
+   "estagio": 1
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh1-U",
+   "backbone": "MLP",
+   "seed": 1,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 110.99283266067505,
+   "estagio": 1
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh1-M",
+   "backbone": "Conv1D+LSTM",
+   "seed": 1,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 102.50401949882507,
+   "estagio": 1
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "AirQ-M",
+   "backbone": "MLP",
+   "seed": 1,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 95.00898361206055,
+   "estagio": 1
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh2-M",
+   "backbone": "MLP",
+   "seed": 1,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 78.34764862060547,
+   "estagio": 1
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "AirQ-M",
+   "backbone": "Conv1D+LSTM",
+   "seed": 1,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 71.92525267601013,
+   "estagio": 1
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "AirQ-U",
+   "backbone": "MLP",
+   "seed": 1,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 68.02624201774597,
+   "estagio": 1
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh1-U",
+   "backbone": "Conv1D+LSTM",
+   "seed": 2,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 1075.7404379844666,
+   "estagio": 2
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "Jena-M",
+   "backbone": "Conv1D+LSTM",
+   "seed": 2,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 1054.1176161766052,
+   "estagio": 2
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh1-M",
+   "backbone": "Conv1D+LSTM",
+   "seed": 2,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 990.4137995243073,
+   "estagio": 2
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "Jena-U",
+   "backbone": "LSTM",
+   "seed": 2,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 983.1459288597107,
+   "estagio": 2
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "Jena-U",
+   "backbone": "Conv1D+LSTM",
+   "seed": 2,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 864.7823476791382,
+   "estagio": 2
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh1-M",
+   "backbone": "LSTM",
+   "seed": 2,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 759.5065720081329,
+   "estagio": 2
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "Jena-M",
+   "backbone": "LSTM",
+   "seed": 2,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 559.2844822406769,
+   "estagio": 2
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "AirQ-U",
+   "backbone": "LSTM",
+   "seed": 2,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 531.5422394275665,
+   "estagio": 2
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh2-M",
+   "backbone": "Conv1D+LSTM",
+   "seed": 2,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 525.8399209976196,
+   "estagio": 2
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "AirQ-M",
+   "backbone": "LSTM",
+   "seed": 2,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 447.0545244216919,
+   "estagio": 2
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh2-M",
+   "backbone": "LSTM",
+   "seed": 2,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 384.91668248176575,
+   "estagio": 2
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "Jena-U",
+   "backbone": "MLP",
+   "seed": 2,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 303.55967831611633,
+   "estagio": 2
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "AirQ-U",
+   "backbone": "Conv1D+LSTM",
+   "seed": 2,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 279.9894154071808,
+   "estagio": 2
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "Jena-M",
+   "backbone": "MLP",
+   "seed": 2,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 271.7006285190582,
+   "estagio": 2
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh1-U",
+   "backbone": "LSTM",
+   "seed": 2,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 257.33284616470337,
+   "estagio": 2
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh2-U",
+   "backbone": "LSTM",
+   "seed": 2,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 239.51804304122925,
+   "estagio": 2
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh2-M",
+   "backbone": "MLP",
+   "seed": 2,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 202.7751796245575,
+   "estagio": 2
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh1-M",
+   "backbone": "MLP",
+   "seed": 2,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 157.36907410621643,
+   "estagio": 2
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh2-U",
+   "backbone": "Conv1D+LSTM",
+   "seed": 2,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 129.5694727897644,
+   "estagio": 2
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "AirQ-M",
+   "backbone": "MLP",
+   "seed": 2,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 108.97178602218628,
+   "estagio": 2
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "AirQ-U",
+   "backbone": "MLP",
+   "seed": 2,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 84.0866596698761,
+   "estagio": 2
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "AirQ-M",
+   "backbone": "Conv1D+LSTM",
+   "seed": 2,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 78.53522038459778,
+   "estagio": 2
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh2-U",
+   "backbone": "MLP",
+   "seed": 2,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 75.32768034934998,
+   "estagio": 2
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh1-U",
+   "backbone": "MLP",
+   "seed": 2,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 66.73364639282227,
+   "estagio": 2
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "Jena-M",
+   "backbone": "Conv1D+LSTM",
+   "seed": 3,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 1822.5703110694885,
+   "estagio": 3
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "Jena-U",
+   "backbone": "Conv1D+LSTM",
+   "seed": 3,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 1663.8175542354584,
+   "estagio": 3
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh1-U",
+   "backbone": "Conv1D+LSTM",
+   "seed": 3,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 1110.4007968902588,
+   "estagio": 3
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh2-U",
+   "backbone": "Conv1D+LSTM",
+   "seed": 3,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 927.6359400749207,
+   "estagio": 3
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh1-M",
+   "backbone": "Conv1D+LSTM",
+   "seed": 3,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 708.9403841495514,
+   "estagio": 3
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "AirQ-M",
+   "backbone": "Conv1D+LSTM",
+   "seed": 3,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 662.600124835968,
+   "estagio": 3
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh1-M",
+   "backbone": "LSTM",
+   "seed": 3,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 649.3851766586304,
+   "estagio": 3
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh2-M",
+   "backbone": "Conv1D+LSTM",
+   "seed": 3,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 560.1703691482544,
+   "estagio": 3
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "AirQ-U",
+   "backbone": "LSTM",
+   "seed": 3,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 484.5603473186493,
+   "estagio": 3
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh2-M",
+   "backbone": "LSTM",
+   "seed": 3,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 445.03640580177307,
+   "estagio": 3
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "AirQ-M",
+   "backbone": "LSTM",
+   "seed": 3,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 423.04092741012573,
+   "estagio": 3
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "AirQ-U",
+   "backbone": "Conv1D+LSTM",
+   "seed": 3,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 388.75013422966003,
+   "estagio": 3
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "Jena-U",
+   "backbone": "MLP",
+   "seed": 3,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 364.255512714386,
+   "estagio": 3
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "Jena-M",
+   "backbone": "MLP",
+   "seed": 3,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 354.7725250720978,
+   "estagio": 3
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "Jena-M",
+   "backbone": "LSTM",
+   "seed": 3,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 301.05427169799805,
+   "estagio": 3
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "Jena-U",
+   "backbone": "LSTM",
+   "seed": 3,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 295.0564851760864,
+   "estagio": 3
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "AirQ-M",
+   "backbone": "MLP",
+   "seed": 3,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 200.53334259986877,
+   "estagio": 3
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh2-U",
+   "backbone": "LSTM",
+   "seed": 3,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 177.49321389198303,
+   "estagio": 3
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh1-U",
+   "backbone": "LSTM",
+   "seed": 3,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 169.87022852897644,
+   "estagio": 3
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh1-M",
+   "backbone": "MLP",
+   "seed": 3,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 161.49560451507568,
+   "estagio": 3
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh2-M",
+   "backbone": "MLP",
+   "seed": 3,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 151.65335631370544,
+   "estagio": 3
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "AirQ-U",
+   "backbone": "MLP",
+   "seed": 3,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 110.69136643409729,
+   "estagio": 3
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh2-U",
+   "backbone": "MLP",
+   "seed": 3,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 106.31936931610107,
+   "estagio": 3
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh1-U",
+   "backbone": "MLP",
+   "seed": 3,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 80.23332190513611,
+   "estagio": 3
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "Jena-M",
+   "backbone": "Conv1D+LSTM",
+   "seed": 4,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 1604.456803560257,
+   "estagio": 4
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh2-U",
+   "backbone": "LSTM",
+   "seed": 4,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 1453.5733394622803,
+   "estagio": 4
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "Jena-U",
+   "backbone": "Conv1D+LSTM",
+   "seed": 4,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 1241.7529211044312,
+   "estagio": 4
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh1-U",
+   "backbone": "Conv1D+LSTM",
+   "seed": 4,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 851.4025418758392,
+   "estagio": 4
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh1-M",
+   "backbone": "LSTM",
+   "seed": 4,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 737.9120631217957,
+   "estagio": 4
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "AirQ-M",
+   "backbone": "Conv1D+LSTM",
+   "seed": 4,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 605.4335255622864,
+   "estagio": 4
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh1-M",
+   "backbone": "Conv1D+LSTM",
+   "seed": 4,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 526.9042825698853,
+   "estagio": 4
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "AirQ-U",
+   "backbone": "LSTM",
+   "seed": 4,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 485.1311390399933,
+   "estagio": 4
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh2-M",
+   "backbone": "Conv1D+LSTM",
+   "seed": 4,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 483.75974583625793,
+   "estagio": 4
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh2-M",
+   "backbone": "LSTM",
+   "seed": 4,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 419.9436402320862,
+   "estagio": 4
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "AirQ-M",
+   "backbone": "LSTM",
+   "seed": 4,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 393.20886063575745,
+   "estagio": 4
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "Jena-M",
+   "backbone": "MLP",
+   "seed": 4,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 338.549946308136,
+   "estagio": 4
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "Jena-U",
+   "backbone": "MLP",
+   "seed": 4,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 329.15707540512085,
+   "estagio": 4
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "AirQ-U",
+   "backbone": "Conv1D+LSTM",
+   "seed": 4,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 327.69945216178894,
+   "estagio": 4
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "Jena-U",
+   "backbone": "LSTM",
+   "seed": 4,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 265.4386374950409,
+   "estagio": 4
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "Jena-M",
+   "backbone": "LSTM",
+   "seed": 4,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 248.74788093566895,
+   "estagio": 4
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh2-U",
+   "backbone": "Conv1D+LSTM",
+   "seed": 4,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 174.6546847820282,
+   "estagio": 4
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh1-U",
+   "backbone": "LSTM",
+   "seed": 4,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 172.15974354743958,
+   "estagio": 4
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh2-M",
+   "backbone": "MLP",
+   "seed": 4,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 168.25797033309937,
+   "estagio": 4
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh1-M",
+   "backbone": "MLP",
+   "seed": 4,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 148.90555047988892,
+   "estagio": 4
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "AirQ-M",
+   "backbone": "MLP",
+   "seed": 4,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 147.82846760749817,
+   "estagio": 4
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh2-U",
+   "backbone": "MLP",
+   "seed": 4,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 120.24088740348816,
+   "estagio": 4
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "ETTh1-U",
+   "backbone": "MLP",
+   "seed": 4,
+   "dispositivo": "GPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 117.73269629478455,
+   "estagio": 4
+  },
+  {
+   "tipo": "treino",
+   "conjunto": "AirQ-U",
+   "backbone": "MLP",
+   "seed": 4,
+   "dispositivo": "CPU",
+   "variantes": [
+    "densa",
+    "densa+E",
+    "nfh"
+   ],
+   "custo_s": 66.1317720413208,
+   "estagio": 4
+  }
+ ]
+}

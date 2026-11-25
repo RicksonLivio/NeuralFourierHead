@@ -1,0 +1,418 @@
+{
+ "ETTh1-U": {
+  "MLP + NFH": {
+   "mediana_dp_entre_sementes": 0.051254171128040295,
+   "media_dp": 0.0647701517303049,
+   "p90_dp": 0.13291708147808678,
+   "mediana_valor": 0.27963885029405255
+  },
+  "MLP + densa (decomposição pura)": {
+   "mediana_dp_entre_sementes": 0.09005105687686078,
+   "media_dp": 0.09789922809109916,
+   "p90_dp": 0.18016413890499763,
+   "mediana_valor": 0.26900951377322013
+  },
+  "LSTM + NFH": {
+   "mediana_dp_entre_sementes": 0.10790861392133906,
+   "media_dp": 0.1258122568154931,
+   "p90_dp": 0.25222351072509047,
+   "mediana_valor": 0.2375149133365598
+  },
+  "LSTM + densa (decomposição pura)": {
+   "mediana_dp_entre_sementes": 0.09901569006979039,
+   "media_dp": 0.12045928610461992,
+   "p90_dp": 0.25364616995632366,
+   "mediana_valor": 0.22311340119622683
+  },
+  "Conv1D+LSTM + NFH": {
+   "mediana_dp_entre_sementes": 0.12927096758143714,
+   "media_dp": 0.14358773335324276,
+   "p90_dp": 0.279909511545408,
+   "mediana_valor": 0.24312829035685873
+  },
+  "Conv1D+LSTM + densa (decomposição pura)": {
+   "mediana_dp_entre_sementes": 0.1424248494709978,
+   "media_dp": 0.15558122645089464,
+   "p90_dp": 0.2912825179652145,
+   "mediana_valor": 0.27562268845988924
+  },
+  "N-BEATS-I nativo": {
+   "mediana_dp_entre_sementes": 0.050054651506020134,
+   "media_dp": 0.05788601570160455,
+   "p90_dp": 0.11081913885211794,
+   "mediana_valor": 0.038921394129874415,
+   "fracao_fora_0_1": 0.24187066130800147,
+   "dif_media_nativo_proj": 0.2697370317133555
+  },
+  "N-BEATS-I projetado": {
+   "mediana_dp_entre_sementes": 0.1171846980590614,
+   "media_dp": 0.12390698641460471,
+   "p90_dp": 0.21296990740726957,
+   "mediana_valor": 0.27575556565361
+  }
+ },
+ "ETTh1-M": {
+  "MLP + NFH": {
+   "mediana_dp_entre_sementes": 0.09109605240291468,
+   "media_dp": 0.1030278465055169,
+   "p90_dp": 0.1923004290615705,
+   "mediana_valor": 0.22491818557324994
+  },
+  "MLP + densa (decomposição pura)": {
+   "mediana_dp_entre_sementes": 0.11871293046299786,
+   "media_dp": 0.12207231042271097,
+   "p90_dp": 0.20557074935171643,
+   "mediana_valor": 0.2452682573678763
+  },
+  "LSTM + NFH": {
+   "mediana_dp_entre_sementes": 0.23056048732365428,
+   "media_dp": 0.21880279557578897,
+   "p90_dp": 0.3354639893940943,
+   "mediana_valor": 0.2889994878819753
+  },
+  "LSTM + densa (decomposição pura)": {
+   "mediana_dp_entre_sementes": 0.17040855174660097,
+   "media_dp": 0.17214043119935662,
+   "p90_dp": 0.28547998012373105,
+   "mediana_valor": 0.2457642605336877
+  },
+  "Conv1D+LSTM + NFH": {
+   "mediana_dp_entre_sementes": 0.10690027986927149,
+   "media_dp": 0.12097794432374623,
+   "p90_dp": 0.23304110125578764,
+   "mediana_valor": 0.25808543184228566
+  },
+  "Conv1D+LSTM + densa (decomposição pura)": {
+   "mediana_dp_entre_sementes": 0.10539396200064725,
+   "media_dp": 0.11995689568143668,
+   "p90_dp": 0.22699958136615947,
+   "mediana_valor": 0.23796945160863509
+  },
+  "N-BEATS-I nativo": {
+   "mediana_dp_entre_sementes": 0.07755192646963863,
+   "media_dp": 0.08705426357102436,
+   "p90_dp": 0.15354303682089293,
+   "mediana_valor": 0.027571300931366817,
+   "fracao_fora_0_1": 0.325758129338692,
+   "dif_media_nativo_proj": 0.27785902523401834
+  },
+  "N-BEATS-I projetado": {
+   "mediana_dp_entre_sementes": 0.14766815558299876,
+   "media_dp": 0.15009899066664287,
+   "p90_dp": 0.24213105917072092,
+   "mediana_valor": 0.27328366408379395
+  }
+ },
+ "ETTh2-U": {
+  "MLP + NFH": {
+   "mediana_dp_entre_sementes": 0.02617448458453775,
+   "media_dp": 0.03515847179885201,
+   "p90_dp": 0.07118971210750918,
+   "mediana_valor": 0.09808219443323005
+  },
+  "MLP + densa (decomposição pura)": {
+   "mediana_dp_entre_sementes": 0.04287496348661335,
+   "media_dp": 0.05051853611323859,
+   "p90_dp": 0.09516451943054131,
+   "mediana_valor": 0.11126381841865329
+  },
+  "LSTM + NFH": {
+   "mediana_dp_entre_sementes": 0.022912720869838126,
+   "media_dp": 0.03137401156360537,
+   "p90_dp": 0.061951552358007915,
+   "mediana_valor": 0.08302104321118703
+  },
+  "LSTM + densa (decomposição pura)": {
+   "mediana_dp_entre_sementes": 0.021670680549649435,
+   "media_dp": 0.030122348039421612,
+   "p90_dp": 0.059300557653804625,
+   "mediana_valor": 0.09220261661124554
+  },
+  "Conv1D+LSTM + NFH": {
+   "mediana_dp_entre_sementes": 0.014701307661535863,
+   "media_dp": 0.021418163143264966,
+   "p90_dp": 0.039205440536659454,
+   "mediana_valor": 0.08100626309521541
+  },
+  "Conv1D+LSTM + densa (decomposição pura)": {
+   "mediana_dp_entre_sementes": 0.03447651962530894,
+   "media_dp": 0.0472674100461907,
+   "p90_dp": 0.09394332787555489,
+   "mediana_valor": 0.10076680784004312
+  },
+  "N-BEATS-I nativo": {
+   "mediana_dp_entre_sementes": 0.023891307528230446,
+   "media_dp": 0.033385082273507664,
+   "p90_dp": 0.06889471685028667,
+   "mediana_valor": 0.014339396693869829,
+   "fracao_fora_0_1": 0.3100474972597735,
+   "dif_media_nativo_proj": 0.10718701789296692
+  },
+  "N-BEATS-I projetado": {
+   "mediana_dp_entre_sementes": 0.036202645645063376,
+   "media_dp": 0.04608981366288158,
+   "p90_dp": 0.08738815433688474,
+   "mediana_valor": 0.1093099680174884
+  }
+ },
+ "ETTh2-M": {
+  "MLP + NFH": {
+   "mediana_dp_entre_sementes": 0.030097941720608055,
+   "media_dp": 0.04063829514800989,
+   "p90_dp": 0.08320880687927844,
+   "mediana_valor": 0.0741166994251453
+  },
+  "MLP + densa (decomposição pura)": {
+   "mediana_dp_entre_sementes": 0.04129129325428458,
+   "media_dp": 0.05077251162263219,
+   "p90_dp": 0.0937979203612448,
+   "mediana_valor": 0.09563594222479468
+  },
+  "LSTM + NFH": {
+   "mediana_dp_entre_sementes": 0.02047801109954466,
+   "media_dp": 0.025629792129138757,
+   "p90_dp": 0.0453989795576423,
+   "mediana_valor": 0.0850796270866176
+  },
+  "LSTM + densa (decomposição pura)": {
+   "mediana_dp_entre_sementes": 0.024194322636165822,
+   "media_dp": 0.02796527675813814,
+   "p90_dp": 0.04955274511865733,
+   "mediana_valor": 0.09402073383978235
+  },
+  "Conv1D+LSTM + NFH": {
+   "mediana_dp_entre_sementes": 0.06293617440918539,
+   "media_dp": 0.08327442091175398,
+   "p90_dp": 0.17347922838121693,
+   "mediana_valor": 0.09478922556519333
+  },
+  "Conv1D+LSTM + densa (decomposição pura)": {
+   "mediana_dp_entre_sementes": 0.07519228181537371,
+   "media_dp": 0.09331792670980887,
+   "p90_dp": 0.18545473890130496,
+   "mediana_valor": 0.11690121174197375
+  },
+  "N-BEATS-I nativo": {
+   "mediana_dp_entre_sementes": 0.029497863551045143,
+   "media_dp": 0.04590500138687218,
+   "p90_dp": 0.10776376057564449,
+   "mediana_valor": 0.012223074185363305,
+   "fracao_fora_0_1": 0.29134088417975884,
+   "dif_media_nativo_proj": 0.12520496888965457
+  },
+  "N-BEATS-I projetado": {
+   "mediana_dp_entre_sementes": 0.06248226500380859,
+   "media_dp": 0.08269024251576325,
+   "p90_dp": 0.17176698111521774,
+   "mediana_valor": 0.11082607487157982
+  }
+ },
+ "Jena-U": {
+  "MLP + NFH": {
+   "mediana_dp_entre_sementes": 0.038708212566136026,
+   "media_dp": 0.05725525770510327,
+   "p90_dp": 0.13038143046133158,
+   "mediana_valor": 0.12286559844567496
+  },
+  "MLP + densa (decomposição pura)": {
+   "mediana_dp_entre_sementes": 0.04522015890281822,
+   "media_dp": 0.0627789555997125,
+   "p90_dp": 0.13324804506649368,
+   "mediana_valor": 0.13302125384046018
+  },
+  "LSTM + NFH": {
+   "mediana_dp_entre_sementes": 0.02583475017101981,
+   "media_dp": 0.03822812525993075,
+   "p90_dp": 0.06987777369696556,
+   "mediana_valor": 0.11338807884014482
+  },
+  "LSTM + densa (decomposição pura)": {
+   "mediana_dp_entre_sementes": 0.03235338916942918,
+   "media_dp": 0.05045867752309055,
+   "p90_dp": 0.11585779287799726,
+   "mediana_valor": 0.12230894268762761
+  },
+  "Conv1D+LSTM + NFH": {
+   "mediana_dp_entre_sementes": 0.0402689406877287,
+   "media_dp": 0.05765286715522939,
+   "p90_dp": 0.11891493876827255,
+   "mediana_valor": 0.09873954562680455
+  },
+  "Conv1D+LSTM + densa (decomposição pura)": {
+   "mediana_dp_entre_sementes": 0.049775432610549904,
+   "media_dp": 0.0666625153841583,
+   "p90_dp": 0.14054541045485006,
+   "mediana_valor": 0.11806154647920761
+  },
+  "N-BEATS-I nativo": {
+   "mediana_dp_entre_sementes": 0.031546599310961675,
+   "media_dp": 0.05693831839162877,
+   "p90_dp": 0.14243028073161015,
+   "mediana_valor": 0.014641933681693697,
+   "fracao_fora_0_1": 0.33908923400894975,
+   "dif_media_nativo_proj": 0.14629426659743763
+  },
+  "N-BEATS-I projetado": {
+   "mediana_dp_entre_sementes": 0.05177567008443557,
+   "media_dp": 0.0778135874892632,
+   "p90_dp": 0.18423842644582666,
+   "mediana_valor": 0.1327971182067486
+  }
+ },
+ "Jena-M": {
+  "MLP + NFH": {
+   "mediana_dp_entre_sementes": 0.06095493126335799,
+   "media_dp": 0.07973286068300724,
+   "p90_dp": 0.16745421909583993,
+   "mediana_valor": 0.15943375532057846
+  },
+  "MLP + densa (decomposição pura)": {
+   "mediana_dp_entre_sementes": 0.06363735031488008,
+   "media_dp": 0.08168345165041846,
+   "p90_dp": 0.16809855269013774,
+   "mediana_valor": 0.15332973887159293
+  },
+  "LSTM + NFH": {
+   "mediana_dp_entre_sementes": 0.03117368163011509,
+   "media_dp": 0.05202278399434804,
+   "p90_dp": 0.12014788307524986,
+   "mediana_valor": 0.10848094965622469
+  },
+  "LSTM + densa (decomposição pura)": {
+   "mediana_dp_entre_sementes": 0.05179227221268832,
+   "media_dp": 0.06744455666817346,
+   "p90_dp": 0.1325904112802472,
+   "mediana_valor": 0.12712900198507837
+  },
+  "Conv1D+LSTM + NFH": {
+   "mediana_dp_entre_sementes": 0.03691281157592554,
+   "media_dp": 0.05160333727242779,
+   "p90_dp": 0.10509536707548282,
+   "mediana_valor": 0.09660364524939094
+  },
+  "Conv1D+LSTM + densa (decomposição pura)": {
+   "mediana_dp_entre_sementes": 0.04508252301132151,
+   "media_dp": 0.06298316687653796,
+   "p90_dp": 0.12864336485404707,
+   "mediana_valor": 0.12205550009272072
+  },
+  "N-BEATS-I nativo": {
+   "mediana_dp_entre_sementes": 0.044798150767047205,
+   "media_dp": 0.06998187711078252,
+   "p90_dp": 0.17236790486953324,
+   "mediana_valor": 0.02319723921136535,
+   "fracao_fora_0_1": 0.24832850750197422,
+   "dif_media_nativo_proj": 0.16896042824280083
+  },
+  "N-BEATS-I projetado": {
+   "mediana_dp_entre_sementes": 0.08737525603336929,
+   "media_dp": 0.10677405932028111,
+   "p90_dp": 0.21918320255034965,
+   "mediana_valor": 0.15390412817448187
+  }
+ },
+ "AirQ-U": {
+  "MLP + NFH": {
+   "mediana_dp_entre_sementes": 0.03148057933524066,
+   "media_dp": 0.03995892482828883,
+   "p90_dp": 0.08259014791168452,
+   "mediana_valor": 0.09548717523051037
+  },
+  "MLP + densa (decomposição pura)": {
+   "mediana_dp_entre_sementes": 0.03821952120496636,
+   "media_dp": 0.04634161642380836,
+   "p90_dp": 0.09119807796253342,
+   "mediana_valor": 0.09801883880141993
+  },
+  "LSTM + NFH": {
+   "mediana_dp_entre_sementes": 0.027453620724784123,
+   "media_dp": 0.03803535731142994,
+   "p90_dp": 0.08426245338055965,
+   "mediana_valor": 0.07217680122623091
+  },
+  "LSTM + densa (decomposição pura)": {
+   "mediana_dp_entre_sementes": 0.03518762965178399,
+   "media_dp": 0.043036298660182624,
+   "p90_dp": 0.08130019311002017,
+   "mediana_valor": 0.08770594531637596
+  },
+  "Conv1D+LSTM + NFH": {
+   "mediana_dp_entre_sementes": 0.024524118270100058,
+   "media_dp": 0.042474368650802695,
+   "p90_dp": 0.10030974271407186,
+   "mediana_valor": 0.06714212785717902
+  },
+  "Conv1D+LSTM + densa (decomposição pura)": {
+   "mediana_dp_entre_sementes": 0.051218748882501657,
+   "media_dp": 0.06331605623791965,
+   "p90_dp": 0.12588919688996636,
+   "mediana_valor": 0.0870206505697416
+  },
+  "N-BEATS-I nativo": {
+   "mediana_dp_entre_sementes": 0.02575233372239387,
+   "media_dp": 0.033706241726669306,
+   "p90_dp": 0.07250906788655773,
+   "mediana_valor": 0.025910718794479055,
+   "fracao_fora_0_1": 0.20995633187772925,
+   "dif_media_nativo_proj": 0.08939549024139139
+  },
+  "N-BEATS-I projetado": {
+   "mediana_dp_entre_sementes": 0.0427326475971728,
+   "media_dp": 0.05380445101914755,
+   "p90_dp": 0.11565024268288093,
+   "mediana_valor": 0.09473033430449049
+  }
+ },
+ "AirQ-M": {
+  "MLP + NFH": {
+   "mediana_dp_entre_sementes": 0.04989914768852542,
+   "media_dp": 0.06008358260291097,
+   "p90_dp": 0.11779903562556088,
+   "mediana_valor": 0.10796890402635588
+  },
+  "MLP + densa (decomposição pura)": {
+   "mediana_dp_entre_sementes": 0.051859791485211144,
+   "media_dp": 0.06233907149837838,
+   "p90_dp": 0.12127695377645165,
+   "mediana_valor": 0.11125219281528531
+  },
+  "LSTM + NFH": {
+   "mediana_dp_entre_sementes": 0.02742055684411096,
+   "media_dp": 0.036801557069869824,
+   "p90_dp": 0.07920818033582658,
+   "mediana_valor": 0.06887730426850354
+  },
+  "LSTM + densa (decomposição pura)": {
+   "mediana_dp_entre_sementes": 0.03503190738711804,
+   "media_dp": 0.04562713793158305,
+   "p90_dp": 0.09168723541633507,
+   "mediana_valor": 0.08134881955744082
+  },
+  "Conv1D+LSTM + NFH": {
+   "mediana_dp_entre_sementes": 0.04008304481939836,
+   "media_dp": 0.052760966776160066,
+   "p90_dp": 0.11708539993005279,
+   "mediana_valor": 0.08297701560571534
+  },
+  "Conv1D+LSTM + densa (decomposição pura)": {
+   "mediana_dp_entre_sementes": 0.05988002204409098,
+   "media_dp": 0.07791673948531784,
+   "p90_dp": 0.1601096056588479,
+   "mediana_valor": 0.10882010844704121
+  },
+  "N-BEATS-I nativo": {
+   "mediana_dp_entre_sementes": 0.03390656772266587,
+   "media_dp": 0.045931366920173994,
+   "p90_dp": 0.0998215018073623,
+   "mediana_valor": 0.028467288612946944,
+   "fracao_fora_0_1": 0.22375545851528383,
+   "dif_media_nativo_proj": 0.07827225172313429
+  },
+  "N-BEATS-I projetado": {
+   "mediana_dp_entre_sementes": 0.0505946205615941,
+   "media_dp": 0.06486974974255583,
+   "p90_dp": 0.13575109694478305,
+   "mediana_valor": 0.09396711177239978
+  }
+ }
+}

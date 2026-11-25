@@ -1,0 +1,251 @@
+{
+ "combinacao": "SINT-M_M_iTransformer_w2_f0.25",
+ "id": "SINT-M|M|iTransformer|w2|f0.25",
+ "dataset": "SINT-M",
+ "modo": "M",
+ "backbone": "iTransformer",
+ "largura": 2,
+ "fracao": 0.25,
+ "variante_nfh": "conv_L1000_K10",
+ "K": 10,
+ "lambda": 1000.0,
+ "seed": 10,
+ "veredito_confirmacao": "SUCESSO",
+ "d": 5,
+ "n_janelas_teste": 1650,
+ "periodo_h_por_harmonico": [
+  48.0,
+  24.0,
+  16.0,
+  12.0,
+  9.6,
+  8.0,
+  6.857142857142857,
+  6.0,
+  5.333333333333333,
+  4.8
+ ],
+ "nfh": {
+  "eps_T": {
+   "mediana": 0.1012285119868003,
+   "q1": 0.06535838498390331,
+   "q3": 0.1672003671178579
+  },
+  "eps_S": {
+   "mediana": 0.8987041737772925,
+   "q1": 0.8327847910649508,
+   "q3": 0.9346288236568832
+  },
+  "eps_R": {
+   "mediana": 2.4475274718598796e-05,
+   "q1": 1.8100456061803773e-05,
+   "q3": 3.405802360940816e-05
+  },
+  "amplitude_mediana_por_harmonico": [
+   0.41343291103839874,
+   0.8989418745040894,
+   0.055470334365963936,
+   0.025497527793049812,
+   0.019171849824488163,
+   0.012400641106069088,
+   0.010662715882062912,
+   0.006026151357218623,
+   0.006500464165583253,
+   0.006689832080155611
+  ],
+  "eps_via_projetor": {
+   "eps_T": {
+    "mediana": 0.10122851368700791,
+    "q1": 0.06535839064747039,
+    "q3": 0.1672003691454164
+   },
+   "eps_S": {
+    "mediana": 0.8987041714049253,
+    "q1": 0.8327847669009225,
+    "q3": 0.9346288255610793
+   },
+   "eps_R": {
+    "mediana": 2.4475189275836363e-05,
+    "q1": 1.8100489600110745e-05,
+    "q3": 3.405792353499718e-05
+   }
+  },
+  "cobertura_mediana": 0.9999755247252814
+ },
+ "densa_projetada": {
+  "eps_T": {
+   "mediana": 0.11082976216185833,
+   "q1": 0.0691757975910121,
+   "q3": 0.17198418761464696
+  },
+  "eps_S": {
+   "mediana": 0.8885054392156914,
+   "q1": 0.8274349336358264,
+   "q3": 0.9294082953836287
+  },
+  "eps_R": {
+   "mediana": 0.0007087759325274192,
+   "q1": 0.0005021645874056219,
+   "q3": 0.0010394842343116905
+  },
+  "amplitude_mediana_por_harmonico": [
+   0.29108978560855764,
+   0.8563257288353177,
+   0.05657049091209572,
+   0.02630610751687536,
+   0.013199415352770479,
+   0.014948401908070294,
+   0.012190759518281058,
+   0.010252739939141397,
+   0.008599161183481634,
+   0.0056227138871549325
+  ],
+  "cobertura_mediana": 0.9992912240674726
+ },
+ "metricas_teste_semente10": {
+  "nfh": {
+   "test_RMSE": 0.2913876493199303,
+   "test_MAE": 0.22903832355417156
+  },
+  "densa": {
+   "test_RMSE": 0.3215370188459936,
+   "test_MAE": 0.2517314687211918
+  }
+ },
+ "conferencias": {
+  "max_abs_T+S+R_menos_previsao": 4.067769623361528e-07,
+  "max_abs_cabeca_vs_projetor": 5.205127293628209e-07,
+  "max_abs_previsao_vs_pred_npy_salvo": 0.00015866756439208984
+ },
+ "ig": {
+  "n_janelas": 50,
+  "n_passos": 64,
+  "baseline": 0.0,
+  "janelas_teste_indices": [
+   0,
+   33,
+   67,
+   100,
+   134,
+   168,
+   201,
+   235,
+   269,
+   302,
+   336,
+   370,
+   403,
+   437,
+   471,
+   504,
+   538,
+   572,
+   605,
+   639,
+   673,
+   706,
+   740,
+   774,
+   807,
+   841,
+   874,
+   908,
+   942,
+   975,
+   1009,
+   1043,
+   1076,
+   1110,
+   1144,
+   1177,
+   1211,
+   1245,
+   1278,
+   1312,
+   1346,
+   1379,
+   1413,
+   1447,
+   1480,
+   1514,
+   1548,
+   1581,
+   1615,
+   1649
+  ],
+  "agrupamento": "por variável (soma sobre as 96 defasagens)",
+  "grupos": [
+   "x1_tendencia",
+   "x2_ciclo",
+   "x3_distrator_lento",
+   "x4_distrator_oscilante",
+   "y"
+  ],
+  "g_T": {
+   "abs_mediana_por_grupo": [
+    5.886788130737841e-06,
+    3.926130105469383e-07,
+    6.7261853473610245e-06,
+    3.451787051744759e-07,
+    0.699691935541523
+   ],
+   "participacao_mediana_por_grupo": [
+    9.101550459228885e-06,
+    3.7433344740994304e-07,
+    7.68836607426216e-06,
+    3.923677856365481e-07,
+    0.9999765532343666
+   ],
+   "completude_erro_mediano": 6.501614279841306e-06,
+   "completude_erro_max": 2.1784574983030325e-05,
+   "completude_rel_mediano": 8.869445796356545e-06,
+   "completude_rel_max": 0.00042448086948162085,
+   "delta_g_mediano": 0.6997315883636475
+  },
+  "g_S": {
+   "abs_mediana_por_grupo": [
+    1.0758987627923489e-05,
+    1.2129712558817118e-06,
+    1.0703988664317876e-05,
+    8.375245670322329e-07,
+    14.907748137782619
+   ],
+   "participacao_mediana_por_grupo": [
+    6.278256865758189e-07,
+    7.697421340013573e-08,
+    6.335158519793873e-07,
+    6.285123976080786e-08,
+    0.9999983004091826
+   ],
+   "completude_erro_mediano": 4.209139662147976e-06,
+   "completude_erro_max": 2.1961906004008824e-05,
+   "completude_rel_mediano": 2.432393073176704e-07,
+   "completude_rel_max": 8.662131565503244e-07,
+   "delta_g_mediano": 14.907752513264295
+  }
+ },
+ "verdade_sint_m": {
+  "verdade": "y_t = x1_{t-48} + x2_{t-48} + ruído AR(1): x1 conduz a tendência, x2 conduz o ciclo (src/v3_sintetico_multivariado.py)",
+  "aviso_d5": "Aqui d = 5 e a última coluna é o próprio y passado (o catálogo exige o alvo entre as variáveis); na v3, d = 4, sem y. Como o y passado é x1 + x2 defasados mais ruído, ele pode absorver atribuição: por isso o acerto é reportado com as 5 colunas e só com as 4 covariáveis.",
+  "tendencia": {
+   "variavel_correta": "x1_tendencia",
+   "acerto_5_colunas": 0.0,
+   "acerto_4_covariaveis": 0.46,
+   "participacao_correta_5_colunas": 2.6481453697221406e-05,
+   "participacao_correta_4_covariaveis": 0.4652264346065571,
+   "participacao_y_passado": 0.9999251497886761
+  },
+  "ciclo": {
+   "variavel_correta": "x2_ciclo",
+   "acerto_5_colunas": 0.0,
+   "acerto_4_covariaveis": 0.02,
+   "participacao_correta_5_colunas": 1.1456013288426779e-07,
+   "participacao_correta_4_covariaveis": 0.07065750964305251,
+   "participacao_y_passado": 0.9999977353249679
+  }
+ },
+ "figura": "SINT-M_M_iTransformer_w2_f0.25.png",
+ "janela_da_figura": 841,
+ "tempo_s": 3.4617104530334473,
+ "texto_relatorio_tex": "Semente 10, 1650 janelas de teste. Participações de energia da NFH (mediana [Q1; Q3]): $\\varepsilon_T=0,101 [0,065; 0,167]$, $\\varepsilon_S=0,899 [0,833; 0,935]$, $\\varepsilon_R=0,000 [0,000; 0,000]$. A densa da mesma semente, decomposta só pelo Projetor, dá $\\varepsilon_T=0,111 [0,069; 0,172]$, $\\varepsilon_S=0,889 [0,827; 0,929]$, $\\varepsilon_R=0,001 [0,001; 0,001]$. O harmônico de maior amplitude mediana da NFH é $k=2$ (período 24,0 h, amplitude 0,899). RMSE e MAE de teste desta semente: NFH 0,2914 e 0,2290; densa 0,3215 e 0,2517. IG de $g_T$ (50 janelas, 64 passos, referência zero): maior participação mediana em ``y'' (100,0\\%); erro de completude mediano 0,000007 (relativo 0,0000). IG de $g_S$ (50 janelas, 64 passos, referência zero): maior participação mediana em ``y'' (100,0\\%); erro de completude mediano 0,000004 (relativo 0,0000). SINT-M: acerto da tendência (x1) 0,00 com as 5 colunas e 0,46 só com as 4 covariáveis; acerto do ciclo (x2) 0,00 e 0,02. Aviso: aqui $d=5$ e a última coluna é o próprio $y$ passado (na v3, $d=4$); sua participação mediana é 100,0\\% em $g_T$ e 100,0\\% em $g_S$.\n"
+}

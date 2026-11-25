@@ -1,0 +1,249 @@
+{
+ "total_execucoes": 160,
+ "por_dispositivo": {
+  "GPU": 114,
+  "CPU": 46
+ },
+ "detalhe": {
+  "AirQ-M": {
+   "Conv1D+LSTM": {
+    "0": "GPU",
+    "1": "GPU",
+    "2": "GPU",
+    "3": "CPU",
+    "4": "CPU"
+   },
+   "LSTM": {
+    "0": "CPU",
+    "1": "CPU",
+    "2": "CPU",
+    "3": "CPU",
+    "4": "CPU"
+   },
+   "MLP": {
+    "0": "CPU",
+    "1": "CPU",
+    "2": "CPU",
+    "3": "CPU",
+    "4": "CPU"
+   },
+   "N-BEATS-I": {
+    "0": "GPU",
+    "1": "GPU",
+    "2": "GPU",
+    "3": "GPU",
+    "4": "GPU"
+   }
+  },
+  "AirQ-U": {
+   "Conv1D+LSTM": {
+    "0": "GPU",
+    "1": "GPU",
+    "2": "GPU",
+    "3": "CPU",
+    "4": "CPU"
+   },
+   "LSTM": {
+    "0": "CPU",
+    "1": "CPU",
+    "2": "CPU",
+    "3": "CPU",
+    "4": "CPU"
+   },
+   "MLP": {
+    "0": "CPU",
+    "1": "CPU",
+    "2": "CPU",
+    "3": "CPU",
+    "4": "CPU"
+   },
+   "N-BEATS-I": {
+    "0": "GPU",
+    "1": "GPU",
+    "2": "GPU",
+    "3": "GPU",
+    "4": "GPU"
+   }
+  },
+  "ETTh1-M": {
+   "Conv1D+LSTM": {
+    "0": "GPU",
+    "1": "GPU",
+    "2": "CPU",
+    "3": "CPU",
+    "4": "CPU"
+   },
+   "LSTM": {
+    "0": "CPU",
+    "1": "CPU",
+    "2": "CPU",
+    "3": "CPU",
+    "4": "CPU"
+   },
+   "MLP": {
+    "0": "CPU",
+    "1": "CPU",
+    "2": "CPU",
+    "3": "CPU",
+    "4": "CPU"
+   },
+   "N-BEATS-I": {
+    "0": "GPU",
+    "1": "GPU",
+    "2": "GPU",
+    "3": "GPU",
+    "4": "GPU"
+   }
+  },
+  "ETTh1-U": {
+   "Conv1D+LSTM": {
+    "0": "GPU",
+    "1": "CPU",
+    "2": "CPU",
+    "3": "CPU",
+    "4": "CPU"
+   },
+   "LSTM": {
+    "0": "GPU",
+    "1": "GPU",
+    "2": "GPU",
+    "3": "GPU",
+    "4": "GPU"
+   },
+   "MLP": {
+    "0": "GPU",
+    "1": "GPU",
+    "2": "GPU",
+    "3": "GPU",
+    "4": "GPU"
+   },
+   "N-BEATS-I": {
+    "0": "CPU",
+    "1": "CPU",
+    "2": "CPU",
+    "3": "CPU",
+    "4": "CPU"
+   }
+  },
+  "ETTh2-M": {
+   "Conv1D+LSTM": {
+    "0": "GPU",
+    "1": "GPU",
+    "2": "GPU",
+    "3": "GPU",
+    "4": "GPU"
+   },
+   "LSTM": {
+    "0": "GPU",
+    "1": "GPU",
+    "2": "GPU",
+    "3": "GPU",
+    "4": "GPU"
+   },
+   "MLP": {
+    "0": "GPU",
+    "1": "GPU",
+    "2": "GPU",
+    "3": "GPU",
+    "4": "GPU"
+   },
+   "N-BEATS-I": {
+    "0": "GPU",
+    "1": "GPU",
+    "2": "GPU",
+    "3": "GPU",
+    "4": "GPU"
+   }
+  },
+  "ETTh2-U": {
+   "Conv1D+LSTM": {
+    "0": "GPU",
+    "1": "GPU",
+    "2": "GPU",
+    "3": "GPU",
+    "4": "GPU"
+   },
+   "LSTM": {
+    "0": "GPU",
+    "1": "GPU",
+    "2": "GPU",
+    "3": "GPU",
+    "4": "GPU"
+   },
+   "MLP": {
+    "0": "GPU",
+    "1": "GPU",
+    "2": "GPU",
+    "3": "GPU",
+    "4": "GPU"
+   },
+   "N-BEATS-I": {
+    "0": "GPU",
+    "1": "GPU",
+    "2": "GPU",
+    "3": "GPU",
+    "4": "GPU"
+   }
+  },
+  "Jena-M": {
+   "Conv1D+LSTM": {
+    "0": "GPU",
+    "1": "GPU",
+    "2": "GPU",
+    "3": "GPU",
+    "4": "GPU"
+   },
+   "LSTM": {
+    "0": "GPU",
+    "1": "GPU",
+    "2": "GPU",
+    "3": "GPU",
+    "4": "GPU"
+   },
+   "MLP": {
+    "0": "GPU",
+    "1": "GPU",
+    "2": "GPU",
+    "3": "GPU",
+    "4": "GPU"
+   },
+   "N-BEATS-I": {
+    "0": "GPU",
+    "1": "GPU",
+    "2": "GPU",
+    "3": "GPU",
+    "4": "GPU"
+   }
+  },
+  "Jena-U": {
+   "Conv1D+LSTM": {
+    "0": "GPU",
+    "1": "GPU",
+    "2": "GPU",
+    "3": "GPU",
+    "4": "GPU"
+   },
+   "LSTM": {
+    "0": "GPU",
+    "1": "GPU",
+    "2": "GPU",
+    "3": "GPU",
+    "4": "GPU"
+   },
+   "MLP": {
+    "0": "GPU",
+    "1": "GPU",
+    "2": "GPU",
+    "3": "GPU",
+    "4": "GPU"
+   },
+   "N-BEATS-I": {
+    "0": "GPU",
+    "1": "GPU",
+    "2": "GPU",
+    "3": "GPU",
+    "4": "GPU"
+   }
+  }
+ }
+}

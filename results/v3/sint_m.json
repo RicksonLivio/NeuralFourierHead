@@ -1,0 +1,248 @@
+{
+  "config": {
+    "N": 12000,
+    "atraso": 48,
+    "L": 96,
+    "H": 48,
+    "K": 10,
+    "q": 2,
+    "janelas_teste": 50,
+    "n_treino": 8223,
+    "n_val": 1650,
+    "n_teste": 1650
+  },
+  "sementes": {
+    "0": {
+      "RMSE_densa": 0.19746147551108148,
+      "RMSE_nfh": 0.17472505703921362,
+      "kappa_densa": NaN,
+      "kappa_nfh": 0.9999940054370087,
+      "epocas_densa": 30,
+      "epoca_ajuste": 15,
+      "metodos": {
+        "NFH | IG sobre g_T e g_S": {
+          "acerto_tendencia": 0.94,
+          "acerto_ciclo": 1.0,
+          "participacao_x1_na_tendencia": 0.7569185049831867,
+          "participacao_x2_no_ciclo": 0.8654178309440613,
+          "tempo_medio_s": 0.27338048680103383
+        },
+        "densa + projeção | IG sobre g_T e g_S": {
+          "acerto_tendencia": 0.96,
+          "acerto_ciclo": 1.0,
+          "participacao_x1_na_tendencia": 0.7696406038105488,
+          "participacao_x2_no_ciclo": 0.8542258501052856,
+          "tempo_medio_s": 0.2906393140600994
+        },
+        "densa | IG sobre a média": {
+          "acerto_tendencia": 0.96,
+          "acerto_ciclo": 0.04,
+          "participacao_x1_na_tendencia": 0.7696406029164791,
+          "participacao_x2_no_ciclo": 0.09963194326031953,
+          "tempo_medio_s": 0.15022394972038455
+        },
+        "densa | IG sobre a energia da forma": {
+          "acerto_tendencia": 0.0,
+          "acerto_ciclo": 1.0,
+          "participacao_x1_na_tendencia": 0.08138092971639707,
+          "participacao_x2_no_ciclo": 0.8502142357826233,
+          "tempo_medio_s": 0.14234358855872414
+        },
+        "NFH | KernelSHAP sobre g_T e g_S": {
+          "acerto_tendencia": 0.94,
+          "acerto_ciclo": 0.68,
+          "participacao_x1_na_tendencia": 0.8614175088658635,
+          "participacao_x2_no_ciclo": 0.6288239119596588,
+          "tempo_medio_s": 11.898001848819549
+        },
+        "NFH | Feature Ablation sobre g_T e g_S": {
+          "acerto_tendencia": 0.86,
+          "acerto_ciclo": 0.92,
+          "participacao_x1_na_tendencia": 0.6441031587123871,
+          "participacao_x2_no_ciclo": 0.6855084306001663,
+          "tempo_medio_s": 0.9213308748416602
+        },
+        "densa | KernelSHAP sobre a média": {
+          "acerto_tendencia": 0.98,
+          "acerto_ciclo": 0.02,
+          "participacao_x1_na_tendencia": 0.8807621063612676,
+          "participacao_x2_no_ciclo": 0.07031417474215183,
+          "tempo_medio_s": 5.879103673639475
+        },
+        "densa | LIME sobre a média": {
+          "acerto_tendencia": 1.0,
+          "acerto_ciclo": 0.0,
+          "participacao_x1_na_tendencia": 0.7066017288058158,
+          "participacao_x2_no_ciclo": 0.23874021379607233,
+          "tempo_medio_s": 0.4767941785400035
+        },
+        "densa | Saliency sobre a média": {
+          "acerto_tendencia": 1.0,
+          "acerto_ciclo": 0.0,
+          "participacao_x1_na_tendencia": 0.7098875194787979,
+          "participacao_x2_no_ciclo": 0.1829754814133048,
+          "tempo_medio_s": 0.1251428397395648
+        },
+        "densa | Feature Ablation sobre a média": {
+          "acerto_tendencia": 0.86,
+          "acerto_ciclo": 0.08,
+          "participacao_x1_na_tendencia": 0.6256748577207327,
+          "participacao_x2_no_ciclo": 0.19367737988941372,
+          "tempo_medio_s": 0.43330996097822205
+        }
+      }
+    },
+    "1": {
+      "RMSE_densa": 0.18484265216284687,
+      "RMSE_nfh": 0.17229257710915974,
+      "kappa_densa": NaN,
+      "kappa_nfh": 0.9999938414568275,
+      "epocas_densa": 27,
+      "epoca_ajuste": 15,
+      "metodos": {
+        "NFH | IG sobre g_T e g_S": {
+          "acerto_tendencia": 0.96,
+          "acerto_ciclo": 1.0,
+          "participacao_x1_na_tendencia": 0.7466926644742489,
+          "participacao_x2_no_ciclo": 0.8800199782848358,
+          "tempo_medio_s": 0.32007806410139894
+        },
+        "densa + projeção | IG sobre g_T e g_S": {
+          "acerto_tendencia": 0.92,
+          "acerto_ciclo": 1.0,
+          "participacao_x1_na_tendencia": 0.7458233903348446,
+          "participacao_x2_no_ciclo": 0.880160049200058,
+          "tempo_medio_s": 0.3115811667975504
+        },
+        "densa | IG sobre a média": {
+          "acerto_tendencia": 0.92,
+          "acerto_ciclo": 0.02,
+          "participacao_x1_na_tendencia": 0.7458233924210071,
+          "participacao_x2_no_ciclo": 0.1083463907148689,
+          "tempo_medio_s": 0.14986151496123057
+        },
+        "densa | IG sobre a energia da forma": {
+          "acerto_tendencia": 0.0,
+          "acerto_ciclo": 1.0,
+          "participacao_x1_na_tendencia": 0.07162749141454697,
+          "participacao_x2_no_ciclo": 0.8685922908782959,
+          "tempo_medio_s": 0.14683560453704558
+        }
+      }
+    },
+    "2": {
+      "RMSE_densa": 0.1935257214524568,
+      "RMSE_nfh": 0.17539589244004192,
+      "kappa_densa": NaN,
+      "kappa_nfh": 0.9999939443384147,
+      "epocas_densa": 21,
+      "epoca_ajuste": 11,
+      "metodos": {
+        "NFH | IG sobre g_T e g_S": {
+          "acerto_tendencia": 0.9,
+          "acerto_ciclo": 1.0,
+          "participacao_x1_na_tendencia": 0.7081908821687102,
+          "participacao_x2_no_ciclo": 0.8989396405220031,
+          "tempo_medio_s": 0.5777430302795256
+        },
+        "densa + projeção | IG sobre g_T e g_S": {
+          "acerto_tendencia": 0.9,
+          "acerto_ciclo": 1.0,
+          "participacao_x1_na_tendencia": 0.7283116728812457,
+          "participacao_x2_no_ciclo": 0.8711174190044403,
+          "tempo_medio_s": 0.5825075181009015
+        },
+        "densa | IG sobre a média": {
+          "acerto_tendencia": 0.9,
+          "acerto_ciclo": 0.08,
+          "participacao_x1_na_tendencia": 0.7283116767555475,
+          "participacao_x2_no_ciclo": 0.11742978307418525,
+          "tempo_medio_s": 0.2587622330605518
+        },
+        "densa | IG sobre a energia da forma": {
+          "acerto_tendencia": 0.0,
+          "acerto_ciclo": 1.0,
+          "participacao_x1_na_tendencia": 0.09179289491439704,
+          "participacao_x2_no_ciclo": 0.8593032205104828,
+          "tempo_medio_s": 0.2732116244372446
+        }
+      }
+    },
+    "3": {
+      "RMSE_densa": 0.19278115918468391,
+      "RMSE_nfh": 0.17210568324920172,
+      "kappa_densa": NaN,
+      "kappa_nfh": 0.9999910855667304,
+      "epocas_densa": 26,
+      "epoca_ajuste": 15,
+      "metodos": {
+        "NFH | IG sobre g_T e g_S": {
+          "acerto_tendencia": 0.9,
+          "acerto_ciclo": 1.0,
+          "participacao_x1_na_tendencia": 0.7335322932712733,
+          "participacao_x2_no_ciclo": 0.8754526543617248,
+          "tempo_medio_s": 0.5581714878004277
+        },
+        "densa + projeção | IG sobre g_T e g_S": {
+          "acerto_tendencia": 0.94,
+          "acerto_ciclo": 1.0,
+          "participacao_x1_na_tendencia": 0.7387418456375598,
+          "participacao_x2_no_ciclo": 0.8693075203895568,
+          "tempo_medio_s": 0.5430932854773709
+        },
+        "densa | IG sobre a média": {
+          "acerto_tendencia": 0.94,
+          "acerto_ciclo": 0.02,
+          "participacao_x1_na_tendencia": 0.7387418482452631,
+          "participacao_x2_no_ciclo": 0.09970280861482024,
+          "tempo_medio_s": 0.3459203136002179
+        },
+        "densa | IG sobre a energia da forma": {
+          "acerto_tendencia": 0.0,
+          "acerto_ciclo": 1.0,
+          "participacao_x1_na_tendencia": 0.10346192874247208,
+          "participacao_x2_no_ciclo": 0.8386087656021118,
+          "tempo_medio_s": 0.27548248815641274
+        }
+      }
+    },
+    "4": {
+      "RMSE_densa": 0.19984777664735207,
+      "RMSE_nfh": 0.17780775711846467,
+      "kappa_densa": NaN,
+      "kappa_nfh": 0.9999947740624833,
+      "epocas_densa": 32,
+      "epoca_ajuste": 15,
+      "metodos": {
+        "NFH | IG sobre g_T e g_S": {
+          "acerto_tendencia": 0.92,
+          "acerto_ciclo": 1.0,
+          "participacao_x1_na_tendencia": 0.7333365006744862,
+          "participacao_x2_no_ciclo": 0.8614798283576965,
+          "tempo_medio_s": 0.6007424000569154
+        },
+        "densa + projeção | IG sobre g_T e g_S": {
+          "acerto_tendencia": 0.96,
+          "acerto_ciclo": 1.0,
+          "participacao_x1_na_tendencia": 0.769957617521286,
+          "participacao_x2_no_ciclo": 0.8556583034992218,
+          "tempo_medio_s": 0.564244621321559
+        },
+        "densa | IG sobre a média": {
+          "acerto_tendencia": 0.96,
+          "acerto_ciclo": 0.04,
+          "participacao_x1_na_tendencia": 0.7699576193094253,
+          "participacao_x2_no_ciclo": 0.10869720239192247,
+          "tempo_medio_s": 0.31008151146175805
+        },
+        "densa | IG sobre a energia da forma": {
+          "acerto_tendencia": 0.0,
+          "acerto_ciclo": 1.0,
+          "participacao_x1_na_tendencia": 0.08904118367936462,
+          "participacao_x2_no_ciclo": 0.8545865154266358,
+          "tempo_medio_s": 0.3945388210593956
+        }
+      }
+    }
+  }
+}

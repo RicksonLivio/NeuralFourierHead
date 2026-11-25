@@ -1,0 +1,263 @@
+[
+  {
+    "nome": "ETTh1",
+    "arquivo": "ETTh1.csv",
+    "fonte_url": "https://raw.githubusercontent.com/zhouhaoyi/ETDataset/main/ETT-small/ETTh1.csv",
+    "licenca": "CC BY-ND 4.0 (ETDataset)",
+    "freq": "H",
+    "alvo": "OT",
+    "covariaveis": [
+      "HUFL",
+      "HULL",
+      "MUFL",
+      "MULL",
+      "LUFL",
+      "LULL"
+    ],
+    "periodos_dominantes_h": [
+      24,
+      168
+    ],
+    "cortes": [
+      0.7,
+      0.15
+    ],
+    "n_obs": 17420,
+    "faltantes_frac": 0.0,
+    "ciclo_diario": {
+      "r2_perfil": 0.3178,
+      "acf_12h": -0.4922,
+      "acf_24h": 0.439
+    },
+    "origem": "dissertação",
+    "notas": "Electricity Transformer Temperature. Alvo: temperatura do óleo (OT). Ciclo diário moderado (R²=0.318)."
+  },
+  {
+    "nome": "ETTh2",
+    "arquivo": "ETTh2.csv",
+    "fonte_url": "https://raw.githubusercontent.com/zhouhaoyi/ETDataset/main/ETT-small/ETTh2.csv",
+    "licenca": "CC BY-ND 4.0 (ETDataset)",
+    "freq": "H",
+    "alvo": "OT",
+    "covariaveis": [
+      "HUFL",
+      "HULL",
+      "MUFL",
+      "MULL",
+      "LUFL",
+      "LULL"
+    ],
+    "periodos_dominantes_h": [
+      24,
+      168
+    ],
+    "cortes": [
+      0.7,
+      0.15
+    ],
+    "n_obs": 17420,
+    "faltantes_frac": 0.0,
+    "ciclo_diario": {
+      "r2_perfil": 0.661,
+      "acf_12h": -0.7092,
+      "acf_24h": 0.7984
+    },
+    "origem": "dissertação",
+    "notas": "Electricity Transformer Temperature. Alvo: temperatura do óleo (OT). Ciclo diário forte (R²=0.661)."
+  },
+  {
+    "nome": "jena_climate",
+    "arquivo": "jena_climate.csv",
+    "fonte_url": "https://storage.googleapis.com/tensorflow/tf-keras-datasets/jena_climate_2009_2016.csv.zip",
+    "licenca": "CC BY 4.0 (MPI-BGC)",
+    "freq": "H",
+    "alvo": "T_degC",
+    "covariaveis": [
+      "p_mbar",
+      "rh_pct",
+      "Wx",
+      "Wy"
+    ],
+    "periodos_dominantes_h": [
+      24,
+      8766
+    ],
+    "cortes": [
+      0.7,
+      0.15
+    ],
+    "n_obs": 26280,
+    "faltantes_frac": 0.0,
+    "ciclo_diario": {
+      "r2_perfil": 0.5738,
+      "acf_12h": -0.8223,
+      "acf_24h": 0.7973
+    },
+    "origem": "dissertação",
+    "recorte": "2009-2011",
+    "notas": "Jena Climate (MPI-BGC/TensorFlow). Alvo: temperatura do ar. Agregado de 10min para horário. Recorte: 2009-2011. Ciclo diário forte (R²=0.574)."
+  },
+  {
+    "nome": "air_quality",
+    "arquivo": "air_quality.csv",
+    "fonte_url": "https://archive.ics.uci.edu/static/public/360/air+quality.zip",
+    "licenca": "CC BY 4.0 (UCI)",
+    "freq": "H",
+    "alvo": "C6H6",
+    "covariaveis": [
+      "S1_CO",
+      "S3_NOx",
+      "S4_NO2",
+      "S5_O3",
+      "T",
+      "RH",
+      "AH"
+    ],
+    "periodos_dominantes_h": [
+      24,
+      168
+    ],
+    "cortes": [
+      0.7,
+      0.15
+    ],
+    "n_obs": 9357,
+    "faltantes_frac": 0.0391,
+    "ciclo_diario": {
+      "r2_perfil": 0.5188,
+      "acf_12h": -0.177,
+      "acf_24h": 0.6772
+    },
+    "origem": "dissertação",
+    "notas": "UCI Air Quality (De Vito et al., 2008). Alvo: benzeno C6H6(GT). Ressalva: C6H6 é quase função monótona de S2(NMHC), excluído. Ciclo diário moderado (R²=0.519 se disponível)."
+  },
+  {
+    "nome": "bike_sharing_dc",
+    "arquivo": "bike_sharing_dc.csv",
+    "fonte_url": "https://archive.ics.uci.edu/static/public/275/bike+sharing+dataset.zip",
+    "licenca": "CC BY 4.0 (UCI)",
+    "freq": "H",
+    "alvo": "cnt",
+    "covariaveis": [
+      "temp",
+      "atemp",
+      "hum",
+      "windspeed",
+      "weathersit",
+      "holiday",
+      "workingday"
+    ],
+    "periodos_dominantes_h": [
+      24,
+      168
+    ],
+    "cortes": [
+      0.7,
+      0.15
+    ],
+    "n_obs": 17379,
+    "faltantes_frac": 0.0094,
+    "ciclo_diario": {
+      "r2_perfil": 0.6299,
+      "acf_12h": -0.404,
+      "acf_24h": 0.7982
+    },
+    "origem": "novo",
+    "notas": "UCI Bike Sharing (Capital Bikeshare, Washington D.C., 2011-2012). Alvo: cnt (total de aluguéis). Ciclo diário muito forte (R²=0.630), picos de commuting."
+  },
+  {
+    "nome": "seoul_bike",
+    "arquivo": "seoul_bike.csv",
+    "fonte_url": "https://archive.ics.uci.edu/static/public/560/seoul+bike+sharing+demand.zip",
+    "licenca": "CC BY 4.0 (UCI)",
+    "freq": "H",
+    "alvo": "RentedBikeCount",
+    "covariaveis": [
+      "Temperature",
+      "Humidity",
+      "WindSpeed",
+      "Visibility",
+      "DewPoint",
+      "SolarRadiation",
+      "Rainfall",
+      "Snowfall"
+    ],
+    "periodos_dominantes_h": [
+      24,
+      168
+    ],
+    "cortes": [
+      0.7,
+      0.15
+    ],
+    "n_obs": 8760,
+    "faltantes_frac": 0.0,
+    "ciclo_diario": {
+      "r2_perfil": 0.4962,
+      "acf_12h": -0.38,
+      "acf_24h": 0.7539
+    },
+    "origem": "novo",
+    "notas": "UCI Seoul Bike Sharing (Seoul, 2017-2018). Um ano completo (8760h). Alvo: contagem de aluguéis. Ciclo diário forte (R²=0.496)."
+  },
+  {
+    "nome": "household_power",
+    "arquivo": "household_power.csv",
+    "fonte_url": "https://archive.ics.uci.edu/static/public/235/individual+household+electric+power+consumption.zip",
+    "licenca": "CC BY 4.0 (UCI)",
+    "freq": "H",
+    "alvo": "Global_active_power",
+    "covariaveis": [
+      "Voltage",
+      "Global_intensity",
+      "Sub_metering_1",
+      "Sub_metering_2",
+      "Sub_metering_3"
+    ],
+    "periodos_dominantes_h": [
+      24,
+      168
+    ],
+    "cortes": [
+      0.7,
+      0.15
+    ],
+    "n_obs": 26304,
+    "faltantes_frac": 0.0049,
+    "ciclo_diario": {
+      "r2_perfil": 0.3031,
+      "acf_12h": 0.0769,
+      "acf_24h": 0.4051
+    },
+    "origem": "novo",
+    "recorte": "2007-2009",
+    "notas": "UCI Household Electric Power (França, 2006-2010). Recorte: 2007-2009. Agregado de 1min para horário. Alvo: consumo ativo global (kW). 0.5% faltantes."
+  },
+  {
+    "nome": "ETTh1_smoke",
+    "arquivo": "ETTh1_smoke.csv",
+    "fonte_url": "https://github.com/zhouhaoyi/ETDataset",
+    "licenca": "MIT",
+    "freq": "H",
+    "alvo": "OT",
+    "covariaveis": [
+      "HUFL",
+      "HULL",
+      "MUFL",
+      "MULL",
+      "LUFL",
+      "LULL"
+    ],
+    "periodos_dominantes_h": [
+      24,
+      12
+    ],
+    "cortes": [
+      0.7,
+      0.15
+    ],
+    "n_obs": 2000,
+    "faltantes_frac": 0.0,
+    "notas": "Subconjunto do ETTh1 para smoke test (primeiras 2000 h)."
+  }
+]

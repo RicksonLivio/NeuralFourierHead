@@ -1,0 +1,160 @@
+{
+  "base": {
+    "lookback": 60,
+    "horizon": 30,
+    "n_harmonics": 10,
+    "trend_degree": 2,
+    "latent_dim": 128,
+    "hidden": 64,
+    "batch_size": 32,
+    "lr": 0.001,
+    "weight_decay": 1e-05,
+    "max_epochs": 60,
+    "patience": 10,
+    "grad_clip": 1.0,
+    "train_ratio": 0.7,
+    "val_ratio": 0.15,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "lambdas": [
+    0.0,
+    0.01,
+    0.1,
+    1.0
+  ],
+  "lambdas_extra": [
+    10.0,
+    100.0,
+    1000.0
+  ],
+  "models_E1": [
+    "NFH-l0",
+    "NFH-l0.01",
+    "NFH-l0.1",
+    "NFH-l1",
+    "ConvLSTM+Densa",
+    "N-BEATS-I",
+    "LSTM",
+    "MLP"
+  ],
+  "models_E1b": [
+    "NFHn-l1",
+    "NFH-l10",
+    "NFH-l100",
+    "NFH-l1000"
+  ],
+  "models_E1c": [
+    "NFHn-l0",
+    "NFHn-l10",
+    "NFHn-l100",
+    "NFHn-l1000"
+  ],
+  "controles_posteriores": {
+    "E1d_ablacao_K": "v2_ablation_K.py: NFHn-l1000 com K em {3, 6, 13} (K = 10 do E1c)",
+    "E1e_densa_penalizada": "v2_dense_pen.py: Conv1D+LSTM + camada densa com a mesma penalização lambda ||Q Q^T y_hat||^2 / H, lambda = 1000",
+    "teste_nao_inferioridade": "Wilcoxon unilateral, H0 mediana(dRMSE) >= +1%",
+    "calibracao_robustez": "v2_xai_baseline.py: similaridade entre janelas e rho_norm"
+  },
+  "regra_selecao": "Para cada parametrização (prefixos 'NFH-l' e 'NFHn-l'), lambda* = maior lambda cujo RMSE médio de VALIDAÇÃO (15 conjuntos x 5 sementes) não excede em mais de 1% o de lambda = 0; entre as parametrizações, a de menor RMSE médio de validação em seu lambda* (v2_common.select_config). Grade e parametrização normalizada ampliadas após a rodada E1.",
+  "parada_antecipada": "paciência de 10 épocas no objetivo de validação: MSE, acrescido de lambda * rho na NFH com lambda > 0 (v2_common.train_model)",
+  "datasets": [
+    "BNB_USD",
+    "BTC_USD",
+    "ETH_USD",
+    "SOL_USD",
+    "XRP_USD",
+    "AAPL",
+    "AMZN",
+    "GOOGL",
+    "MSFT",
+    "NVDA",
+    "ETTh1-U",
+    "ETTh1-M",
+    "SINT-1",
+    "SINT-2",
+    "SINT-3"
+  ],
+  "specs": {
+    "BNB_USD": {
+      "L": 60,
+      "H": 30,
+      "group": "univariado"
+    },
+    "BTC_USD": {
+      "L": 60,
+      "H": 30,
+      "group": "univariado"
+    },
+    "ETH_USD": {
+      "L": 60,
+      "H": 30,
+      "group": "univariado"
+    },
+    "SOL_USD": {
+      "L": 60,
+      "H": 30,
+      "group": "univariado"
+    },
+    "XRP_USD": {
+      "L": 60,
+      "H": 30,
+      "group": "univariado"
+    },
+    "AAPL": {
+      "L": 60,
+      "H": 30,
+      "group": "multivariado"
+    },
+    "AMZN": {
+      "L": 60,
+      "H": 30,
+      "group": "multivariado"
+    },
+    "GOOGL": {
+      "L": 60,
+      "H": 30,
+      "group": "multivariado"
+    },
+    "MSFT": {
+      "L": 60,
+      "H": 30,
+      "group": "multivariado"
+    },
+    "NVDA": {
+      "L": 60,
+      "H": 30,
+      "group": "multivariado"
+    },
+    "ETTh1-U": {
+      "L": 96,
+      "H": 48,
+      "group": "controle"
+    },
+    "ETTh1-M": {
+      "L": 96,
+      "H": 48,
+      "group": "controle"
+    },
+    "SINT-1": {
+      "L": 60,
+      "H": 30,
+      "group": "sintetico"
+    },
+    "SINT-2": {
+      "L": 60,
+      "H": 30,
+      "group": "sintetico"
+    },
+    "SINT-3": {
+      "L": 60,
+      "H": 30,
+      "group": "sintetico"
+    }
+  }
+}

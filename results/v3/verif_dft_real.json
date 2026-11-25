@@ -1,0 +1,33 @@
+{
+  "reconstrucao_erro_max": 3.8191672047105385e-14,
+  "parseval_erro_rel_max": 3.2817820003067003e-15,
+  "somas_C_erro_max": 1.3478942266376328e-13,
+  "somas_D_erro_max": 4.666523752818652e-13,
+  "gram_base_real_erro_max": 3.4845957410645765e-13,
+  "energia_harmonico_erro_max": 1.1368683772161603e-13,
+  "delta_senoide_erro_max": 6.394329510328589e-13,
+  "recorrencia_chi_residuo_max": 9.264931044583591e-10,
+  "recorrencia_chi_monico": true,
+  "posto_B": {
+    "configuracoes_testadas": 1407,
+    "falhas": [],
+    "experimentos_H48_q2": {
+      "K2": {
+        "m": 7,
+        "posto": 7,
+        "menor_valor_singular": 0.04875204247141205
+      },
+      "K4": {
+        "m": 11,
+        "posto": 11,
+        "menor_valor_singular": 0.02007254270619778
+      },
+      "K10": {
+        "m": 23,
+        "posto": 23,
+        "menor_valor_singular": 0.004554086967976583
+      }
+    }
+  },
+  "cor_nbeats_a_ortogonal_erro_max": 9.270362255620057e-14
+}

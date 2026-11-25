@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[oc]
+.venv/
+.pytest_cache/
+
+# Third-party data: downloaded by data/download_data.py, never committed (see DATA.md)
+data/controle/
+data/v3_bruto/
+teste_exemplificacao_nfh/dados/*.csv
+teste_exemplificacao_nfh/dados/temp/
+experimento_backbones_nfh/dados/electricity_mt156.csv
+experimento_backbones_nfh/dados/opsd_de_solar.csv
+*.part
+
+# Trained weights and large intermediate outputs (published as a release archive, see REPRODUCE.md)
+*.pt
+*.pth
+*.npy
+**/modelos/
+results/v3/previsoes/
+results/v3/partes/
+
+# Run-time bookkeeping of the experiment workers
+**/claims/
+**/pids/
+**/logs/
+*.log
+
+# LaTeX by-products
+*.aux
+*.synctex.gz
+*.api_current.*
+
+# Outputs of the smoke runs and of src/v3_tabelas.py (LaTeX tables of the dissertation, not part of this repository)
+experimento_backbones_nfh/resultados/smoke*.csv
+experimento_controle_epocas/resultados/smoke/
+versao3_correcao2_aplicada/

@@ -1,0 +1,100 @@
+{
+  "config": {
+    "L": 168,
+    "H": 24,
+    "K": [
+      5,
+      2
+    ],
+    "q": 1,
+    "lambda": 1000.0,
+    "adjust_epochs": 15,
+    "adjust_lr": 0.0001,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "max_epochs_dense": 40
+  },
+  "best_naive_rmse": 0.665165901184082,
+  "comparacao": {
+    "lstm_K5": {
+      "rmse_densa": 0.5114317735036215,
+      "rmse_nfh": 0.5129576722780863,
+      "rmse_completa": 0.5129576722780863,
+      "dif_rel_nfh_densa_pct": 0.30153383517227095,
+      "nfh_melhor": 0,
+      "nfh_igual": 0,
+      "nfh_pior": 3,
+      "cobertura_densa": 0.9989927874820999,
+      "cobertura_nfh": 0.9999902282527456,
+      "cobertura_min_densa": 0.985910404592841,
+      "cobertura_min_nfh": 0.9998209435901756,
+      "epocas_selecionadas": [
+        15,
+        12,
+        15
+      ],
+      "ganho_vs_ingenuo_pct": 22.882746790694654
+    },
+    "lstm_K2": {
+      "rmse_densa": 0.5114317735036215,
+      "rmse_nfh": 0.5114317735036215,
+      "rmse_completa": 0.5881447990735372,
+      "dif_rel_nfh_densa_pct": 0.0,
+      "nfh_melhor": 0,
+      "nfh_igual": 3,
+      "nfh_pior": 0,
+      "cobertura_densa": 0.9188999451110152,
+      "cobertura_nfh": 0.9188999442452318,
+      "cobertura_min_densa": 0.7123359737402062,
+      "cobertura_min_nfh": 0.7123359847232392,
+      "epocas_selecionadas": [
+        0,
+        0,
+        0
+      ],
+      "ganho_vs_ingenuo_pct": 23.112148023041136
+    },
+    "transformer_K5": {
+      "rmse_densa": 0.5177901188532511,
+      "rmse_nfh": 0.5147558053334554,
+      "rmse_completa": 0.5158745447794596,
+      "dif_rel_nfh_densa_pct": -0.5923228773200203,
+      "nfh_melhor": 2,
+      "nfh_igual": 1,
+      "nfh_pior": 0,
+      "cobertura_densa": 0.9990269492841198,
+      "cobertura_nfh": 0.9996709144363454,
+      "cobertura_min_densa": 0.9944584812184681,
+      "cobertura_min_nfh": 0.9983065110691824,
+      "epocas_selecionadas": [
+        0,
+        13,
+        15
+      ],
+      "ganho_vs_ingenuo_pct": 22.61241828284899
+    },
+    "transformer_K2": {
+      "rmse_densa": 0.5177901188532511,
+      "rmse_nfh": 0.5177900989850363,
+      "rmse_completa": 0.5755249857902527,
+      "dif_rel_nfh_densa_pct": -3.998927167819417e-06,
+      "nfh_melhor": 0,
+      "nfh_igual": 3,
+      "nfh_pior": 0,
+      "cobertura_densa": 0.9203674152089003,
+      "cobertura_nfh": 0.9203674076071472,
+      "cobertura_min_densa": 0.7604109131966151,
+      "cobertura_min_nfh": 0.7604109079662145,
+      "epocas_selecionadas": [
+        0,
+        0,
+        0
+      ],
+      "ganho_vs_ingenuo_pct": 22.156247326674084
+    }
+  },
+  "tempo_total_min": 13.6
+}

@@ -1,0 +1,31 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  cpu:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      CUDA_VISIBLE_DEVICES: ""
+    steps:
+      - uses: actions/checkout@v5
+      # pinned by commit; the tag is v10.4.0 (https://github.com/astral-sh/setup-uv, README, accessed 2026-11-25)
+      - uses: astral-sh/setup-uv@1db35dd8eee11c5894872e0b383ae6c406cf738d
+        with:
+          enable-cache: true
+      - name: Install (versions pinned by uv.lock)
+        run: uv sync --locked
+      - name: Tests (library, paper claims, docs map, README snippet, smoke test of the examples)
+        run: uv run --locked pytest
+      - name: Level 1 check that needs no third-party data (recomputes Chapter 5 numbers from stored results)
+        run: |
+          uv run --locked python src/v3_tabelas.py
+          git diff --stat -- results/v3/numeros_cap5.json
+          git diff --exit-code -- results/v3/numeros_cap5.json

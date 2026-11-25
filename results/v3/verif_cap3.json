@@ -1,0 +1,293 @@
+{
+ "nbeats_intersecao": [
+  {
+   "H": 6,
+   "p_nb": 1,
+   "dim_S": 5,
+   "dim_T": 2,
+   "dim_intersecao": 1,
+   "formula_H_par": 1,
+   "confere": true
+  },
+  {
+   "H": 6,
+   "p_nb": 2,
+   "dim_S": 5,
+   "dim_T": 3,
+   "dim_intersecao": 2,
+   "formula_H_par": 2,
+   "confere": true
+  },
+  {
+   "H": 6,
+   "p_nb": 3,
+   "dim_S": 5,
+   "dim_T": 4,
+   "dim_intersecao": 3,
+   "formula_H_par": 3,
+   "confere": true
+  },
+  {
+   "H": 7,
+   "p_nb": 1,
+   "dim_S": 5,
+   "dim_T": 2,
+   "dim_intersecao": 1,
+   "formula_H_par": null,
+   "confere": true
+  },
+  {
+   "H": 7,
+   "p_nb": 2,
+   "dim_S": 5,
+   "dim_T": 3,
+   "dim_intersecao": 1,
+   "formula_H_par": null,
+   "confere": true
+  },
+  {
+   "H": 7,
+   "p_nb": 3,
+   "dim_S": 5,
+   "dim_T": 4,
+   "dim_intersecao": 2,
+   "formula_H_par": null,
+   "confere": true
+  },
+  {
+   "H": 8,
+   "p_nb": 1,
+   "dim_S": 7,
+   "dim_T": 2,
+   "dim_intersecao": 1,
+   "formula_H_par": 1,
+   "confere": true
+  },
+  {
+   "H": 8,
+   "p_nb": 2,
+   "dim_S": 7,
+   "dim_T": 3,
+   "dim_intersecao": 2,
+   "formula_H_par": 2,
+   "confere": true
+  },
+  {
+   "H": 8,
+   "p_nb": 3,
+   "dim_S": 7,
+   "dim_T": 4,
+   "dim_intersecao": 3,
+   "formula_H_par": 3,
+   "confere": true
+  },
+  {
+   "H": 13,
+   "p_nb": 1,
+   "dim_S": 11,
+   "dim_T": 2,
+   "dim_intersecao": 1,
+   "formula_H_par": null,
+   "confere": true
+  },
+  {
+   "H": 13,
+   "p_nb": 2,
+   "dim_S": 11,
+   "dim_T": 3,
+   "dim_intersecao": 1,
+   "formula_H_par": null,
+   "confere": true
+  },
+  {
+   "H": 13,
+   "p_nb": 3,
+   "dim_S": 11,
+   "dim_T": 4,
+   "dim_intersecao": 2,
+   "formula_H_par": null,
+   "confere": true
+  },
+  {
+   "H": 14,
+   "p_nb": 1,
+   "dim_S": 13,
+   "dim_T": 2,
+   "dim_intersecao": 1,
+   "formula_H_par": 1,
+   "confere": true
+  },
+  {
+   "H": 14,
+   "p_nb": 2,
+   "dim_S": 13,
+   "dim_T": 3,
+   "dim_intersecao": 2,
+   "formula_H_par": 2,
+   "confere": true
+  },
+  {
+   "H": 14,
+   "p_nb": 3,
+   "dim_S": 13,
+   "dim_T": 4,
+   "dim_intersecao": 3,
+   "formula_H_par": 3,
+   "confere": true
+  },
+  {
+   "H": 18,
+   "p_nb": 1,
+   "dim_S": 17,
+   "dim_T": 2,
+   "dim_intersecao": 1,
+   "formula_H_par": 1,
+   "confere": true
+  },
+  {
+   "H": 18,
+   "p_nb": 2,
+   "dim_S": 17,
+   "dim_T": 3,
+   "dim_intersecao": 2,
+   "formula_H_par": 2,
+   "confere": true
+  },
+  {
+   "H": 18,
+   "p_nb": 3,
+   "dim_S": 17,
+   "dim_T": 4,
+   "dim_intersecao": 3,
+   "formula_H_par": 3,
+   "confere": true
+  },
+  {
+   "H": 30,
+   "p_nb": 1,
+   "dim_S": 29,
+   "dim_T": 2,
+   "dim_intersecao": 1,
+   "formula_H_par": 1,
+   "confere": true
+  },
+  {
+   "H": 30,
+   "p_nb": 2,
+   "dim_S": 29,
+   "dim_T": 3,
+   "dim_intersecao": 2,
+   "formula_H_par": 2,
+   "confere": true
+  },
+  {
+   "H": 30,
+   "p_nb": 3,
+   "dim_S": 29,
+   "dim_T": 4,
+   "dim_intersecao": 3,
+   "formula_H_par": 3,
+   "confere": true
+  },
+  {
+   "H": 31,
+   "p_nb": 1,
+   "dim_S": 29,
+   "dim_T": 2,
+   "dim_intersecao": 1,
+   "formula_H_par": null,
+   "confere": true
+  },
+  {
+   "H": 31,
+   "p_nb": 2,
+   "dim_S": 29,
+   "dim_T": 3,
+   "dim_intersecao": 1,
+   "formula_H_par": null,
+   "confere": true
+  },
+  {
+   "H": 31,
+   "p_nb": 3,
+   "dim_S": 29,
+   "dim_T": 4,
+   "dim_intersecao": 2,
+   "formula_H_par": null,
+   "confere": true
+  },
+  {
+   "H": 48,
+   "p_nb": 1,
+   "dim_S": 47,
+   "dim_T": 2,
+   "dim_intersecao": 1,
+   "formula_H_par": 1,
+   "confere": true
+  },
+  {
+   "H": 48,
+   "p_nb": 2,
+   "dim_S": 47,
+   "dim_T": 3,
+   "dim_intersecao": 2,
+   "formula_H_par": 2,
+   "confere": true
+  },
+  {
+   "H": 48,
+   "p_nb": 3,
+   "dim_S": 47,
+   "dim_T": 4,
+   "dim_intersecao": 3,
+   "formula_H_par": 3,
+   "confere": true
+  }
+ ],
+ "nbeats_vetor_compartilhado": [
+  {
+   "H": 8,
+   "erro_v_em_S": 9.063930161978817e-17,
+   "prod_tau_alternado": -0.5,
+   "prod_1_alternado": 0.0
+  },
+  {
+   "H": 30,
+   "erro_v_em_S": 2.498001805406602e-16,
+   "prod_tau_alternado": -0.5,
+   "prod_1_alternado": 0.0
+  },
+  {
+   "H": 48,
+   "erro_v_em_S": 6.106226635438361e-16,
+   "prod_tau_alternado": -0.5,
+   "prod_1_alternado": 0.0
+  }
+ ],
+ "nft": {
+  "M": 4,
+  "H": 8,
+  "N": 4,
+  "grau_tendencia": 2,
+  "formato_FM": [
+   6,
+   4
+  ],
+  "formato_FH": [
+   6,
+   8
+  ],
+  "erro_1_no_sazonal": 6.661338147750939e-16,
+  "erro_1_na_tendencia": 4.440892098500626e-16,
+  "dim_intersecao": 4,
+  "posto_sazonal": 20,
+  "colunas_sazonal": 36,
+  "linhas_nulas_FM": [
+   3,
+   5
+  ],
+  "linhas_nulas_FH": [
+   3
+  ]
+ }
+}

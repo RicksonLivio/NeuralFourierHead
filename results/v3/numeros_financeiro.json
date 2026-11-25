@@ -1,0 +1,59 @@
+{
+ "barras_negativas": [
+  {
+   "conjunto": "AAPL",
+   "modelo": "Conv1D+LSTM + NFH",
+   "rel_pct": -0.261
+  },
+  {
+   "conjunto": "AAPL",
+   "modelo": "Conv1D+LSTM + densa",
+   "rel_pct": -0.004
+  },
+  {
+   "conjunto": "AAPL",
+   "modelo": "N-BEATS-I",
+   "rel_pct": -0.1
+  },
+  {
+   "conjunto": "AAPL",
+   "modelo": "MLP",
+   "rel_pct": -0.267
+  },
+  {
+   "conjunto": "AMZN",
+   "modelo": "Conv1D+LSTM + NFH",
+   "rel_pct": -0.425
+  },
+  {
+   "conjunto": "AMZN",
+   "modelo": "Conv1D+LSTM + densa",
+   "rel_pct": -0.154
+  },
+  {
+   "conjunto": "AMZN",
+   "modelo": "LSTM",
+   "rel_pct": -0.32
+  },
+  {
+   "conjunto": "NVDA",
+   "modelo": "MLP",
+   "rel_pct": -0.476
+  }
+ ],
+ "rel_nfh_vs_densa_pct": {
+  "BNB_USD": -0.152,
+  "BTC_USD": -0.204,
+  "ETH_USD": -0.098,
+  "SOL_USD": -0.18,
+  "XRP_USD": -0.318,
+  "AAPL": -0.257,
+  "AMZN": -0.272,
+  "GOOGL": -0.405,
+  "MSFT": -0.856,
+  "NVDA": 0.289
+ },
+ "conjuntos_nfh_pior_que_densa": [
+  "NVDA"
+ ]
+}

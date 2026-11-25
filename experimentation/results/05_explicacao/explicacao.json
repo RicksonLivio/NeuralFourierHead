@@ -1,0 +1,144 @@
+{
+  "janela": 16,
+  "inicio_previsao": "2012-09-21 00:00:00",
+  "backbone": "lstm",
+  "resumo": {
+    "level": 0.581372412542502,
+    "eps_T": 0.4397332264846522,
+    "eps_S": 0.5602626244077196,
+    "eps_R": 4.193993090790215e-06,
+    "coverage": 0.9999958060069092,
+    "shape_rms": 0.8820225656179134,
+    "top_harmonics": [
+      {
+        "k": 1,
+        "period": 24.0,
+        "e_k": 0.30857186055586344,
+        "amplitude": 0.9714014530181885
+      },
+      {
+        "k": 2,
+        "period": 12.0,
+        "e_k": 0.12630205057679814,
+        "amplitude": 0.6283462643623352
+      },
+      {
+        "k": 3,
+        "period": 8.0,
+        "e_k": 0.07978136689032156,
+        "amplitude": 0.3511975109577179
+      }
+    ]
+  },
+  "atribuicao": {
+    "T": {
+      "I": {
+        "cnt": 0.28672367334365845,
+        "temp": 0.016950925812125206,
+        "atemp": -0.048260342329740524,
+        "hum": -0.010225973092019558,
+        "windspeed": 0.007131499238312244,
+        "weathersit": 0.028940726071596146,
+        "workingday": 0.09043747186660767,
+        "holiday": 0.0,
+        "hr_sin": -0.18014103174209595,
+        "hr_cos": -0.1206963062286377,
+        "wd_sin": 0.012918567284941673,
+        "wd_cos": 0.0007686307653784752
+      },
+      "share": {
+        "cnt": 0.3569788414906338,
+        "temp": 0.021104367797888254,
+        "atemp": 0.060085450545143144,
+        "hum": 0.012731617117391658,
+        "windspeed": 0.008878912251981123,
+        "weathersit": 0.03603199814112828,
+        "workingday": 0.11259713422961219,
+        "holiday": 0.0,
+        "hr_sin": 0.22428052789050662,
+        "hr_cos": 0.1502702133634296,
+        "wd_sin": 0.016083970776873693,
+        "wd_cos": 0.0009569663954116465
+      },
+      "delta": 0.08387774229049683,
+      "completeness_error": 0.0006700986996293068
+    },
+    "S": {
+      "I": {
+        "cnt": 0.23835483193397522,
+        "temp": 0.576764702796936,
+        "atemp": -0.16565048694610596,
+        "hum": -0.10032311826944351,
+        "windspeed": -0.014218145981431007,
+        "weathersit": 0.08966097235679626,
+        "workingday": -0.7893770337104797,
+        "holiday": 0.0,
+        "hr_sin": 3.001772880554199,
+        "hr_cos": 4.424931049346924,
+        "wd_sin": 0.5146248936653137,
+        "wd_cos": -1.867178201675415
+      },
+      "share": {
+        "cnt": 0.020228951751307397,
+        "temp": 0.04894948111632261,
+        "atemp": 0.01405860196256298,
+        "hum": 0.008514329256708482,
+        "windspeed": 0.0012066807570785215,
+        "weathersit": 0.007609442901007979,
+        "workingday": 0.06699369087236583,
+        "holiday": 0.0,
+        "hr_sin": 0.2547576580529915,
+        "hr_cos": 0.37553976134579,
+        "wd_sin": 0.04367573360904641,
+        "wd_cos": 0.15846566837481835
+      },
+      "delta": 5.938822269439697,
+      "completeness_error": 0.02945992536842823
+    },
+    "R": {
+      "I": {
+        "cnt": 0.0017374542076140642,
+        "temp": 0.00034900661557912827,
+        "atemp": -0.0011878348886966705,
+        "hum": -0.0007407772354781628,
+        "windspeed": -5.442837573355064e-05,
+        "weathersit": -6.884837057441473e-05,
+        "workingday": -5.592337402049452e-05,
+        "holiday": 0.0,
+        "hr_sin": -0.04798725247383118,
+        "hr_cos": -0.03369610756635666,
+        "wd_sin": 0.0012406244641169906,
+        "wd_cos": -0.003580003511160612
+      },
+      "share": {
+        "cnt": 0.01915642248114304,
+        "temp": 0.0038479967687486474,
+        "atemp": 0.013096556367354559,
+        "hum": 0.008167491048135295,
+        "windspeed": 0.0006001038507634104,
+        "weathersit": 0.0007590925090756386,
+        "workingday": 0.0006165870585899982,
+        "holiday": 0.0,
+        "hr_sin": 0.5290867972631945,
+        "hr_cos": 0.37151878287347145,
+        "wd_sin": 0.013678591511026354,
+        "wd_cos": 0.03947157826849712
+      },
+      "delta": -0.08384918421506882,
+      "completeness_error": 0.0001949062934727408
+    }
+  },
+  "robustez": 0.9999250832628883,
+  "topicos": [
+    "Previsão para 21/09/2012: 7,330 aluguéis no dia, pico às 17 h com ≈697 bicicletas/h.",
+    "Nível médio previsto de 0,58 para 'log(1+aluguéis) padronizado' nos próximos 24 h: explicado inteiramente pela tendência.",
+    "Tendência crescente de -0,39 para 1,55 no horizonte.",
+    "Forma da previsão (sem o nível): tendência 44,0%, sazonalidade 56,0%, resíduo 0,0%; cobertura estrutural κ = 100,0%.",
+    "Ciclo de ≈24,0 h (k=1): e_k = 30,9% da forma, amplitude 0,97.",
+    "Ciclo de ≈12,0 h (k=2): e_k = 12,6% da forma, amplitude 0,63.",
+    "Ciclo de ≈8,0 h (k=3): e_k = 8,0% da forma, amplitude 0,35.",
+    "Escala da forma: RMS 0,88 (92,7% do desvio histórico).",
+    "Nível/tendência sustentada principalmente por 'cnt' (35,7%) e 'hr_sin' (22,4%) (Integrated Gradients, leitura local).",
+    "Sazonalidade sustentada principalmente por 'hr_cos' (37,6%) e 'hr_sin' (25,5%) (Integrated Gradients, leitura local)."
+  ]
+}

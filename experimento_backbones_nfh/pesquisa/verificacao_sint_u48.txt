@@ -1,0 +1,16 @@
+N=12000 sigma=0.3 sd_treino=1.1216 sigma/sd=0.2675
+1) cobertura do SINAL futuro (sem ruido) por T+S: 1-eps_R medio sobre janelas de 48 h (passo 24)
+   q=2 K=2: colunas=7  1-eps_R=0.834332
+   q=2 K=4: colunas=11  1-eps_R=0.999995
+   q=2 K=10: colunas=23  1-eps_R=1.000000
+2) RMSE padronizado de teste de um oraculo que preve o sinal futuro projetado em T+S (R=0), contra y futuro ruidoso
+   K=2: 0.3982   (piso = oraculo sem projecao: 0.2658)
+   K=4: 0.2663   (piso = oraculo sem projecao: 0.2658)
+   K=10: 0.2663   (piso = oraculo sem projecao: 0.2658)
+3) Referencia LINEAR (OLS, NAO e a NFH): janela 96 -> 48, instance norm por media, ultimas janelas do treino
+   K=4 fracao=1.0: janelas=8257  OLS denso=0.3022  OLS com saida em T+S (R=0)=0.3003
+   K=4 fracao=0.25: janelas=2064  OLS denso=0.3097  OLS com saida em T+S (R=0)=0.3034
+   K=4 fracao=0.1: janelas=825  OLS denso=0.3193  OLS com saida em T+S (R=0)=0.3068
+   K=10 fracao=1.0: janelas=8257  OLS denso=0.3022  OLS com saida em T+S (R=0)=0.3008
+   K=10 fracao=0.25: janelas=2064  OLS denso=0.3097  OLS com saida em T+S (R=0)=0.3058
+   K=10 fracao=0.1: janelas=825  OLS denso=0.3193  OLS com saida em T+S (R=0)=0.3130
